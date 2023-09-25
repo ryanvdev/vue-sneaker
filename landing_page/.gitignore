@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+# test
+TestPage.vue
+TestComponent.vue
+TestComponent
+TestPage
