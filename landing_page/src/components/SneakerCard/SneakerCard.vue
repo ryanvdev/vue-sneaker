@@ -33,10 +33,15 @@ const emit = defineEmits<{
     'click:buy-now': [e: SneakerEvent]
 }>();
 
+// the color id of variationLibrary.colors
 const color = ref<string | undefined>();
+
+// similar to the color ref
 const size = ref<string | undefined>();
 
-
+/**
+ * The variations remaining when the customer has selected color or size on the SneakerCard
+ */
 const variations = computed<SneakerVariation[]>(() => {
     const colorValue = color.value;
     const sizeValue = size.value;
@@ -57,6 +62,7 @@ const variations = computed<SneakerVariation[]>(() => {
         return result;
     });
 });
+
 
 const availableVariationLibrary = computed<SneakerVariationLibrary>(() => {
     return computeAvailableVariationLibrary(variations.value, variationLibrary);

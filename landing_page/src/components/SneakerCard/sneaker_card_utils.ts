@@ -102,10 +102,14 @@ export const createSneakerEvent = (
 }
 
 
-
 // ====================
 
-
+/**
+ * 
+ * @param variations The variations remaining after the customer has selected color or size.
+ * @param variationLibrary The variation-library is passed to props from SneakerCard
+ * @returns Available variation-library which is computed based on variations remaining
+ */
 export const computeAvailableVariationLibrary = (
     variations: SneakerVariation[],
     variationLibrary: SneakerVariationLibrary

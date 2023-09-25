@@ -29,3 +29,5 @@ TestPage.vue
 TestComponent.vue
 TestComponent
 TestPage
+
+*.test.vue
