@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+body{
+  --container-width: 1100px;
+}
+
 :root {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;

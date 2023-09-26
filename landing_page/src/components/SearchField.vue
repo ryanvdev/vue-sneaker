@@ -28,7 +28,7 @@ const suggestions = computed<[string, string, string][]>(() => {
 </script>
 
 <template>
-    <div :class="`${props.class||''} ${style['search-field']} ${style[isFocused?'focus':'blur']}`">
+    <div :class="`${style['search-field']} ${style[isFocused?'focus':'blur']} ${props.class||''}`">
         <div :class="style['cover-wrapper']">
             <div :class="style['cover']" v-show="isFocused" @mousedown="isFocused = false"></div>
         </div>
@@ -155,7 +155,7 @@ const suggestions = computed<[string, string, string][]>(() => {
 
 .line-break {
     display: block;
-    transition: width 0.3s;
+    transition: width 0.2s;
 
     width: 0px;
     height: 2px;
