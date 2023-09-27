@@ -1,31 +1,21 @@
 <script setup lang="ts" >
-import { provide, onUpdated, withDefaults, defineProps, computed, ref, watch } from 'vue';
+import type {Sneaker, SneakerVariation, SneakerVariationLibrary} from '@/types/sneaker';
+import { provide, onUpdated, defineProps, computed, ref, watch } from 'vue';
 import SneakerCardInfo from './SneakerCardInfo.vue';
 import { injectionKey, localLogger, computeAvailableVariationLibrary, createSneakerEvent } from './sneaker_card_utils';
-import type { SneakerVariation, SneakerVariationLibrary, SneakerEvent } from './sneaker_card_utils';
+import type { SneakerEvent } from './sneaker_card_utils';
 
+interface Props extends Sneaker{
 
-interface SneakerCardProps {
-    href?: string,
-    brand?: string,
-    name?: string,
-    defaultImage: string,
-    defaultColor: string,
-    variations: SneakerVariation[],
-    variationLibrary: SneakerVariationLibrary,
 }
 
 defineOptions({
     inheritAttrs: false,
 });
 
-const props = withDefaults(defineProps<SneakerCardProps>(), {
-    brand: 'Brand',
-    href: '#',
-    name: 'Sneaker',
-});
+const props = defineProps<Props>();
 
-const { name, brand, href, variationLibrary } = props;
+const { name, brand, variationLibrary } = props;
 
 const emit = defineEmits<{
     'update:variation': [value: Partial<SneakerVariation>],
@@ -63,7 +53,6 @@ const variations = computed<SneakerVariation[]>(() => {
     });
 });
 
-
 const availableVariationLibrary = computed<SneakerVariationLibrary>(() => {
     return computeAvailableVariationLibrary(variations.value, variationLibrary);
 });
@@ -89,6 +78,10 @@ const image = computed<string>(() => {
     return variationLibrary.images[props.defaultImage];
 });
 
+const href = computed<string>(() => {
+    return '';
+});
+
 const handleBuyNowClick = () => {
     emit('click:buy-now', createSneakerEvent(color.value, size.value, props.variations));
 }
@@ -97,11 +90,9 @@ const handleAddToCartClick = () => {
     emit('click:add-to-cart', createSneakerEvent(color.value, size.value, props.variations));
 }
 
-
 watch(color, (value) => {
     localLogger.info('color', value);
-}, { immediate: true })
-
+}, { immediate: true });
 
 provide(injectionKey, {
     name,
@@ -158,7 +149,7 @@ onUpdated(() => {
     >p {
         transition: all 0.3s;
         rotate: 45deg;
-        color: rgba(86, 86, 86, 0.54);
+        color: rgba(80, 85, 90, 0.6);
         font-family: Roboto Slab;
         font-size: 90px;
         font-style: normal;
@@ -190,7 +181,7 @@ onUpdated(() => {
     align-items: center;
     position: relative;
     transition: all 0.3s;
-    z-index: 5;
+    z-index: 4;
 
     top: 53px;
 
@@ -210,12 +201,19 @@ onUpdated(() => {
 
 .sneaker-info {
     position: relative;
-    transition: top 0.3s;
+    z-index: 5;
+    transition: top 0.3s, background-color 0.1s;
 
-    top: 300px;
+    
+    top: 285px;
+    
+    border-radius: 10px 10px 0px 0px;
 
     margin-left: auto;
     margin-right: auto;
+
+
+    background-color: rgba(var(--v-theme-dark), 0);
 }
 
 .sneaker-card {
@@ -227,17 +225,17 @@ onUpdated(() => {
 
     border-radius: 10px;
 
-    background-color: rgba(var(--v-theme-cardBackground));
+    background-color: rgba(var(--v-theme-card-background));
 
     >* {
         overflow: hidden;
     }
 }
 
-.sneaker-card:hover {
+.sneaker-card:hover{
     .brand>p {
         rotate: 0deg;
-        font-size: 80px;
+        font-size: 70px;
     }
 
     .ellipse {
@@ -249,7 +247,7 @@ onUpdated(() => {
     }
 
     .sneaker-image {
-        top: 2px;
+        top: -5px;
 
         width: 180px;
         height: 180px;
@@ -258,7 +256,8 @@ onUpdated(() => {
     }
 
     .sneaker-info {
-        top: 186px;
+        top: 165px;
+        background-color: rgba(var(--v-theme-dark), 0.5);
     }
 }
 </style>

@@ -47,6 +47,7 @@ onUpdated(() => {
         <ul>
             <li 
                 v-for="([sizeKey, sizeValue, available]) in sizes" 
+                v-ripple 
                 :key="sizeKey"
                 :class="`${sizeKey === size ? style['selected'] : ''} ${!available?style['unavailable']:''}`"
                 @click="if(available) handleClick(sizeKey);"
@@ -69,7 +70,7 @@ $gap: 8px;
     gap: $gap;
 
     >label {
-        color: var(--White, #FFF);
+        color: rgb(var(--v-theme-tertiary));
         font-family: Roboto Slab;
         font-size: 13px;
         font-style: normal;
@@ -101,7 +102,7 @@ $gap: 8px;
             border-style: solid;
             border-width: 2px;
 
-            color: #000;
+            color: rgb(var(--v-theme-dark));
             font-family: Roboto Slab;
             font-size: 16px;
             font-style: normal;
@@ -112,12 +113,14 @@ $gap: 8px;
             
 
             &.selected {
-                background-color: rgba(var(--v-theme-secondary), 1);
+                color: rgb(var(--v-theme-white));
+                background-color: rgba(var(--v-theme-primary), 1);
             }
             &.unavailable {
-                background-color: transparent;
                 cursor: default;
+                border-radius: 50%;
                 color: transparent;
+                background-color: transparent;
             }
             &:hover {
                 border-color: rgb(var(--v-theme-secondary));

@@ -11,9 +11,9 @@ const props = defineProps<Props>();
 
 <template>
     <div :class="`${style['header-buttons']} ${props.class}`">
-        <VBtn height="60px" stacked variant="text" to="/cart">
-            <VBadge :content="80" color="white">
-                <VIcon icon="mdi-cart" size="40px" color="white"/>
+        <VBtn height="60px" stacked variant="text" to="/cart" color="rgb(var(--v-theme-tertiary))">
+            <VBadge :content="80" color="rgb(var(--v-theme-tertiary))">
+                <VIcon icon="mdi-cart" size="40px" color="rgb(var(--v-theme-tertiary))"/>
             </VBadge>
         </VBtn>
     </div>

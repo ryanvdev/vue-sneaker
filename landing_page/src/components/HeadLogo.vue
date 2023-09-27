@@ -20,7 +20,14 @@ const props = withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-    <v-btn :class="props.class" :to="props.href" variant="text" stacked height="60px" >
+    <v-btn 
+        :class="`${style['btn']} ${props.class}`" 
+        :to="props.href" 
+        variant="text" 
+        stacked 
+        height="60px"
+        color="rgb(var(--v-theme-tertiary))"
+    >
         <div :class="style['wrapper']">
             <img :src="props.logo" :alt="props.webName"/>
             <span v-show="props.webName.length>0">{{ props.webName }}</span>
@@ -29,6 +36,13 @@ const props = withDefaults(defineProps<Props>(), {
 </template>
 
 <style module="style" lang="scss">
+.btn{
+    > :global(.v-btn__overlay){
+        background-color: transparent;
+    }
+}
+
+
 .wrapper{
     display: block;
     width: fit-content;
@@ -48,7 +62,7 @@ const props = withDefaults(defineProps<Props>(), {
         line-height: 60px;
         font-weight: 700;
         font-size: 24px;
-        color: rgb(var(--v-theme-white));
+        color: rgb(var(--v-theme-tertiary));
     }
 }
 

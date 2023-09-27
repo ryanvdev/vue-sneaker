@@ -53,7 +53,7 @@ onUpdated(() => {
     <div :class="`${style['sneaker-card-color']} ${props.class}`">
         <label>COLOR</label>
         <ul>
-            <li v-for="([colorKey, colorValue, available]) in colors" 
+            <li v-for="([colorKey, colorValue, available]) in colors"
                 :key="colorKey"
                 :class="computeClassName(style, colorKey, available)"
                 :style="{ '--color': colorValue }"
@@ -76,7 +76,7 @@ $gap: 8px;
     gap: $gap;
 
     >label {
-        color: var(--White, #FFF);
+        color: rgb(var(--v-theme-tertiary));
         font-family: Roboto Slab;
         font-size: 13px;
         font-style: normal;

@@ -13,6 +13,7 @@
     "@mdi/js": "^7.2.96",
     "@tanstack/vue-query": "^4.35.3",
     "axios": "^1.5.0",
+    "lodash": "^4.17.21",
     "loglevel": "^1.8.1",
     "pinia": "^2.1.6",
     "sass": "^1.68.0",
@@ -21,6 +22,7 @@
     "vuetify": "^3.3.17"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.199",
     "@types/node": "^20.6.5",
     "@vitejs/plugin-vue": "^4.3.4",
     "typescript": "^5.2.2",

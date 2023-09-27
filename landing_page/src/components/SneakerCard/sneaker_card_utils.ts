@@ -1,3 +1,4 @@
+import type {SneakerVariation, SneakerVariationLibrary} from '@/types/sneaker';
 import type { ComputedRef, InjectionKey, Ref } from 'vue';
 import { getLogger } from 'loglevel';
 
@@ -7,22 +8,8 @@ export interface SneakerEvent {
     variation: SneakerVariation | undefined;
 }
 
-export interface SneakerVariationLibrary {
-    sizes: IndexSignature<string>,
-    colors: IndexSignature<string>,
-    images: IndexSignature<string>,
-}
-
-export interface SneakerVariation {
-    id: string,
-    size: string,
-    color: string,
-    image: string,
-    price: number,
-}
-
 export interface SneakerCardInjection {
-    href: string,
+    href: ComputedRef<string>,
     name: string,
     color: Ref<string | undefined>,
     size: Ref<string | undefined>,

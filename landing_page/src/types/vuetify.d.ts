@@ -9,8 +9,10 @@ declare module "vuetify" {
             white: string;
             primary: string;
             secondary: string;
-            cardBackground: string;
             background: string;
-        }
+            tertiary: string;
+            price: string;
+            cardBackground: string;
+        },
     }
 }

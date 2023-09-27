@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import {VContainer} from 'vuetify/components';
+
 import HeadLogo from './HeadLogo.vue';
 import HeaderButtons from './HeaderButtons.vue';
 import SearchField from './SearchField.vue';
@@ -8,7 +10,7 @@ import SearchField from './SearchField.vue';
 
 <template>
     <div :class="style['header']">
-        <div :class="style['wrapper']">
+        <v-container :class="style['wrapper']">
             <div :class="`stack ${style['stack']}`">
                 <div>
                     <HeadLogo :class="style['logo']"/>
@@ -18,7 +20,7 @@ import SearchField from './SearchField.vue';
                     <SearchField :class="style['search-field']"/>
                 </div>
             </div>
-        </div>
+        </v-container>
     </div>
 </template>
 
@@ -29,19 +31,12 @@ import SearchField from './SearchField.vue';
     width: 100vw;
     height: 80px;
 
-    background-color: rgb(var(--v-theme-secondary));
+    background-color: rgb(var(--v-theme-primary));
 }
 
 .wrapper{
-    display: block;
-
-    width: var(--container-width);
     height: 100%;
-    max-width: 100%;
-
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 10px;
 }
 
 .stack {

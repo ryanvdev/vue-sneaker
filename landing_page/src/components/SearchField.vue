@@ -2,6 +2,7 @@
 import { ref, computed, defineProps, withDefaults } from 'vue';
 import { RouterLink } from 'vue-router';
 
+
 interface Props {
     class?:string;
     placeholder?: string;
@@ -41,7 +42,7 @@ const suggestions = computed<[string, string, string][]>(() => {
                     v-model="inputValue"
                     @focus="isFocused=true"
                 />
-                <button>Search</button>
+                <button v-ripple>Search</button>
             </div>
             <div :class="`${style['line-break']} ${isFocused&&style['display']}`"></div>
             <div :class="style['suggestion-wrapper']" v-show="isFocused">
@@ -50,9 +51,9 @@ const suggestions = computed<[string, string, string][]>(() => {
                 </div>
                 <ul :class="style['suggestion']">
                     <li v-for="[key, href, label] of suggestions" :key="key">
-                        <RouterLink :to="href">
+                        <router-link v-ripple :to="href">
                             {{ label }}
-                        </RouterLink>
+                        </router-link>
                     </li>
                 </ul>
             </div>
@@ -109,7 +110,7 @@ const suggestions = computed<[string, string, string][]>(() => {
 
     border-radius: 5px;
 
-    background-color: white;
+    background-color: rgb(var(--v-theme-tertiary));
 }
 
 .input-wrapper {
@@ -125,11 +126,14 @@ const suggestions = computed<[string, string, string][]>(() => {
         width: calc(100% - 130px);
         height: var(--input-height);
 
+        border: none;
+        outline: none;
+
         margin-left: 10px;
         margin-top: 10px;
 
-        border: none;
-        outline: none;
+        color: rgb(var(--v-theme-dark));
+        background-color: transparent;
     }
 
     >button {
@@ -147,9 +151,9 @@ const suggestions = computed<[string, string, string][]>(() => {
 
         font-size: 18px;
         font-weight: 600;
-        color: rgb(10, 30, 30);
+        color: rgb(var(--v-theme-tertiary));
 
-        background-color: rgb(var(--v-theme-secondary));
+        background-color: rgb(var(--v-theme-primary));
     }
 }
 
@@ -164,7 +168,7 @@ const suggestions = computed<[string, string, string][]>(() => {
     margin-right: auto;
 
     border-radius: 1px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgb(var(--v-theme-primary));
 
     &.display {
         width: calc(100% - 20px);
@@ -216,6 +220,18 @@ const suggestions = computed<[string, string, string][]>(() => {
                 background-color: rgba(0, 0, 0, 0.05);
             }
         }
+    }
+}
+
+.search-field.focus{
+    .wrapper{
+        background-color: rgb(var(--v-theme-white));
+    }
+
+    .input-wrapper {
+        > button {
+            color: rgb(var(--v-theme-white));
+        };
     }
 }
 </style>

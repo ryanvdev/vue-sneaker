@@ -34,7 +34,7 @@ onUpdated(() => {
 <template>
     <div :class="`${style['sneaker-card-info']} ${props.class}`">
         <RouterLink :to="href" :class="style['sneaker-name']">{{ name }}</RouterLink>
-        <p :class="style['sneaker-price']">{{ localPrice }}</p>
+        <p :class="style['sneaker-price']"><span>{{ localPrice }}</span></p>
         <SneakerCardSize/>
         <SneakerCardColor/>
         <SneakerCardButtons />
@@ -48,23 +48,46 @@ onUpdated(() => {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
+
+    padding: 10px 0px;
+
+    width: 100%;
 }
 
 .sneaker-name {
-    color: var(--White, #FFF);
+    color: rgb(var(--v-theme-tertiary));
     font-family: Roboto Slab;
     font-size: 20px;
     font-weight: 700;
     line-height: normal;
+
+    &:hover{
+        color: rgb(var(--v-theme-secondary));
+    }
 }
 
 .sneaker-price {
-    color: var(--Secondary, #75FFAC);
-    font-family: Roboto Slab;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 25px;
-    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    height: 25px;
+    width: 190px;
+
+    
+    >span{
+        display: block;
+        color: rgb(var(--v-theme-price));
+        font-family: Roboto Slab;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25px;
+        font-style: normal;
+        transform: scaleX(0.75);
+        white-space: nowrap; 
+        text-overflow: clip;
+    }
 }
 </style>

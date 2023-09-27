@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { inject } from 'vue';
 import { injectionKey } from './sneaker_card_utils';
+// import { VBtn } from 'vuetify/';
 
 
 export interface SneakerCardButtonsProps {
@@ -20,8 +21,8 @@ const props = defineProps<SneakerCardButtonsProps>();
 
 <template>
     <div :class="`${style['sneaker-card-buttons']} ${props.class}`">
-        <button @click="onBuyNowClick">Buy Now</button>
-        <button @click="onAddToCartClick">Add To Cart</button>
+        <button v-ripple @click="onBuyNowClick">Buy Now</button>
+        <button v-ripple @click="onAddToCartClick">Add To Cart</button>
     </div>
 </template>
 
@@ -31,7 +32,7 @@ const props = defineProps<SneakerCardButtonsProps>();
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
     
     > button{
         display: flex;
@@ -42,7 +43,7 @@ const props = defineProps<SneakerCardButtonsProps>();
         gap: 10px;
         flex-shrink: 0;
         
-        border-radius: 10px;
+        border-radius: 5px;
 
         text-align: center;
         font-family: Roboto Slab;
@@ -52,14 +53,20 @@ const props = defineProps<SneakerCardButtonsProps>();
         line-height: normal;   
         
         &:nth-child(1) {
-            color: rgb(var(--v-theme-card-Background));
-            background-color: rgb(var(--v-theme-secondary));
+            color: rgb(var(--v-theme-card-background));
+            background-color: rgb(var(--v-theme-tertiary));
+            &:hover{
+                background-color: rgb(var(--v-theme-secondary));
+            }
         }
     
         &:nth-child(2) {
-            border: 2px solid rgb(var(--v-theme-secondary));
-            color: rgb(var(--v-theme-secondary));
-            background: var(--Transparent, rgba(255, 255, 255, 0.00));
+            border: 2px solid currentColor;
+            color: rgb(var(--v-theme-tertiary));
+            background-color: transparent;
+            &:hover{
+                color: rgb(var(--v-theme-secondary));
+            }
         }
     }
 }
