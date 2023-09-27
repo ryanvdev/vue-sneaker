@@ -1,0 +1,37 @@
+{
+    "id": "tempor-reprehenderit-nisi-029",
+    "slug": "tempor-reprehenderit-nisi-029",
+    "brand": "TEMPOR",
+    "name": "Reprehenderit Nisi",
+    "defaultColor": "red",
+    "defaultImage": "red",
+    "variationLibrary": {
+        "colors": { "red": "red", "pink": "pink", "orange": "orange", "blue": "blue", "aqua": "aqua" },
+        "sizes": { "XL": "XL", "XXL": "XXL", "XS": "XS" },
+        "images": {
+            "red": "/img/demo-sneaker/red.png",
+            "pink": "/img/demo-sneaker/pink.png",
+            "orange": "/img/demo-sneaker/red.png",
+            "blue": "/img/demo-sneaker/blue.png",
+            "aqua": "/img/demo-sneaker/blue.png"
+        }
+    },
+    "variations": [
+        { "id": "XL-red-539", "color": "red", "size": "XL", "image": "red", "price": 5213000 },
+        { "id": "XL-pink-540", "color": "pink", "size": "XL", "image": "pink", "price": 1486000 },
+        { "id": "XL-orange-541", "color": "orange", "size": "XL", "image": "orange", "price": 5846000 },
+        { "id": "XL-blue-542", "color": "blue", "size": "XL", "image": "blue", "price": 9574000 },
+        { "id": "XL-aqua-543", "color": "aqua", "size": "XL", "image": "aqua", "price": 1432000 },
+        { "id": "XXL-red-544", "color": "red", "size": "XXL", "image": "red", "price": 9601000 },
+        { "id": "XXL-pink-545", "color": "pink", "size": "XXL", "image": "pink", "price": 4931000 },
+        { "id": "XXL-orange-546", "color": "orange", "size": "XXL", "image": "orange", "price": 3429000 },
+        { "id": "XXL-blue-547", "color": "blue", "size": "XXL", "image": "blue", "price": 6720000 },
+        { "id": "XXL-aqua-548", "color": "aqua", "size": "XXL", "image": "aqua", "price": 3884000 },
+        { "id": "XS-red-549", "color": "red", "size": "XS", "image": "red", "price": 7529000 },
+        { "id": "XS-pink-550", "color": "pink", "size": "XS", "image": "pink", "price": 6144000 },
+        { "id": "XS-orange-551", "color": "orange", "size": "XS", "image": "orange", "price": 4561000 },
+        { "id": "XS-blue-552", "color": "blue", "size": "XS", "image": "blue", "price": 8845000 },
+        { "id": "XS-aqua-553", "color": "aqua", "size": "XS", "image": "aqua", "price": 43000 }
+    ],
+    "description": "<p>Nisi laborum amet excepteur elit magna excepteur cupidatat esse do velit. Veniam sit excepteur voluptate nostrud aliqua sunt ad exercitation consequat. Eiusmod labore non occaecat nulla cillum. Mollit enim laboris nulla mollit sunt proident qui elit magna. Deserunt et sit tempor adipisicing dolor laboris. Eiusmod adipisicing eiusmod reprehenderit mollit proident reprehenderit non dolore consequat cupidatat non.</p> <p>Commodo aliquip sit nostrud dolore ea exercitation amet esse veniam voluptate esse consequat. Dolore commodo occaecat elit aliqua culpa excepteur et aliqua consectetur minim nulla voluptate ipsum ex. Ut reprehenderit ea sit pariatur nulla. Laborum eu adipisicing quis ullamco amet amet aute. Occaecat elit sit Lorem qui officia proident dolor.</p> <p>Proident quis id sit ad eu sunt id. Ut eu elit esse magna sint aliqua id. Elit adipisicing mollit veniam dolor laborum dolor.</p> <p>Ad ut Lorem esse cupidatat. Ipsum est occaecat eiusmod dolore excepteur. Esse duis amet ex Lorem dolor laborum qui. Incididunt est enim nulla pariatur commodo occaecat minim qui sunt incididunt. Aliqua cillum eiusmod laboris esse incididunt incididunt sunt pariatur qui cupidatat amet duis.</p> <p>Adipisicing deserunt laboris qui non. Cillum tempor nulla labore reprehenderit. Incididunt elit tempor eu adipisicing consequat excepteur enim laboris fugiat veniam. Id dolore do ullamco voluptate elit ad nulla elit Lorem officia duis.</p> <p>Dolore do non duis eiusmod occaecat labore fugiat. Labore dolor pariatur et excepteur fugiat elit labore fugiat. Incididunt ullamco irure consectetur amet aute ipsum ipsum non. Reprehenderit veniam in anim in officia. Ex laboris consequat culpa nostrud cillum nostrud Lorem nostrud amet duis adipisicing ullamco nisi enim. Nostrud mollit consequat laboris aliquip voluptate proident incididunt consectetur tempor amet non dolore consectetur.</p> <p>Tempor pariatur ex cupidatat laborum nulla et. Fugiat ea ea sint tempor culpa sit voluptate velit amet nostrud aliqua aliqua labore tempor. Pariatur esse duis in eiusmod occaecat.</p> <p>Sunt incididunt tempor magna pariatur esse mollit laboris voluptate duis dolore excepteur pariatur in. Laboris nisi ullamco cillum culpa et quis eiusmod sunt. Tempor adipisicing do ipsum aliqua ullamco amet incididunt. Pariatur consequat ex fugiat quis eiusmod adipisicing exercitation adipisicing commodo non amet excepteur occaecat. Ex aute deserunt ex incididunt amet officia reprehenderit culpa reprehenderit do amet quis incididunt officia. Eu proident proident veniam veniam qui proident amet. Adipisicing commodo irure mollit est proident officia esse consectetur fugiat.</p> <p>Irure non dolore est nisi nisi duis fugiat veniam. Anim non duis duis est id qui do ea consequat consectetur consectetur sunt dolor fugiat. Consectetur pariatur nostrud anim tempor occaecat culpa est mollit veniam pariatur. Culpa dolor incididunt ea dolor dolor in qui dolore proident sunt eiusmod eiusmod commodo.</p> <p>Occaecat qui minim proident laborum veniam esse sunt. Do aliquip culpa est non et dolore. Aute laborum minim reprehenderit irure esse nulla qui do nisi. Sint sunt non proident deserunt velit fugiat voluptate tempor sit excepteur et in commodo. Elit qui adipisicing aliqua adipisicing et reprehenderit. Id tempor qui officia exercitation nisi aliqua sit non reprehenderit esse commodo velit.</p> <p>Irure aute eiusmod irure et duis incididunt voluptate. Consectetur occaecat mollit aliquip aute cupidatat labore laborum. Sunt dolor quis cupidatat occaecat sit sit et. Ipsum tempor laborum fugiat quis irure culpa velit nisi. Est Lorem labore occaecat nostrud id culpa do aliquip enim ullamco commodo amet.</p>"
+}

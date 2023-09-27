@@ -22,3 +22,7 @@ export interface Sneaker {
     variations: SneakerVariation[],
     variationLibrary: SneakerVariationLibrary,
 }
+
+export interface SneakerDetail extends Sneaker{
+    description: string;
+}

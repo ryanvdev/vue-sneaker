@@ -1,20 +1,17 @@
 import path from "node:path";
-import fs from 'node:fs';
-import prettier from 'prettier';
-import { randomSneakers } from './utils/random_home_suggestion';
+import { createSneakerDetail, randomSneakers } from './utils/random_home_suggestion';
+import { saveSneakerDetail, saveSneakers } from "./utils/io_utils";
 
-const fakeApiPath = path.join(__dirname, '../../landing_page/public/testing-api/', 'random-sneakers.json');
+const rootDir = path.join(__dirname, '../../landing_page/public/testing-api/sneakers/');
+const sneakerDetailDir = path.join(rootDir, '/detail');
 
 const main = async () => {
-    const sample = randomSneakers(200);
-    // console.log(sample);
-    const data = await prettier.format(JSON.stringify(sample), {
-        parser: 'json',
-        printWidth: 150,
-        tabWidth: 4,
-        endOfLine: 'crlf',
-    });
-    fs.writeFileSync(fakeApiPath, data);
-    console.log('done!');
+    const sneakers = randomSneakers();
+    
+    await saveSneakers(sneakers, rootDir);
+
+    for(const item of sneakers){
+        await saveSneakerDetail(createSneakerDetail(item), sneakerDetailDir);
+    }
 }
 main();

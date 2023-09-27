@@ -1,0 +1,52 @@
+{
+    "id": "et-ex-anim-excepteur-429",
+    "slug": "et-ex-anim-excepteur-429",
+    "brand": "ET",
+    "name": "Ex Anim Excepteur",
+    "defaultColor": "red",
+    "defaultImage": "red",
+    "variationLibrary": {
+        "colors": { "red": "red", "green": "green", "pink": "pink", "blue": "blue", "black": "black" },
+        "sizes": { "M": "M", "XXL": "XXL", "XXXL": "XXXL", "L": "L", "XL": "XL", "S": "S" },
+        "images": {
+            "red": "/img/demo-sneaker/red.png",
+            "green": "/img/demo-sneaker/green.png",
+            "pink": "/img/demo-sneaker/pink.png",
+            "blue": "/img/demo-sneaker/blue.png",
+            "black": "/img/demo-sneaker/black.png"
+        }
+    },
+    "variations": [
+        { "id": "M-red-6867", "color": "red", "size": "M", "image": "red", "price": 7100000 },
+        { "id": "M-green-6868", "color": "green", "size": "M", "image": "green", "price": 6032000 },
+        { "id": "M-pink-6869", "color": "pink", "size": "M", "image": "pink", "price": 6561000 },
+        { "id": "M-blue-6870", "color": "blue", "size": "M", "image": "blue", "price": 6692000 },
+        { "id": "M-black-6871", "color": "black", "size": "M", "image": "black", "price": 7265000 },
+        { "id": "XXL-red-6872", "color": "red", "size": "XXL", "image": "red", "price": 4873000 },
+        { "id": "XXL-green-6873", "color": "green", "size": "XXL", "image": "green", "price": 4887000 },
+        { "id": "XXL-pink-6874", "color": "pink", "size": "XXL", "image": "pink", "price": 8788000 },
+        { "id": "XXL-blue-6875", "color": "blue", "size": "XXL", "image": "blue", "price": 2303000 },
+        { "id": "XXL-black-6876", "color": "black", "size": "XXL", "image": "black", "price": 9962000 },
+        { "id": "XXXL-red-6877", "color": "red", "size": "XXXL", "image": "red", "price": 2997000 },
+        { "id": "XXXL-green-6878", "color": "green", "size": "XXXL", "image": "green", "price": 7798000 },
+        { "id": "XXXL-pink-6879", "color": "pink", "size": "XXXL", "image": "pink", "price": 8694000 },
+        { "id": "XXXL-blue-6880", "color": "blue", "size": "XXXL", "image": "blue", "price": 9328000 },
+        { "id": "XXXL-black-6881", "color": "black", "size": "XXXL", "image": "black", "price": 7128000 },
+        { "id": "L-red-6882", "color": "red", "size": "L", "image": "red", "price": 609000 },
+        { "id": "L-green-6883", "color": "green", "size": "L", "image": "green", "price": 1250000 },
+        { "id": "L-pink-6884", "color": "pink", "size": "L", "image": "pink", "price": 4735000 },
+        { "id": "L-blue-6885", "color": "blue", "size": "L", "image": "blue", "price": 689000 },
+        { "id": "L-black-6886", "color": "black", "size": "L", "image": "black", "price": 2312000 },
+        { "id": "XL-red-6887", "color": "red", "size": "XL", "image": "red", "price": 9247000 },
+        { "id": "XL-green-6888", "color": "green", "size": "XL", "image": "green", "price": 9340000 },
+        { "id": "XL-pink-6889", "color": "pink", "size": "XL", "image": "pink", "price": 9967000 },
+        { "id": "XL-blue-6890", "color": "blue", "size": "XL", "image": "blue", "price": 834000 },
+        { "id": "XL-black-6891", "color": "black", "size": "XL", "image": "black", "price": 1944000 },
+        { "id": "S-red-6892", "color": "red", "size": "S", "image": "red", "price": 9483000 },
+        { "id": "S-green-6893", "color": "green", "size": "S", "image": "green", "price": 1116000 },
+        { "id": "S-pink-6894", "color": "pink", "size": "S", "image": "pink", "price": 2324000 },
+        { "id": "S-blue-6895", "color": "blue", "size": "S", "image": "blue", "price": 5434000 },
+        { "id": "S-black-6896", "color": "black", "size": "S", "image": "black", "price": 4026000 }
+    ],
+    "description": "<p>Quis dolor excepteur enim id laboris laboris nisi nisi duis proident. Dolore laboris duis ea cillum cillum magna culpa duis laborum labore enim officia tempor. Non est ipsum cillum nostrud labore nisi id aute officia pariatur eu do.</p> <p>Ea laboris non id irure culpa consectetur in non elit qui. Ut enim consequat eu nostrud cupidatat. Sint dolore excepteur veniam amet do exercitation ullamco.</p> <p>Veniam sit irure eiusmod laborum fugiat quis id mollit eu duis eiusmod. Labore mollit ex nisi voluptate ex commodo incididunt pariatur eu irure magna. Sunt duis nostrud ea in proident eu ad enim officia.</p> <p>Deserunt laborum laboris reprehenderit non consequat duis ea id ea eu. Laborum officia officia fugiat magna in Lorem ex. Do proident ad do dolore ullamco cupidatat exercitation irure ut sint non aute. Est sunt id irure ipsum ad mollit non ad ex. Ipsum duis do pariatur officia minim ex quis. Elit consectetur mollit esse aliquip incididunt. Minim esse minim aliqua do dolore consectetur cillum veniam exercitation.</p> <p>Consectetur aliquip consectetur mollit qui elit nisi quis duis sint deserunt. Aliqua voluptate eiusmod fugiat laborum officia esse consectetur fugiat. Adipisicing aliquip ut voluptate minim. Est officia sint ipsum qui ipsum dolore amet proident sit. Sunt tempor laborum duis cillum id. Dolore aute in mollit ut aliquip id sit veniam aliqua amet esse.</p> <p>Cupidatat dolore tempor voluptate laboris voluptate non ea ipsum elit qui. Incididunt ex esse minim labore reprehenderit exercitation velit ea excepteur irure ea nostrud. Esse amet culpa sint nostrud reprehenderit laboris aliqua nostrud deserunt. Sint ex est exercitation ea laboris. Eiusmod tempor ut commodo proident officia esse mollit veniam.</p> <p>Ipsum proident tempor nisi cupidatat culpa qui magna reprehenderit. Quis tempor deserunt laborum non do irure elit ex commodo. Excepteur nostrud officia laborum sunt ipsum ad et id. Duis ut officia veniam nostrud aute dolor. Nisi laboris veniam esse non labore mollit adipisicing. Deserunt laboris incididunt nostrud minim dolor dolor cillum eu laborum laborum dolor quis pariatur.</p> <p>Consequat occaecat tempor amet ut voluptate nulla ad commodo quis non. Adipisicing dolore velit et amet in cillum aliquip ad minim aliquip veniam ea ex velit. Minim elit pariatur qui qui laborum adipisicing sint fugiat consectetur reprehenderit nostrud elit sunt. Voluptate veniam incididunt elit occaecat anim dolore sunt ad cupidatat velit quis.</p> <p>Cillum aliqua ex amet exercitation. Mollit voluptate Lorem proident ea velit esse in ipsum. Velit adipisicing ex consectetur officia ut amet cillum. Do consequat nisi in fugiat consectetur consequat id sit ex.</p> <p>Dolor veniam sit proident sit culpa ipsum sint. Adipisicing sunt fugiat veniam voluptate Lorem. Culpa amet adipisicing est eu. Excepteur eiusmod consequat velit elit eu irure id labore excepteur veniam. Elit dolor occaecat reprehenderit ipsum elit. Occaecat exercitation ad fugiat ex excepteur sint aliqua. Nulla ad ea nisi occaecat incididunt.</p> <p>Velit velit nisi voluptate duis sunt dolore cillum deserunt velit. Pariatur incididunt dolor nostrud do commodo occaecat sit ex culpa consectetur ut. Labore ea irure ut dolore laboris incididunt minim laboris officia qui do culpa reprehenderit. Excepteur esse culpa incididunt ea et esse est consequat ad consequat.</p> <p>Aliqua enim commodo officia in. Nostrud minim ad culpa id tempor est commodo dolore. Irure sint ullamco do occaecat qui dolore reprehenderit. Amet veniam nulla culpa aliquip sit minim nisi ea id dolore excepteur eu. Ut adipisicing duis et nulla sunt ut sint cupidatat.</p> <p>Elit sit duis proident do exercitation nostrud fugiat. Dolor commodo qui qui ipsum aute eiusmod laboris magna est magna Lorem minim anim. Est velit est nulla in culpa est elit veniam eu deserunt. Voluptate mollit do reprehenderit et officia qui veniam non elit consequat ipsum consectetur cillum. Sunt qui minim tempor consequat magna aliqua duis reprehenderit magna.</p> <p>Laborum eu fugiat excepteur commodo qui adipisicing tempor pariatur pariatur ullamco laboris ut anim. Aliquip officia eiusmod enim proident laborum. Minim sint deserunt cupidatat veniam elit nostrud ullamco.</p>"
+}

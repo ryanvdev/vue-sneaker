@@ -1,0 +1,54 @@
+{
+    "id": "fugiat-eiusmod-409",
+    "slug": "fugiat-eiusmod-409",
+    "brand": "FUGIAT",
+    "name": "Eiusmod",
+    "defaultColor": "blue",
+    "defaultImage": "blue",
+    "variationLibrary": {
+        "colors": {
+            "blue": "blue",
+            "pink": "pink",
+            "red": "red",
+            "aqua": "aqua",
+            "green": "green",
+            "orange": "orange"
+        },
+        "sizes": { "XXXL": "XXXL", "L": "L", "XS": "XS", "S": "S" },
+        "images": {
+            "blue": "/img/demo-sneaker/blue.png",
+            "pink": "/img/demo-sneaker/pink.png",
+            "red": "/img/demo-sneaker/red.png",
+            "aqua": "/img/demo-sneaker/blue.png",
+            "green": "/img/demo-sneaker/green.png",
+            "orange": "/img/demo-sneaker/red.png"
+        }
+    },
+    "variations": [
+        { "id": "XXXL-blue-6565", "color": "blue", "size": "XXXL", "image": "blue", "price": 3644000 },
+        { "id": "XXXL-pink-6566", "color": "pink", "size": "XXXL", "image": "pink", "price": 4404000 },
+        { "id": "XXXL-red-6567", "color": "red", "size": "XXXL", "image": "red", "price": 4170000 },
+        { "id": "XXXL-aqua-6568", "color": "aqua", "size": "XXXL", "image": "aqua", "price": 391000 },
+        { "id": "XXXL-green-6569", "color": "green", "size": "XXXL", "image": "green", "price": 216000 },
+        { "id": "XXXL-orange-6570", "color": "orange", "size": "XXXL", "image": "orange", "price": 9009000 },
+        { "id": "L-blue-6571", "color": "blue", "size": "L", "image": "blue", "price": 3492000 },
+        { "id": "L-pink-6572", "color": "pink", "size": "L", "image": "pink", "price": 9514000 },
+        { "id": "L-red-6573", "color": "red", "size": "L", "image": "red", "price": 7935000 },
+        { "id": "L-aqua-6574", "color": "aqua", "size": "L", "image": "aqua", "price": 4240000 },
+        { "id": "L-green-6575", "color": "green", "size": "L", "image": "green", "price": 1509000 },
+        { "id": "L-orange-6576", "color": "orange", "size": "L", "image": "orange", "price": 4724000 },
+        { "id": "XS-blue-6577", "color": "blue", "size": "XS", "image": "blue", "price": 1224000 },
+        { "id": "XS-pink-6578", "color": "pink", "size": "XS", "image": "pink", "price": 4427000 },
+        { "id": "XS-red-6579", "color": "red", "size": "XS", "image": "red", "price": 1334000 },
+        { "id": "XS-aqua-6580", "color": "aqua", "size": "XS", "image": "aqua", "price": 4354000 },
+        { "id": "XS-green-6581", "color": "green", "size": "XS", "image": "green", "price": 6838000 },
+        { "id": "XS-orange-6582", "color": "orange", "size": "XS", "image": "orange", "price": 5014000 },
+        { "id": "S-blue-6583", "color": "blue", "size": "S", "image": "blue", "price": 854000 },
+        { "id": "S-pink-6584", "color": "pink", "size": "S", "image": "pink", "price": 6635000 },
+        { "id": "S-red-6585", "color": "red", "size": "S", "image": "red", "price": 8378000 },
+        { "id": "S-aqua-6586", "color": "aqua", "size": "S", "image": "aqua", "price": 1569000 },
+        { "id": "S-green-6587", "color": "green", "size": "S", "image": "green", "price": 3384000 },
+        { "id": "S-orange-6588", "color": "orange", "size": "S", "image": "orange", "price": 5255000 }
+    ],
+    "description": "<p>Voluptate fugiat labore nulla magna magna magna incididunt occaecat occaecat sint nisi. Proident sint id consectetur mollit non pariatur consequat irure incididunt irure. Minim quis non enim est mollit ex ex enim. Fugiat magna nulla ad est incididunt esse mollit laborum esse id ea commodo. Laborum nisi tempor consequat ullamco. Eiusmod reprehenderit pariatur occaecat irure velit deserunt nostrud sunt sit culpa aliqua. Deserunt commodo amet laboris voluptate veniam velit exercitation incididunt.</p> <p>Exercitation laborum pariatur enim mollit ad elit eiusmod nulla adipisicing pariatur ullamco esse occaecat est. Fugiat velit sint velit ex anim. Reprehenderit ullamco ullamco duis minim eiusmod nostrud aliquip occaecat cupidatat qui amet. Sunt cillum ipsum sit culpa mollit proident pariatur in. Sunt ut fugiat amet nostrud non ullamco duis nostrud duis nostrud magna velit aliqua minim. Anim anim excepteur enim excepteur incididunt ipsum ullamco.</p> <p>Veniam Lorem aute qui laborum proident labore ex non minim ullamco eiusmod aliqua. Eu Lorem ut non officia veniam pariatur ea amet nulla nostrud pariatur. Duis ipsum proident do fugiat occaecat velit qui cupidatat ex ea qui do.</p> <p>Cillum qui consectetur consectetur dolore sit commodo veniam esse do. Adipisicing magna labore adipisicing amet ex officia amet tempor ad sit occaecat. Ullamco exercitation laboris magna excepteur excepteur et. Exercitation aute pariatur qui occaecat. Et commodo excepteur dolor excepteur ad magna amet voluptate sunt.</p> <p>Laborum dolore incididunt enim ullamco. Nisi consequat tempor esse reprehenderit consectetur amet Lorem minim deserunt. Sint esse ullamco ad nisi duis Lorem Lorem tempor exercitation. Sunt sunt eiusmod in culpa et.</p> <p>Fugiat exercitation laborum dolor culpa anim est sint irure consequat Lorem. Veniam fugiat laborum ex occaecat cillum cillum commodo mollit in. Nulla amet do aliquip est excepteur dolore. Consequat nostrud qui aliqua commodo pariatur ea adipisicing aliqua.</p> <p>Ipsum eu eu laborum aliqua elit laborum esse. Duis officia amet esse est occaecat exercitation minim. Eu officia est Lorem ipsum reprehenderit consectetur amet tempor ex id fugiat. Laboris occaecat excepteur mollit eu irure mollit occaecat do enim et duis voluptate ut pariatur.</p> <p>Id magna aliqua cupidatat deserunt occaecat. Aliqua occaecat occaecat amet est incididunt qui exercitation enim consequat eiusmod. Occaecat incididunt magna aute occaecat cupidatat. Amet ex laborum ipsum consequat nisi eiusmod sunt ex eu aute mollit qui.</p> <p>Voluptate sint id minim amet exercitation eiusmod sunt veniam minim minim fugiat aliquip. Esse ut mollit veniam dolore deserunt in in qui sint occaecat eu anim. Lorem enim irure proident eu eu minim.</p> <p>Do duis occaecat excepteur mollit exercitation elit qui id Lorem reprehenderit eu ullamco elit culpa. Eiusmod quis eiusmod sint id laborum eiusmod cillum. Deserunt cillum fugiat ipsum aliqua minim fugiat id adipisicing aliquip. Deserunt fugiat qui eiusmod elit ad consequat duis cupidatat tempor. Aliquip reprehenderit eiusmod dolore non duis laborum proident dolor aliqua. Nisi adipisicing velit exercitation deserunt esse dolor enim dolor ex excepteur irure culpa magna voluptate. Nisi cillum minim aute consectetur.</p> <p>Anim officia labore officia ex exercitation consectetur minim do non duis Lorem. Cupidatat amet mollit nostrud officia consectetur laboris. Irure nulla aute ex mollit officia nulla irure occaecat qui anim. Voluptate veniam mollit labore aute elit cillum minim excepteur id quis incididunt magna pariatur sunt.</p> <p>Magna deserunt aliqua non esse. Consectetur excepteur tempor eu velit ea velit occaecat id. Deserunt sit sit consectetur aliquip velit proident adipisicing mollit mollit excepteur ipsum.</p> <p>Velit dolore minim officia culpa incididunt nostrud id. Proident cupidatat eu fugiat ea mollit ipsum ex exercitation exercitation aliqua. Minim minim incididunt dolor cillum culpa proident irure est aliqua est ut dolore fugiat commodo. Ut cupidatat cillum veniam esse.</p> <p>Adipisicing tempor et culpa Lorem tempor et ex amet commodo aliquip occaecat. Veniam tempor eu commodo do magna quis magna voluptate commodo incididunt deserunt nostrud voluptate quis. Consequat incididunt eu commodo cupidatat mollit excepteur velit Lorem reprehenderit Lorem ea id excepteur sint. Aliqua ea elit irure sit fugiat occaecat laborum. Adipisicing tempor incididunt ex elit. Proident incididunt duis mollit minim. Magna elit commodo quis do officia anim do deserunt incididunt dolor in consectetur labore culpa.</p> <p>Qui occaecat labore labore exercitation irure ipsum deserunt commodo enim ipsum laborum quis dolor. Id ullamco qui adipisicing id occaecat ipsum nostrud aute mollit in laborum elit. In ipsum reprehenderit cillum ut do commodo et cupidatat magna dolore excepteur. Et sint nulla excepteur anim. Velit aliqua sint sint quis commodo consectetur non commodo est proident.</p>"
+}

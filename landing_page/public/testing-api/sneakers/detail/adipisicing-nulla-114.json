@@ -1,0 +1,22 @@
+{
+    "id": "adipisicing-nulla-114",
+    "slug": "adipisicing-nulla-114",
+    "brand": "ADIPISICING",
+    "name": "Nulla",
+    "defaultColor": "red",
+    "defaultImage": "red",
+    "variationLibrary": {
+        "colors": { "red": "red" },
+        "sizes": { "M": "M", "S": "S", "XS": "XS", "XXL": "XXL", "L": "L", "XXXL": "XXXL" },
+        "images": { "red": "/img/demo-sneaker/red.png" }
+    },
+    "variations": [
+        { "id": "M-red-1859", "color": "red", "size": "M", "image": "red", "price": 7239000 },
+        { "id": "S-red-1860", "color": "red", "size": "S", "image": "red", "price": 7288000 },
+        { "id": "XS-red-1861", "color": "red", "size": "XS", "image": "red", "price": 9616000 },
+        { "id": "XXL-red-1862", "color": "red", "size": "XXL", "image": "red", "price": 6828000 },
+        { "id": "L-red-1863", "color": "red", "size": "L", "image": "red", "price": 1326000 },
+        { "id": "XXXL-red-1864", "color": "red", "size": "XXXL", "image": "red", "price": 5404000 }
+    ],
+    "description": "<p>Et proident aliquip in sit exercitation deserunt quis mollit id elit pariatur. Sunt occaecat aute consectetur ut qui sunt reprehenderit officia mollit excepteur enim. Reprehenderit Lorem reprehenderit cupidatat laboris sit laborum quis anim sint qui reprehenderit ea commodo. Sint do ea ipsum minim duis cillum elit sunt dolor.</p> <p>Anim velit et minim ad nostrud duis excepteur minim consectetur qui Lorem excepteur. Aliquip exercitation nisi reprehenderit veniam. Tempor et anim deserunt non. Amet sunt amet incididunt proident in magna nostrud dolore minim nostrud dolore.</p> <p>Ea esse ut occaecat excepteur fugiat non quis nostrud aliquip incididunt id. Do in excepteur do voluptate aute qui do dolore. Exercitation velit deserunt enim mollit laboris culpa. Irure laboris sit irure in esse consectetur laboris culpa cillum. Adipisicing et labore proident magna et et veniam magna eiusmod sit est ipsum labore. Adipisicing enim dolor culpa consectetur esse commodo cillum culpa laborum nulla nulla Lorem anim laboris. Anim officia nisi in nisi esse eiusmod.</p> <p>Ipsum amet in exercitation fugiat eu laborum sit exercitation proident laborum reprehenderit do. Voluptate velit tempor anim consectetur incididunt qui laboris eu tempor amet. Enim eu do sit adipisicing aliqua voluptate laborum. Quis veniam eu enim sunt esse consequat excepteur et voluptate cillum irure sint nulla.</p> <p>Ut sit anim veniam fugiat consequat eu exercitation est esse quis voluptate ad. Do et dolor ipsum magna consequat. Ad dolor magna tempor eu occaecat culpa ea commodo. Commodo tempor excepteur commodo non culpa pariatur do magna pariatur do consequat. Irure deserunt exercitation est sunt fugiat officia tempor adipisicing. Laboris fugiat ex incididunt id minim eiusmod magna ex aute veniam proident. Dolore esse deserunt reprehenderit deserunt.</p> <p>Et labore reprehenderit commodo sit commodo. Esse aliquip magna proident adipisicing ad ex pariatur aliquip laboris cillum non. Laboris irure proident dolor ex do dolor.</p> <p>Elit id qui dolore fugiat eu duis dolor sint ea do officia anim. Labore occaecat pariatur magna sit adipisicing velit consequat exercitation qui. Nostrud aute quis non amet excepteur.</p> <p>Cillum occaecat sunt sunt eiusmod cupidatat velit labore sit sint dolore. Cillum dolore aliquip ad aliquip aute aute veniam aliquip fugiat aliqua nisi velit. Incididunt esse dolor consectetur eiusmod ipsum mollit pariatur ad.</p> <p>Ipsum est nulla irure ipsum in occaecat nisi. Fugiat aute voluptate esse dolor in eiusmod mollit ipsum culpa ut dolor nostrud deserunt. Duis eiusmod occaecat ut aliquip deserunt voluptate deserunt aliquip. Aliqua id elit aliquip commodo in eiusmod qui pariatur officia laboris nulla aute.</p> <p>Duis sunt proident deserunt tempor in pariatur. Est ipsum nisi commodo laboris. Id ex officia ullamco incididunt adipisicing sit non non nostrud. Do in deserunt culpa enim ea esse enim culpa cillum id excepteur officia proident aliquip. Elit reprehenderit dolore sunt ea.</p> <p>Enim ut aute anim duis reprehenderit ea consequat sunt dolor do ipsum mollit Lorem anim. Do amet irure Lorem Lorem cupidatat ea excepteur. Incididunt pariatur culpa est exercitation.</p>"
+}

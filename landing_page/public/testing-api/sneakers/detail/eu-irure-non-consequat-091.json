@@ -1,0 +1,42 @@
+{
+    "id": "eu-irure-non-consequat-091",
+    "slug": "eu-irure-non-consequat-091",
+    "brand": "EU",
+    "name": "Irure Non Consequat",
+    "defaultColor": "orange",
+    "defaultImage": "orange",
+    "variationLibrary": {
+        "colors": {
+            "orange": "orange",
+            "black": "black",
+            "blue": "blue",
+            "red": "red",
+            "pink": "pink",
+            "aqua": "aqua"
+        },
+        "sizes": { "XS": "XS", "XXXL": "XXXL" },
+        "images": {
+            "orange": "/img/demo-sneaker/red.png",
+            "black": "/img/demo-sneaker/black.png",
+            "blue": "/img/demo-sneaker/blue.png",
+            "red": "/img/demo-sneaker/red.png",
+            "pink": "/img/demo-sneaker/pink.png",
+            "aqua": "/img/demo-sneaker/blue.png"
+        }
+    },
+    "variations": [
+        { "id": "XS-orange-1442", "color": "orange", "size": "XS", "image": "orange", "price": 2279000 },
+        { "id": "XS-black-1443", "color": "black", "size": "XS", "image": "black", "price": 6627000 },
+        { "id": "XS-blue-1444", "color": "blue", "size": "XS", "image": "blue", "price": 2460000 },
+        { "id": "XS-red-1445", "color": "red", "size": "XS", "image": "red", "price": 8094000 },
+        { "id": "XS-pink-1446", "color": "pink", "size": "XS", "image": "pink", "price": 6389000 },
+        { "id": "XS-aqua-1447", "color": "aqua", "size": "XS", "image": "aqua", "price": 6017000 },
+        { "id": "XXXL-orange-1448", "color": "orange", "size": "XXXL", "image": "orange", "price": 3803000 },
+        { "id": "XXXL-black-1449", "color": "black", "size": "XXXL", "image": "black", "price": 702000 },
+        { "id": "XXXL-blue-1450", "color": "blue", "size": "XXXL", "image": "blue", "price": 7861000 },
+        { "id": "XXXL-red-1451", "color": "red", "size": "XXXL", "image": "red", "price": 3916000 },
+        { "id": "XXXL-pink-1452", "color": "pink", "size": "XXXL", "image": "pink", "price": 7342000 },
+        { "id": "XXXL-aqua-1453", "color": "aqua", "size": "XXXL", "image": "aqua", "price": 2646000 }
+    ],
+    "description": "<p>Aute ipsum elit laboris esse dolor labore. Eu anim incididunt dolor eu laboris nisi culpa id Lorem. Fugiat anim in amet qui cillum duis elit voluptate. Culpa duis ad laborum et excepteur excepteur sint aute tempor aute minim ullamco magna. Officia enim ex pariatur reprehenderit sunt id dolor commodo quis excepteur nostrud eu.</p> <p>Officia aliqua sunt anim pariatur reprehenderit ea anim amet aliqua exercitation. In excepteur quis velit proident excepteur. Nulla voluptate elit magna amet eu.</p> <p>Incididunt nostrud sunt aliqua ipsum ea voluptate eiusmod laborum culpa nisi deserunt. Magna veniam et non elit exercitation voluptate sit amet velit labore aliqua nisi anim. Sint dolor eu et ullamco aliquip nisi eu laborum amet nulla nisi quis magna minim. Ipsum veniam adipisicing laborum et quis eu aliquip officia anim incididunt officia adipisicing sint anim.</p> <p>Deserunt nostrud excepteur ullamco tempor anim culpa voluptate Lorem consequat. Consectetur Lorem incididunt enim irure magna ut aliqua incididunt mollit minim et quis laboris elit. Tempor proident ad ad est. Deserunt exercitation ea duis deserunt ea ut veniam laborum nostrud.</p> <p>Fugiat laboris dolor irure ipsum aliquip deserunt sit id duis consectetur labore minim aliquip. Sunt do sunt amet do esse laboris eu cillum nostrud consectetur qui magna. Irure exercitation sint dolor aliquip exercitation culpa in culpa laborum laboris anim commodo mollit cupidatat. Laborum laboris id laboris ut. In esse aute id ullamco minim enim eiusmod ad nostrud. Incididunt exercitation officia nostrud consectetur mollit. Labore velit elit laborum mollit.</p> <p>Tempor ex commodo nulla non voluptate enim tempor duis ut. Proident aute labore dolore mollit aliquip do anim elit Lorem ea. Ea officia non eu et commodo. Cillum magna sit deserunt eu laborum veniam deserunt non ad Lorem adipisicing aute laboris. Ex nulla duis anim enim et enim et tempor laborum nisi culpa exercitation.</p> <p>Eiusmod esse esse pariatur magna occaecat eu incididunt. Fugiat magna incididunt adipisicing non ad tempor nulla non ad minim enim esse tempor. Exercitation aliquip est nostrud non eiusmod exercitation ipsum tempor quis ex cupidatat velit pariatur excepteur. Velit esse culpa veniam aliqua amet excepteur occaecat eu qui veniam est minim anim. Duis et consequat magna qui culpa nostrud amet pariatur aliquip. Aute anim ullamco aute aute fugiat consectetur consectetur. Aliqua pariatur eu nulla tempor labore eiusmod est tempor sint enim amet et.</p> <p>Sint exercitation incididunt ullamco fugiat nulla. Cupidatat deserunt incididunt sit cupidatat nisi ut ullamco elit non occaecat. Consequat et sit consequat proident pariatur aliquip occaecat sit non dolore ad qui dolore enim. Adipisicing pariatur occaecat in laborum eiusmod mollit quis. Minim eu ipsum irure consequat quis nostrud et aliqua exercitation.</p> <p>Aliquip ipsum magna officia quis. Qui cupidatat est ex eu. Dolore commodo aute labore aliquip est exercitation culpa minim eu aliquip dolore. Amet non consectetur anim consequat dolor fugiat. Tempor consectetur ad mollit elit mollit eu culpa. Velit culpa sit cillum ad laborum minim incididunt est nulla nulla aliquip enim amet est. Dolore commodo ullamco ex nostrud nulla incididunt qui est reprehenderit ut.</p> <p>Excepteur do incididunt labore nostrud consectetur consequat ut. Ut consequat id cupidatat deserunt laboris magna. In in voluptate ex sunt minim eu sint ex amet adipisicing cillum Lorem aliqua. Ad elit Lorem aliquip dolor velit. Sunt occaecat laborum aliquip aliqua Lorem cillum.</p>"
+}

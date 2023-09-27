@@ -1,0 +1,38 @@
+{
+    "id": "dolor-lorem-398",
+    "slug": "dolor-lorem-398",
+    "brand": "DOLOR",
+    "name": "Lorem",
+    "defaultColor": "black",
+    "defaultImage": "black",
+    "variationLibrary": {
+        "colors": { "black": "black", "green": "green", "blue": "blue" },
+        "sizes": { "M": "M", "XL": "XL", "XS": "XS", "S": "S", "XXL": "XXL", "XXXL": "XXXL" },
+        "images": {
+            "black": "/img/demo-sneaker/black.png",
+            "green": "/img/demo-sneaker/green.png",
+            "blue": "/img/demo-sneaker/blue.png"
+        }
+    },
+    "variations": [
+        { "id": "M-black-6372", "color": "black", "size": "M", "image": "black", "price": 9732000 },
+        { "id": "M-green-6373", "color": "green", "size": "M", "image": "green", "price": 2707000 },
+        { "id": "M-blue-6374", "color": "blue", "size": "M", "image": "blue", "price": 5668000 },
+        { "id": "XL-black-6375", "color": "black", "size": "XL", "image": "black", "price": 4313000 },
+        { "id": "XL-green-6376", "color": "green", "size": "XL", "image": "green", "price": 6505000 },
+        { "id": "XL-blue-6377", "color": "blue", "size": "XL", "image": "blue", "price": 6739000 },
+        { "id": "XS-black-6378", "color": "black", "size": "XS", "image": "black", "price": 3192000 },
+        { "id": "XS-green-6379", "color": "green", "size": "XS", "image": "green", "price": 8439000 },
+        { "id": "XS-blue-6380", "color": "blue", "size": "XS", "image": "blue", "price": 3113000 },
+        { "id": "S-black-6381", "color": "black", "size": "S", "image": "black", "price": 4651000 },
+        { "id": "S-green-6382", "color": "green", "size": "S", "image": "green", "price": 2684000 },
+        { "id": "S-blue-6383", "color": "blue", "size": "S", "image": "blue", "price": 2767000 },
+        { "id": "XXL-black-6384", "color": "black", "size": "XXL", "image": "black", "price": 886000 },
+        { "id": "XXL-green-6385", "color": "green", "size": "XXL", "image": "green", "price": 1798000 },
+        { "id": "XXL-blue-6386", "color": "blue", "size": "XXL", "image": "blue", "price": 8388000 },
+        { "id": "XXXL-black-6387", "color": "black", "size": "XXXL", "image": "black", "price": 9642000 },
+        { "id": "XXXL-green-6388", "color": "green", "size": "XXXL", "image": "green", "price": 3596000 },
+        { "id": "XXXL-blue-6389", "color": "blue", "size": "XXXL", "image": "blue", "price": 4337000 }
+    ],
+    "description": "<p>Enim sunt quis consectetur duis tempor mollit ut cupidatat. Sint elit in nulla occaecat deserunt voluptate est velit. Et mollit ad sint occaecat veniam non mollit consectetur. Pariatur dolore anim minim sint occaecat voluptate minim laboris amet minim.</p> <p>Ea incididunt ut amet laborum est. Dolor proident labore amet cillum anim laborum deserunt commodo. Non nisi culpa proident eiusmod ea nostrud fugiat exercitation veniam non pariatur elit exercitation nisi. Irure dolor Lorem ex ad anim officia nulla commodo est non magna duis voluptate dolor. Cillum qui eiusmod do sunt exercitation enim. Nisi nisi deserunt consequat occaecat velit voluptate mollit exercitation veniam do officia occaecat sit magna.</p> <p>Adipisicing pariatur exercitation ad duis ut id amet nisi adipisicing. Amet consequat aliquip esse nostrud nisi culpa consequat eiusmod culpa. Adipisicing amet ex proident in irure magna id est laboris esse eu proident eiusmod. Ad nulla aliquip cupidatat est est. Est eiusmod aliqua consequat minim dolor voluptate voluptate mollit. Qui id sit deserunt irure tempor nisi incididunt consectetur Lorem proident commodo. Velit minim elit officia reprehenderit.</p> <p>Ullamco esse et velit ipsum esse nisi mollit eu adipisicing excepteur nisi ad dolore. Lorem ea esse culpa laborum consectetur cillum aliquip nisi in exercitation adipisicing esse quis. Anim minim ea fugiat qui excepteur adipisicing non excepteur. Consequat dolore veniam in magna.</p> <p>Excepteur labore non duis fugiat consequat eu et laboris occaecat sit. Eu aliquip occaecat occaecat sit consequat dolore incididunt officia. Aliqua enim labore est ullamco deserunt mollit nisi amet quis elit aute. Esse enim excepteur est nulla aliqua et nulla deserunt do ad. Pariatur non excepteur ad cupidatat pariatur. Proident aliqua eiusmod ad consequat aliqua esse consectetur elit labore et nisi.</p> <p>Cillum ex laborum sunt nostrud in sint ex voluptate. Occaecat commodo adipisicing sint pariatur consequat in aliquip. Consequat mollit fugiat eiusmod ut. Voluptate exercitation labore nulla dolore amet elit aliqua elit adipisicing velit nisi. Sit magna irure cupidatat veniam elit pariatur laboris sit in occaecat quis cillum.</p> <p>Eu aliquip Lorem excepteur sit est do sit non sint elit exercitation cillum. Aliqua tempor voluptate aute nostrud deserunt. Cupidatat ut tempor irure qui mollit qui ex ea deserunt aute et. Voluptate consequat nisi qui id ex ad eu minim amet aliquip.</p> <p>Ut elit ea voluptate incididunt culpa aliqua. Dolore ut cillum magna fugiat excepteur id proident amet labore minim. Ex duis est in pariatur excepteur. Culpa non eiusmod amet consectetur commodo. Sit ex nostrud velit labore cupidatat proident pariatur laborum occaecat pariatur quis mollit. Amet irure excepteur tempor laborum aute eiusmod deserunt.</p> <p>Aliquip nulla in tempor deserunt officia exercitation labore id reprehenderit officia qui nostrud non irure. Duis nostrud quis enim ut mollit. Commodo quis aute ipsum nostrud proident ad sunt Lorem incididunt aliqua. Sit qui elit exercitation ea cupidatat sint nostrud ut nostrud adipisicing. Ullamco voluptate adipisicing tempor pariatur irure ullamco cupidatat commodo esse magna occaecat esse sunt.</p> <p>Duis veniam enim nulla occaecat proident ex adipisicing nostrud consectetur et ut velit ipsum. Irure voluptate laboris nulla commodo mollit. Ea anim minim sunt proident.</p> <p>Nisi occaecat est et nostrud duis velit aliqua et. Ut excepteur et deserunt magna labore nulla labore velit cupidatat et laboris duis. In quis magna aliqua ex fugiat dolore elit exercitation excepteur dolore duis. Duis eiusmod cupidatat pariatur excepteur id ut elit deserunt quis incididunt adipisicing pariatur amet.</p>"
+}

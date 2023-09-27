@@ -1,0 +1,42 @@
+{
+    "id": "mollit-ullamco-commodo-156",
+    "slug": "mollit-ullamco-commodo-156",
+    "brand": "MOLLIT",
+    "name": "Ullamco Commodo",
+    "defaultColor": "pink",
+    "defaultImage": "pink",
+    "variationLibrary": {
+        "colors": {
+            "pink": "pink",
+            "red": "red",
+            "black": "black",
+            "blue": "blue",
+            "orange": "orange",
+            "aqua": "aqua"
+        },
+        "sizes": { "XS": "XS", "M": "M" },
+        "images": {
+            "pink": "/img/demo-sneaker/pink.png",
+            "red": "/img/demo-sneaker/red.png",
+            "black": "/img/demo-sneaker/black.png",
+            "blue": "/img/demo-sneaker/blue.png",
+            "orange": "/img/demo-sneaker/red.png",
+            "aqua": "/img/demo-sneaker/blue.png"
+        }
+    },
+    "variations": [
+        { "id": "XS-pink-2460", "color": "pink", "size": "XS", "image": "pink", "price": 6019000 },
+        { "id": "XS-red-2461", "color": "red", "size": "XS", "image": "red", "price": 4238000 },
+        { "id": "XS-black-2462", "color": "black", "size": "XS", "image": "black", "price": 223000 },
+        { "id": "XS-blue-2463", "color": "blue", "size": "XS", "image": "blue", "price": 8417000 },
+        { "id": "XS-orange-2464", "color": "orange", "size": "XS", "image": "orange", "price": 8989000 },
+        { "id": "XS-aqua-2465", "color": "aqua", "size": "XS", "image": "aqua", "price": 3181000 },
+        { "id": "M-pink-2466", "color": "pink", "size": "M", "image": "pink", "price": 9043000 },
+        { "id": "M-red-2467", "color": "red", "size": "M", "image": "red", "price": 7776000 },
+        { "id": "M-black-2468", "color": "black", "size": "M", "image": "black", "price": 71000 },
+        { "id": "M-blue-2469", "color": "blue", "size": "M", "image": "blue", "price": 5021000 },
+        { "id": "M-orange-2470", "color": "orange", "size": "M", "image": "orange", "price": 7498000 },
+        { "id": "M-aqua-2471", "color": "aqua", "size": "M", "image": "aqua", "price": 8212000 }
+    ],
+    "description": "<p>Id officia qui cupidatat mollit aliqua sit deserunt aliqua consectetur deserunt. Adipisicing ullamco commodo consectetur officia reprehenderit aliquip consectetur exercitation ut ut et aliquip eu. Eiusmod amet occaecat ea nulla nisi magna dolore sunt.</p> <p>Excepteur Lorem esse do id adipisicing dolor do ipsum labore labore. Sint excepteur aliqua labore proident sint. Cillum in non ut qui occaecat proident anim sit magna quis elit consequat occaecat. Nisi ea reprehenderit dolor commodo ex incididunt duis est dolor sunt ad proident aute.</p> <p>Officia Lorem enim esse ipsum irure. Incididunt laboris ullamco est anim Lorem cupidatat. Nisi veniam exercitation adipisicing magna enim veniam aute id occaecat do eiusmod commodo magna est. Magna magna cillum et aliqua incididunt anim exercitation consectetur velit. Exercitation esse elit mollit fugiat velit ipsum aliqua elit officia eu mollit. Consequat ex laboris cillum consectetur dolore. Eiusmod laborum ipsum ullamco quis ipsum.</p> <p>Voluptate velit duis exercitation tempor aliquip. Commodo ad exercitation ullamco velit aute aute eiusmod sint eu consequat proident deserunt. Aute aute pariatur ullamco duis id excepteur duis esse cupidatat.</p> <p>Deserunt cillum deserunt Lorem ad sint ullamco nostrud ut eiusmod aute est. Do velit ipsum dolore laboris eiusmod amet nisi aliquip dolore. Aliquip proident amet quis voluptate elit aute nostrud. Ad deserunt nostrud quis nostrud ex veniam enim magna deserunt laboris tempor. Cillum dolor tempor ut nisi reprehenderit. Tempor qui eiusmod duis exercitation est pariatur ad qui non. Id est cupidatat non duis quis labore eu anim ipsum ipsum aute et do voluptate.</p> <p>Reprehenderit officia amet ipsum enim id voluptate sunt fugiat enim adipisicing Lorem nisi reprehenderit nostrud. Aliqua nostrud quis incididunt ea. Ipsum consequat ex ea ullamco mollit nostrud tempor enim Lorem.</p> <p>Aliqua elit incididunt duis fugiat anim aute. Dolore ut id laborum proident do voluptate. Minim occaecat occaecat deserunt laboris ea in incididunt aute aliquip ex ex. Velit sint laborum ad consequat laboris officia.</p> <p>Velit culpa sit sint qui dolore laboris magna. Enim ea minim consequat aliqua laborum nostrud mollit aute. Exercitation anim consequat nulla excepteur culpa ex sunt.</p> <p>Amet irure eu non enim Lorem ex et cillum dolor fugiat aliqua quis. Nulla anim enim anim incididunt. Nisi culpa commodo exercitation proident excepteur cillum ad consequat in ullamco tempor. Irure amet voluptate labore proident labore in adipisicing aliqua irure ipsum nisi. Cillum mollit fugiat consectetur reprehenderit aliquip veniam ut reprehenderit anim.</p> <p>Ad deserunt tempor exercitation nulla aliquip velit commodo anim. Et ut sint cupidatat ipsum qui Lorem duis est proident ea adipisicing occaecat incididunt ex. In in non elit minim officia aliqua minim officia elit exercitation sint aliqua. Duis irure ullamco ad consectetur.</p> <p>Ut laboris proident consequat officia esse. Cupidatat non ut culpa pariatur in sint adipisicing sunt. Labore occaecat reprehenderit dolor voluptate. Fugiat proident pariatur quis magna nisi enim. Voluptate tempor nisi consequat fugiat cillum id velit sit incididunt. Anim dolore sunt mollit non aliqua magna dolore et enim sint nisi officia. Consequat sit excepteur enim aliquip dolor incididunt ipsum velit consequat.</p>"
+}

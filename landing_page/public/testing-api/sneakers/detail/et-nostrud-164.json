@@ -1,0 +1,60 @@
+{
+    "id": "et-nostrud-164",
+    "slug": "et-nostrud-164",
+    "brand": "ET",
+    "name": "Nostrud",
+    "defaultColor": "orange",
+    "defaultImage": "orange",
+    "variationLibrary": {
+        "colors": {
+            "orange": "orange",
+            "blue": "blue",
+            "pink": "pink",
+            "black": "black",
+            "green": "green",
+            "aqua": "aqua",
+            "red": "red"
+        },
+        "sizes": { "S": "S", "XL": "XL", "M": "M", "L": "L" },
+        "images": {
+            "orange": "/img/demo-sneaker/red.png",
+            "blue": "/img/demo-sneaker/blue.png",
+            "pink": "/img/demo-sneaker/pink.png",
+            "black": "/img/demo-sneaker/black.png",
+            "green": "/img/demo-sneaker/green.png",
+            "aqua": "/img/demo-sneaker/blue.png",
+            "red": "/img/demo-sneaker/red.png"
+        }
+    },
+    "variations": [
+        { "id": "S-orange-2634", "color": "orange", "size": "S", "image": "orange", "price": 2773000 },
+        { "id": "S-blue-2635", "color": "blue", "size": "S", "image": "blue", "price": 1113000 },
+        { "id": "S-pink-2636", "color": "pink", "size": "S", "image": "pink", "price": 2752000 },
+        { "id": "S-black-2637", "color": "black", "size": "S", "image": "black", "price": 6304000 },
+        { "id": "S-green-2638", "color": "green", "size": "S", "image": "green", "price": 3164000 },
+        { "id": "S-aqua-2639", "color": "aqua", "size": "S", "image": "aqua", "price": 8395000 },
+        { "id": "S-red-2640", "color": "red", "size": "S", "image": "red", "price": 6762000 },
+        { "id": "XL-orange-2641", "color": "orange", "size": "XL", "image": "orange", "price": 5392000 },
+        { "id": "XL-blue-2642", "color": "blue", "size": "XL", "image": "blue", "price": 4471000 },
+        { "id": "XL-pink-2643", "color": "pink", "size": "XL", "image": "pink", "price": 7648000 },
+        { "id": "XL-black-2644", "color": "black", "size": "XL", "image": "black", "price": 9052000 },
+        { "id": "XL-green-2645", "color": "green", "size": "XL", "image": "green", "price": 3161000 },
+        { "id": "XL-aqua-2646", "color": "aqua", "size": "XL", "image": "aqua", "price": 6864000 },
+        { "id": "XL-red-2647", "color": "red", "size": "XL", "image": "red", "price": 9575000 },
+        { "id": "M-orange-2648", "color": "orange", "size": "M", "image": "orange", "price": 5566000 },
+        { "id": "M-blue-2649", "color": "blue", "size": "M", "image": "blue", "price": 5514000 },
+        { "id": "M-pink-2650", "color": "pink", "size": "M", "image": "pink", "price": 7172000 },
+        { "id": "M-black-2651", "color": "black", "size": "M", "image": "black", "price": 3689000 },
+        { "id": "M-green-2652", "color": "green", "size": "M", "image": "green", "price": 148000 },
+        { "id": "M-aqua-2653", "color": "aqua", "size": "M", "image": "aqua", "price": 7000000 },
+        { "id": "M-red-2654", "color": "red", "size": "M", "image": "red", "price": 8186000 },
+        { "id": "L-orange-2655", "color": "orange", "size": "L", "image": "orange", "price": 9251000 },
+        { "id": "L-blue-2656", "color": "blue", "size": "L", "image": "blue", "price": 1143000 },
+        { "id": "L-pink-2657", "color": "pink", "size": "L", "image": "pink", "price": 8807000 },
+        { "id": "L-black-2658", "color": "black", "size": "L", "image": "black", "price": 3148000 },
+        { "id": "L-green-2659", "color": "green", "size": "L", "image": "green", "price": 9348000 },
+        { "id": "L-aqua-2660", "color": "aqua", "size": "L", "image": "aqua", "price": 8223000 },
+        { "id": "L-red-2661", "color": "red", "size": "L", "image": "red", "price": 2411000 }
+    ],
+    "description": "<p>Lorem elit cillum ullamco commodo tempor esse. Non in exercitation laboris officia labore. Culpa sit amet excepteur enim tempor dolore ut enim ullamco laboris est voluptate. Laborum nisi quis pariatur laborum ut duis tempor amet incididunt ullamco commodo consequat in. Sint ipsum velit enim minim consequat minim ex aliquip tempor ut mollit nulla proident.</p> <p>Exercitation id pariatur fugiat ea ea ipsum qui ex non dolor sunt officia. Mollit adipisicing cupidatat incididunt ea consectetur sunt proident sit laboris. Anim ullamco mollit fugiat ipsum dolore eu cillum.</p> <p>Ea culpa aute irure Lorem Lorem reprehenderit deserunt in excepteur enim dolore cupidatat eu eu. Pariatur deserunt incididunt cupidatat fugiat. Mollit cillum dolor sint deserunt aliqua anim cillum velit aute et qui. Esse duis in nostrud aliquip nisi veniam elit non est eiusmod pariatur sint incididunt. Ea Lorem aute elit culpa ut quis aute officia cillum dolore laborum in. Pariatur ut eu velit tempor reprehenderit laboris cupidatat consequat eiusmod officia velit ut esse proident.</p> <p>Do aute fugiat in mollit et adipisicing consectetur eiusmod laborum amet. Officia elit eu laborum magna magna anim aliqua fugiat occaecat amet. Elit eu ex ipsum velit deserunt proident ea irure occaecat irure reprehenderit. Nostrud magna officia adipisicing quis anim magna duis sint voluptate ut laboris Lorem. Magna commodo cillum aliquip eu laboris occaecat consectetur.</p> <p>Dolore incididunt eiusmod proident nostrud occaecat consectetur elit anim nostrud minim dolor ea magna veniam. Adipisicing anim enim irure in laborum eiusmod. Velit enim culpa labore dolor sunt. Ullamco fugiat consectetur dolor aliquip dolor quis commodo. Laboris irure id qui commodo aliquip nulla nostrud qui irure. Pariatur anim sit culpa exercitation tempor aliqua cillum mollit.</p> <p>Duis cupidatat fugiat fugiat non Lorem. Duis incididunt ut incididunt mollit non sint sunt. Laborum excepteur qui commodo in. Ex voluptate ut aute reprehenderit sit reprehenderit voluptate nostrud deserunt anim sunt excepteur et non.</p> <p>Dolor dolore exercitation non dolore amet et esse. Irure tempor pariatur commodo incididunt exercitation nostrud quis aute velit. Veniam id aliqua ex exercitation amet dolore laborum et nulla adipisicing aliquip consequat. Excepteur fugiat aute tempor id qui reprehenderit. Aute eiusmod mollit cupidatat incididunt minim aliqua proident ullamco proident ea esse sit exercitation excepteur.</p> <p>Elit dolor in enim in duis cillum magna laborum dolor aliqua velit. Deserunt officia culpa excepteur pariatur. Enim aliquip esse irure deserunt cillum ea nisi. Amet incididunt cupidatat culpa reprehenderit adipisicing excepteur qui esse officia ipsum labore. Labore ullamco officia pariatur incididunt voluptate culpa ex adipisicing. Non occaecat adipisicing anim dolor exercitation adipisicing velit est reprehenderit commodo consequat commodo eiusmod qui.</p> <p>Aute mollit officia anim sint ut ipsum minim mollit ipsum cupidatat. Eiusmod consectetur veniam aliqua voluptate commodo cillum irure. Duis et ut culpa fugiat excepteur adipisicing sit labore excepteur sunt eu et incididunt reprehenderit.</p> <p>Duis consequat quis ea ipsum reprehenderit elit qui voluptate aliqua dolore. Veniam eu tempor sint quis anim do adipisicing incididunt eu voluptate esse. Laborum laborum Lorem anim reprehenderit non ex occaecat dolore amet enim. Duis cupidatat consectetur fugiat ea in proident. Amet voluptate magna elit aliquip elit. Fugiat ex ipsum ullamco dolore adipisicing Lorem dolore aliqua commodo laboris aute sint deserunt.</p> <p>Officia dolore enim consequat pariatur sit enim adipisicing do sint. Magna magna dolore do sit non Lorem dolore nulla officia. Eu id minim occaecat culpa adipisicing ad irure consectetur veniam qui velit.</p> <p>Exercitation proident incididunt ad mollit enim dolor excepteur. Elit eiusmod cillum deserunt enim commodo culpa sit officia laborum in cillum proident. Deserunt nisi minim occaecat culpa qui ea.</p> <p>Eiusmod commodo cupidatat consequat consequat esse laborum. Voluptate velit laborum ullamco eu minim occaecat velit exercitation culpa cupidatat duis qui laboris. Occaecat dolor elit incididunt sit quis in pariatur veniam. Proident reprehenderit minim esse eiusmod enim esse culpa magna amet sint veniam sit elit. Excepteur exercitation consectetur veniam do in fugiat eu labore aute fugiat voluptate est exercitation.</p> <p>Ipsum qui esse nisi pariatur nisi minim qui voluptate incididunt exercitation fugiat commodo enim laborum. Do Lorem velit nisi pariatur fugiat nulla. Aliqua occaecat ipsum mollit ipsum. Proident tempor labore dolor irure. Minim occaecat sit commodo qui.</p> <p>Aliqua id anim Lorem sunt proident nisi duis deserunt deserunt consectetur aute elit cupidatat aliqua. Consequat anim ad ex voluptate in eu eiusmod cillum. Et quis adipisicing ad incididunt ad eu non. In sunt officia eu voluptate anim esse.</p> <p>Et quis cillum ipsum minim anim sit ad quis pariatur officia. Consequat exercitation cupidatat quis esse. Reprehenderit commodo ut voluptate consequat ea deserunt et. Mollit nostrud qui fugiat id officia.</p> <p>Eu laborum dolor adipisicing est occaecat fugiat culpa. Irure sit occaecat sint aliqua culpa sint esse id anim dolore aute velit. Aliqua non sint cillum esse aliquip. Esse deserunt est tempor et sit quis ex dolor excepteur irure nostrud ad excepteur. Officia veniam tempor ut ex exercitation. Fugiat fugiat magna ea consequat elit. Eiusmod eu incididunt velit enim consequat irure commodo eu aute.</p> <p>Enim dolore quis fugiat cupidatat aliqua irure aliquip id ex ut ipsum pariatur. Et exercitation sunt cillum enim ad ullamco in enim consectetur. Id nostrud do fugiat magna anim Lorem ipsum veniam aliqua adipisicing. Aliqua veniam ut ullamco non sunt cupidatat esse nisi. Qui eiusmod sunt nisi ullamco officia eiusmod et sit anim laborum tempor adipisicing minim. Non Lorem velit duis duis non.</p> <p>Nisi ad elit consectetur fugiat est sint cupidatat dolor occaecat id voluptate. Consequat anim ex sint ex qui laboris excepteur aute cillum aliquip deserunt. Excepteur do dolore anim enim sint nostrud amet mollit pariatur laborum. Commodo veniam ex nostrud do culpa anim eu consectetur ut in. Enim aute irure elit nostrud quis fugiat pariatur ad deserunt qui in. Nostrud laborum adipisicing tempor amet elit commodo aliquip. Exercitation nostrud proident culpa pariatur proident eiusmod do sint aliqua ad ipsum anim.</p> <p>Nostrud tempor dolore ea aliquip. Proident commodo veniam aliqua velit excepteur nisi officia nisi exercitation. Incididunt exercitation ullamco laboris labore voluptate.</p> <p>Esse ea in elit ea id irure ea esse exercitation. Aliqua nisi dolor est sit elit qui fugiat pariatur et elit. Anim deserunt reprehenderit reprehenderit magna incididunt. Ipsum exercitation ipsum Lorem sunt cupidatat ad in sit occaecat in. Cupidatat fugiat reprehenderit eu duis veniam magna. Et commodo duis eu fugiat minim id laboris deserunt culpa consequat. Veniam ipsum enim magna magna eiusmod dolore.</p> <p>Aliqua consequat ullamco cupidatat officia. Occaecat labore amet adipisicing cillum id qui. Magna reprehenderit mollit qui culpa exercitation occaecat. Magna eiusmod do veniam nisi ullamco et. Quis labore enim eu magna excepteur exercitation nulla nisi pariatur duis. Ullamco et sint eu occaecat commodo duis est pariatur deserunt. Minim velit in dolor sit anim cupidatat labore fugiat elit sint velit ea.</p>"
+}

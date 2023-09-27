@@ -1,0 +1,21 @@
+{
+    "id": "enim-enim-ipsum-213",
+    "slug": "enim-enim-ipsum-213",
+    "brand": "ENIM",
+    "name": "Enim Ipsum",
+    "defaultColor": "pink",
+    "defaultImage": "pink",
+    "variationLibrary": {
+        "colors": { "pink": "pink" },
+        "sizes": { "M": "M", "XS": "XS", "XL": "XL", "L": "L", "XXXL": "XXXL" },
+        "images": { "pink": "/img/demo-sneaker/pink.png" }
+    },
+    "variations": [
+        { "id": "M-pink-3479", "color": "pink", "size": "M", "image": "pink", "price": 2368000 },
+        { "id": "XS-pink-3480", "color": "pink", "size": "XS", "image": "pink", "price": 1541000 },
+        { "id": "XL-pink-3481", "color": "pink", "size": "XL", "image": "pink", "price": 9837000 },
+        { "id": "L-pink-3482", "color": "pink", "size": "L", "image": "pink", "price": 2062000 },
+        { "id": "XXXL-pink-3483", "color": "pink", "size": "XXXL", "image": "pink", "price": 7530000 }
+    ],
+    "description": "<p>Ea laboris eu consectetur dolore voluptate ut sunt qui qui sint officia velit. Aliqua mollit mollit do do culpa irure consequat dolor reprehenderit labore non nisi voluptate qui. Ipsum officia labore mollit officia exercitation dolor. Officia cupidatat nostrud sint dolore cupidatat et aliqua ut mollit nostrud nostrud amet commodo aliquip.</p> <p>Minim aliquip pariatur sint tempor non et nostrud cupidatat ipsum. Eu laborum elit do commodo do sit nulla tempor. Est mollit exercitation ullamco esse incididunt consequat veniam id fugiat. Cupidatat ipsum proident proident aliquip quis qui sint aute aliqua laboris ut.</p> <p>Ea ea enim et consectetur minim id cillum non in in consectetur labore minim. Mollit voluptate laboris qui adipisicing nulla deserunt occaecat minim dolore veniam non. Officia laboris proident ipsum eu laboris cillum nulla esse officia tempor. Deserunt magna elit ullamco aute incididunt. Culpa irure excepteur excepteur do aliqua nostrud dolore dolor ea enim nisi dolore.</p> <p>Nulla consequat velit cillum voluptate sunt amet dolor quis fugiat dolore nostrud voluptate magna. Amet aute mollit ea commodo nisi voluptate laborum Lorem minim sit nostrud. Pariatur do excepteur qui dolor eiusmod. Labore eiusmod aliquip dolore Lorem quis tempor pariatur nisi nisi nisi velit reprehenderit. Consectetur est reprehenderit voluptate proident elit est proident ullamco.</p> <p>In nostrud nisi sunt sint sit ad tempor laborum laborum magna veniam. Et elit pariatur proident voluptate do minim magna reprehenderit anim. Ea nisi quis duis tempor Lorem aute mollit duis fugiat sit sit. Irure irure mollit cupidatat cupidatat est irure ex nostrud et nisi sit.</p> <p>Fugiat minim quis irure tempor adipisicing exercitation fugiat. Tempor tempor ipsum minim ullamco eiusmod deserunt proident. Irure veniam et duis mollit mollit consequat ullamco officia est voluptate sit aliquip exercitation.</p> <p>Incididunt aliqua dolor eiusmod cupidatat fugiat duis do occaecat in labore mollit laboris consectetur. Amet reprehenderit laboris irure mollit non adipisicing ipsum adipisicing dolore. Culpa magna labore Lorem voluptate quis consequat fugiat.</p> <p>Magna excepteur id duis et amet occaecat quis qui incididunt adipisicing enim. Laborum minim Lorem commodo proident excepteur adipisicing eu id sunt culpa do. Id adipisicing consequat magna reprehenderit minim eiusmod et dolore occaecat tempor magna. Minim esse commodo ipsum Lorem labore quis nostrud nulla deserunt. Excepteur voluptate nisi enim ipsum reprehenderit ullamco aute Lorem voluptate cillum. Aute adipisicing ea ad consequat reprehenderit.</p> <p>Nulla et amet exercitation velit. Veniam tempor exercitation voluptate anim. Quis exercitation dolor deserunt labore eu velit sunt enim reprehenderit sint cillum duis. Proident amet nostrud dolor magna.</p> <p>Nostrud pariatur occaecat ipsum occaecat anim dolor laborum esse. Aute ut nisi consequat est aliquip amet esse laborum laborum. Ullamco eiusmod fugiat veniam ullamco aute culpa culpa dolore excepteur dolor eiusmod.</p>"
+}
