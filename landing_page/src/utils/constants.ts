@@ -1,1 +1,1 @@
-export const IS_DEV = ( process.env.NODE_ENV?.trim().toLowerCase() === 'development' );
+export const IS_DEV = true;

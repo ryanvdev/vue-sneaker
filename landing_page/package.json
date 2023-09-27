@@ -6,7 +6,7 @@
   "scripts": {
     "start": "live-server --port=80 ./dist",
     "dev": "set NODE_ENV=development && vite",
-    "build": "rmdir /S /Q dist && set NODE_ENV=production && vue-tsc && vite build",
+    "build": "set NODE_ENV=production && vue-tsc && vite build",
     "preview": "vite preview",
     "deploy": "xcopy .\\dist ..\\docs /E /H /C /I"
   },
@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@types/lodash": "^4.14.199",
-    "@types/node": "^20.6.5",
+    "@types/node": "^20.7.0",
     "@vitejs/plugin-vue": "^4.3.4",
     "typescript": "^5.2.2",
     "vite": "^4.4.9",
