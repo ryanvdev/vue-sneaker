@@ -82,6 +82,22 @@ const href = computed<string>(() => {
     return '';
 });
 
+const btnBuyIsReady = computed<boolean>(() => {
+    const colorValue = color.value;
+    const sizeValue = size.value;
+    if(colorValue === undefined || sizeValue === undefined) return false;
+
+    const variationsValue = variations.value;
+    if(variationsValue.length === 1){
+        const tmp = variationsValue[0];
+        if(sizeValue === tmp.size && colorValue === tmp.color) return true;
+
+        localLogger.error(`Not found variation with size=${sizeValue} and color=${colorValue}`);
+    }
+
+    return false;
+});
+
 const handleBuyNowClick = () => {
     emit('click:buy-now', createSneakerEvent(color.value, size.value, props.variations));
 }
@@ -100,6 +116,7 @@ provide(injectionKey, {
     href,
     color,
     size,
+    btnBuyIsReady,
     variationLibrary,
     availableVariationLibrary,
     handleBuyNowClick,
@@ -232,7 +249,7 @@ onUpdated(() => {
     }
 }
 
-.sneaker-card:hover{
+.sneaker-card:hover {
     .brand>p {
         rotate: 0deg;
         font-size: 70px;

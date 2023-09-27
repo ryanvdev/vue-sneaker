@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import {inject, onUpdated, computed} from 'vue';
+import {VSlideGroup, VSlideGroupItem, VSheet} from 'vuetify/components';
 import { injectionKey, localLogger } from './sneaker_card_utils';
 
 export interface SneakerCardSizeProps {
@@ -26,12 +27,14 @@ const sizes = computed<[string, string, boolean][]>(() => {
     });
 });
 
-const handleClick = (sizeKey:string) => {
+const handleClick = (sizeKey:string, select: (v:boolean) => any) => {
     if(size.value === sizeKey){
         size.value = undefined;
+        select(false);
     }
     else {
         size.value = sizeKey;
+        select(true);
     }
 }
 
@@ -43,31 +46,38 @@ onUpdated(() => {
 
 <template>
     <div :class="`${style['sneaker-card-size']} ${props.class}`">
-        <label>SIZE</label>
-        <ul>
-            <li 
-                v-for="([sizeKey, sizeValue, available]) in sizes" 
-                v-ripple 
-                :key="sizeKey"
-                :class="`${sizeKey === size ? style['selected'] : ''} ${!available?style['unavailable']:''}`"
-                @click="if(available) handleClick(sizeKey);"
-            >
-                {{ sizeValue }}
-            </li>
-        </ul>
+        <label v-if="sizes.length<=4">SIZE</label>
+        <v-sheet max-width="220px" color="transparent">
+            <v-slide-group center-active show-arrows>
+                <v-slide-group-item
+                    v-for="([sizeKey, sizeValue, available]) in sizes" 
+                    :key="sizeKey"
+                    v-slot="{select}"
+                >
+                    <button 
+                        :class="`${style['size-btn']} ${sizeKey===size?style['selected']:''} ${!available?style['unavailable']:''}`"
+                        @click="if(available) handleClick(sizeKey, select);"
+                    >
+                        {{ sizeValue }}
+                    </button>
+                </v-slide-group-item>
+            </v-slide-group>
+        </v-sheet>
     </div>
 </template>
 
 
 <style module="style" lang="scss">
-$gap: 8px;
+$gap: 10px;
 
 .sneaker-card-size {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: $gap;
+
+    width: 100%;
 
     >label {
         color: rgb(var(--v-theme-tertiary));
@@ -78,53 +88,53 @@ $gap: 8px;
         line-height: normal;
     }
 
-    >ul {
+    .size-btn {
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        gap: $gap;
+        cursor: pointer;
+        user-select: none;
+        transition: all 0.2s;
+        overflow: hidden;
 
-        >li {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            user-select: none;
-            transition: all 0.3s;
+        min-width: 25px;
+        width: fit-content;
+        height: 25px;
 
-            width: 25px;
-            height: 25px;
+        border-radius: 5px;
+        border-color: rgb(var(--v-theme-white));
+        border-style: solid;
+        border-width: 2px;
 
-            border-radius: 5px;
-            border-color: rgb(var(--v-theme-white));
-            border-style: solid;
-            border-width: 2px;
+        padding: 0px 3px;
 
-            color: rgb(var(--v-theme-dark));
-            font-family: Roboto Slab;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
+        margin: 0px calc($gap/2);
 
-            background-color: rgba(var(--v-theme-white), 1);
-            
+        color: rgb(var(--v-theme-dark));
+        font-family: Roboto Slab;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        white-space: nowrap;
 
-            &.selected {
-                color: rgb(var(--v-theme-white));
-                background-color: rgba(var(--v-theme-primary), 1);
-            }
-            &.unavailable {
-                cursor: default;
-                border-radius: 50%;
-                color: transparent;
-                background-color: transparent;
-            }
-            &:hover {
-                border-color: rgb(var(--v-theme-secondary));
-            }
+        background-color: rgba(var(--v-theme-white), 1);
+        
+
+        &.selected {
+            color: rgb(var(--v-theme-white));
+            background-color: rgb(var(--v-theme-primary));
+        }
+        &.unavailable {
+            cursor: default;
+            // width: 25px;
+            border-radius: 12.5px;
+            color: transparent;
+            background-color: transparent;
+        }
+        &:hover {
+            border-color: rgb(var(--v-theme-secondary));
         }
     }
 }

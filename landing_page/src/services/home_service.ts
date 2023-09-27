@@ -1,13 +1,13 @@
+import axios from 'axios';
 import type {Sneaker} from '@/types/sneaker';
-import { randomSneakers } from "@/testutils/random_home_suggestion"
-
 
 
 
 let suggestionsCache:Sneaker[]|undefined = undefined;
 export const fetchSuggestions = async ():Promise<Sneaker[]> => {
-    if(!suggestionsCache){
-        suggestionsCache = randomSneakers();
+    if(suggestionsCache === undefined){
+        const res = await axios.get('/testing-api/random-sneakers.json');
+        suggestionsCache = res.data as Sneaker[];
     }
     return suggestionsCache;
 }

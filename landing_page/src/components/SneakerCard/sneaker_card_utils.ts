@@ -14,7 +14,7 @@ export interface SneakerCardInjection {
     color: Ref<string | undefined>,
     size: Ref<string | undefined>,
     price: Ref<[number, number]>,
-
+    btnBuyIsReady: ComputedRef<boolean>,
     variationLibrary: SneakerVariationLibrary,
     availableVariationLibrary: ComputedRef<SneakerVariationLibrary>,
 
@@ -23,7 +23,8 @@ export interface SneakerCardInjection {
 }
 
 const localLogger = getLogger('Sneaker Card');
-localLogger.disableAll();
+localLogger.enableAll();
+// localLogger.disableAll();
 
 export const injectionKey = Symbol() as InjectionKey<SneakerCardInjection>;
 

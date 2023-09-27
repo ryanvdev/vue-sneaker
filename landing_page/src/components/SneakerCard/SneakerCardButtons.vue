@@ -12,7 +12,7 @@ defineOptions({
     inheritAttrs: false,
 });
 
-const { handleAddToCartClick: onAddToCartClick, handleBuyNowClick: onBuyNowClick } = inject(injectionKey)!;
+const { handleAddToCartClick, handleBuyNowClick, btnBuyIsReady } = inject(injectionKey)!;
 
 const props = defineProps<SneakerCardButtonsProps>();
 
@@ -20,15 +20,30 @@ const props = defineProps<SneakerCardButtonsProps>();
 </script>
 
 <template>
-    <div :class="`${style['sneaker-card-buttons']} ${props.class}`">
-        <button v-ripple @click="onBuyNowClick">Buy Now</button>
-        <button v-ripple @click="onAddToCartClick">Add To Cart</button>
+    <div :class="`${style['sneaker-card-buttons']} ${style[btnBuyIsReady?'is-ready':'is-not-ready']} ${props.class}`">
+        <button 
+            v-ripple 
+            @click="handleBuyNowClick"
+        >
+            Buy Now
+        </button>
+        <button 
+            v-ripple
+            @click="handleAddToCartClick"
+        >
+            Add To Cart
+        </button>
     </div>
 </template>
 
 
 <style module="style" lang="scss">
 .sneaker-card-buttons{
+    --primary-color: rgba(var(--v-theme-secondary), 0.8);
+    --secondary-color: rgb(var(--v-theme-card-background));
+    --on-hover-color: rgba(var(--v-theme-secondary), 1);
+
+
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -53,21 +68,41 @@ const props = defineProps<SneakerCardButtonsProps>();
         line-height: normal;   
         
         &:nth-child(1) {
-            color: rgb(var(--v-theme-card-background));
-            background-color: rgb(var(--v-theme-tertiary));
+            color: var(--secondary-color);
+            background-color: var(--primary-color);
             &:hover{
-                background-color: rgb(var(--v-theme-secondary));
+                background-color: var(--on-hover-color);
             }
         }
     
         &:nth-child(2) {
             border: 2px solid currentColor;
-            color: rgb(var(--v-theme-tertiary));
-            background-color: transparent;
+            color: var(--primary-color);
+            background-color: var(--secondary-color);
             &:hover{
-                color: rgb(var(--v-theme-secondary));
+                color: var(--on-hover-color);
             }
         }
     }
+}
+
+.sneaker-card-buttons.is-not-ready > button {
+    cursor: default;
+    filter: grayscale(1);
+    opacity: 0.5;
+
+    &:nth-child(1):hover {
+        background-color: var(--primary-color);
+    }
+    &:nth-child(2):hover {
+        color: var(--primary-color);
+    }
+
+}
+
+.sneaker-card-buttons.is-ready > button{
+    cursor: pointer;
+    filter: grayscale(0);
+    opacity: 1;
 }
 </style>

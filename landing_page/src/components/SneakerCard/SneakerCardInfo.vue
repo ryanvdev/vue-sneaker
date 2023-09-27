@@ -61,6 +61,8 @@ onUpdated(() => {
     font-size: 20px;
     font-weight: 700;
     line-height: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
     &:hover{
         color: rgb(var(--v-theme-secondary));

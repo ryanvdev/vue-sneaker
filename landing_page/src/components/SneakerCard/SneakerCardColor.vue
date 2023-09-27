@@ -2,6 +2,7 @@
 import { inject, onUpdated } from 'vue';
 import { injectionKey, localLogger } from './sneaker_card_utils';
 import { computed } from 'vue';
+import { VSlideGroup, VSheet, VSlideGroupItem } from 'vuetify/components';
 
 export interface SneakerCardColorProps {
     class?: string;
@@ -27,19 +28,21 @@ const colors = computed<[string, string, boolean][]>(() => {
 });
 
 
-const computeClassName = (style:IndexSignature<string>, colorKey:string, available:boolean):string => {
+const computeClassName = (style: IndexSignature<string>, colorKey: string, available: boolean): string => {
     const selectedClassName = colorKey === color.value ? style['selected'] : '';
     const availableClassName = !available ? style['unavailable'] : '';
     return `${selectedClassName} ${availableClassName}`;
 }
 
 
-const handleClick = (colorKey: string) => {
+const handleClick = (colorKey: string, select: (v:boolean) => any) => {
     if (color.value === colorKey) {
         color.value = undefined;
+        select(false);
     }
     else {
         color.value = colorKey;
+        select(true);
     }
 }
 
@@ -51,22 +54,28 @@ onUpdated(() => {
 
 <template>
     <div :class="`${style['sneaker-card-color']} ${props.class}`">
-        <label>COLOR</label>
-        <ul>
-            <li v-for="([colorKey, colorValue, available]) in colors"
-                :key="colorKey"
-                :class="computeClassName(style, colorKey, available)"
-                :style="{ '--color': colorValue }"
-                @click="if (available) handleClick(colorKey);"
-            >
-            </li>
-        </ul>
+        <label v-if="colors.length <= 4">COLOR</label>
+        <v-sheet max-width="220px" color="transparent">
+            <v-slide-group :class="style['slide-group']" center-active show-arrows>
+                <v-slide-group-item 
+                    v-for="([colorKey, colorValue, available]) in colors" 
+                    :key="colorKey"
+                    v-slot="{select}"
+                >
+                    <button 
+                        :class="`${style['color-btn']} ${computeClassName(style, colorKey, available)}`"
+                        :style="{ '--color': colorValue }" 
+                        @click="if (available) handleClick(colorKey, select);"
+                    ></button>
+                </v-slide-group-item>
+            </v-slide-group>
+        </v-sheet>
     </div>
 </template>
 
 
 <style module="style" lang="scss">
-$gap: 8px;
+$gap: 10px;
 
 .sneaker-card-color {
     display: flex;
@@ -84,50 +93,44 @@ $gap: 8px;
         line-height: normal;
     }
 
-    >ul {
+    .color-btn {
+        --color: black;
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        gap: $gap;
+        cursor: pointer;
+        transition: all 0.3s;
+        filter: grayscale(0);
 
-        >li {
-            --color: black;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            transition: all 0.3s;
-            filter: grayscale(0);
+        width: 25px;
+        height: 25px;
 
-            width: 25px;
-            height: 25px;
+        border-radius: 12.5px;
+        border-style: solid;
+        border-width: 0px;
+        border-color: rgba(var(--v-theme-white), 1);
 
-            border-radius: 12.5px;
-            border-style: solid;
-            border-width: 0px;
-            border-color: rgba(var(--v-theme-white), 1);
+        margin: 0px calc($gap/2);
 
-            color: #000;
-            font-family: Roboto Slab;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
+        color: #000;
+        font-family: Roboto Slab;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
 
-            background-color: var(--color);
+        background-color: var(--color);
 
-            &.selected {
-                border-radius: 5px;
-                border-width: 2px;
-            }
+        &.selected {
+            border-radius: 5px;
+            border-width: 2px;
+        }
 
-            &.unavailable {
-                border-width: 2px;
-                background-color: transparent;
-                cursor: default;
-            }
+        &.unavailable {
+            border-width: 2px;
+            background-color: transparent;
+            cursor: default;
         }
     }
 }
