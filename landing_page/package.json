@@ -7,8 +7,7 @@
     "start": "live-server --port=80 ./dist",
     "dev": "set NODE_ENV=development && vite",
     "build": "set NODE_ENV=production && vue-tsc && vite build",
-    "preview": "vite preview",
-    "deploy": "xcopy .\\dist ..\\docs /E /H /C /I"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@mdi/js": "^7.2.96",
