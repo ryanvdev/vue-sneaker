@@ -6,7 +6,7 @@ export interface HomeStoreState{
     suggestions: Sneaker[],
 }
 
-export const useHomeStore = defineStore('cart', {
+export const useHomeStore = defineStore('home', {
     state: ():HomeStoreState => ({
         suggestions: [],
     }),

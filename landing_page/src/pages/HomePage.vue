@@ -1,49 +1,28 @@
 <script setup lang="ts">
 import { watchEffect } from 'vue';
-import { VContainer } from 'vuetify/components';
+import { VContainer, VCol, VRow } from 'vuetify/components';
 
-import {useHomeStore} from '@/stores/home_store';
-import Header from '@/components/Header.vue';
+import { useHomeStore } from '@/stores/home_store';
+
 import SneakerCard from '@/components/SneakerCard';
+
 
 const homeStore = useHomeStore();
 
-watchEffect(() => {
+watchEffect(async () => {
     console.log('fetch home suggestions');
-    homeStore.fetchSuggestions();
+    await homeStore.fetchSuggestions();
 })
 
 </script>
 
 <template>
-    <div :class="style['page']">
-        <Header></Header>
-        <v-container :class="style['suggestions']">
-            <SneakerCard 
-                v-for="item of homeStore.suggestions"
-                v-bind="item"
-            />
-        </v-container>
-    </div>
+    <v-container>
+        <v-row>
+            <v-col v-for="item of homeStore.suggestions" :key="item.id" md="4" lg="3" xl="2" xxl="2"
+                class="d-flex justify-center ">
+                <sneaker-card v-bind="item" />
+            </v-col>
+        </v-row>
+    </v-container>
 </template>
-
-
-<style module="style" lang="scss">
-.page{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-}
-
-.suggestions{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-}
-
-
-</style>

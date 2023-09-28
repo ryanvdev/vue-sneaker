@@ -1,15 +1,24 @@
 <script setup lang="ts">
+import { defineProps } from 'vue';
 import {VContainer} from 'vuetify/components';
+
+import { className } from '@/utils/template_utils';
 
 import HeadLogo from './HeadLogo.vue';
 import HeaderButtons from './HeaderButtons.vue';
 import SearchField from './SearchField.vue';
 
+interface Props {
+    class?:string;
+}
+
+const props = defineProps<Props>();
+
 
 </script>
 
 <template>
-    <div :class="style['header']">
+    <header :class="className(style['header'],  props.class)">
         <v-container :class="style['wrapper']">
             <div :class="`stack ${style['stack']}`">
                 <div>
@@ -21,7 +30,7 @@ import SearchField from './SearchField.vue';
                 </div>
             </div>
         </v-container>
-    </div>
+    </header>
 </template>
 
 <style module="style" lang="scss">

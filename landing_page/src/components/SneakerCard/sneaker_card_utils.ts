@@ -23,8 +23,8 @@ export interface SneakerCardInjection {
 }
 
 const localLogger = getLogger('Sneaker Card');
-localLogger.enableAll();
-// localLogger.disableAll();
+// localLogger.enableAll();
+localLogger.disableAll();
 
 export const injectionKey = Symbol() as InjectionKey<SneakerCardInjection>;
 
@@ -53,17 +53,15 @@ const defaultSneakerEvent: SneakerEvent = {
  * @param variations The variations which is passed from props of SneakerCard
  * @returns SneakerVariation
  */
-export const createSneakerEvent = (
+export const getSelectedVariation = (
     color: string | undefined,
     size: string | undefined,
     variations: SneakerVariation[],
-): SneakerEvent => {
+): SneakerVariation|undefined => {
     // Check if the customer has selected the color and size 
     if (color === undefined || size === undefined) {
-        // If not, then return the defaultSneakerEvent.
-        // Note that the defaultSneakerEvent is a event data 
-        // that user has not selected color or size
-        return { ...defaultSneakerEvent }; // * RETURN
+        // If not, then return undefined.
+        return undefined; // * RETURN
     }
 
     // Find the index of variation that color and size are
@@ -74,19 +72,11 @@ export const createSneakerEvent = (
 
     // case: Not found
     if (index === -1) {
-        // * RETURN
-        return { ...defaultSneakerEvent };
+        return undefined;
     }
 
     // case: Found
-    const variation = variations[index];
-
-    // * RETURN
-    return {
-        index,
-        variationId: variation.id,
-        variation,
-    }
+    return variations[index];
 }
 
 

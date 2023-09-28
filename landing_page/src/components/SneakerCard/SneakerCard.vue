@@ -2,8 +2,8 @@
 import type {Sneaker, SneakerVariation, SneakerVariationLibrary} from '@/types/sneaker';
 import { provide, onUpdated, defineProps, computed, ref, watch } from 'vue';
 import SneakerCardInfo from './SneakerCardInfo.vue';
-import { injectionKey, localLogger, computeAvailableVariationLibrary, createSneakerEvent } from './sneaker_card_utils';
-import type { SneakerEvent } from './sneaker_card_utils';
+import { injectionKey, localLogger, computeAvailableVariationLibrary, getSelectedVariation } from './sneaker_card_utils';
+import { createSneakerUrl } from '@/utils/sneaker_util';
 
 interface Props extends Sneaker{
 
@@ -16,12 +16,6 @@ defineOptions({
 const props = defineProps<Props>();
 
 const { name, brand, variationLibrary } = props;
-
-const emit = defineEmits<{
-    'update:variation': [value: Partial<SneakerVariation>],
-    'click:add-to-cart': [e: SneakerEvent],
-    'click:buy-now': [e: SneakerEvent]
-}>();
 
 // the color id of variationLibrary.colors
 const color = ref<string | undefined>();
@@ -75,11 +69,18 @@ const image = computed<string>(() => {
     if (uniqueImageIds.length === 1) {
         return variationLibrary.images[uniqueImageIds[0]];
     }
-    return variationLibrary.images[props.defaultImage];
+    return variationLibrary.images[color.value||props.defaultImage];
 });
 
 const href = computed<string>(() => {
-    return '';
+    return createSneakerUrl(props.slug);
+});
+
+const ellipseColor = computed<string>(() => {
+    const colorValue = color.value;
+    if(colorValue !== undefined) return variationLibrary.colors[colorValue];
+    const firstColorKey = variations.value.at(0)?.color;
+    return variationLibrary.colors[firstColorKey||props.defaultColor];
 });
 
 const btnBuyIsReady = computed<boolean>(() => {
@@ -99,11 +100,12 @@ const btnBuyIsReady = computed<boolean>(() => {
 });
 
 const handleBuyNowClick = () => {
-    emit('click:buy-now', createSneakerEvent(color.value, size.value, props.variations));
+    // const selectedVariation = getSelectedVariation(color.value, size.value, props.variations);
+    // if(!selectedVariation) 
 }
 
 const handleAddToCartClick = () => {
-    emit('click:add-to-cart', createSneakerEvent(color.value, size.value, props.variations));
+    
 }
 
 watch(color, (value) => {
@@ -133,7 +135,7 @@ onUpdated(() => {
     <div :class="`${style['sneaker-card']} stack`">
         <div>
             <div :class="style['ellipse']" :style="{
-                backgroundColor: variationLibrary.colors[color||defaultColor]
+                backgroundColor: ellipseColor
             }">
             </div>
         </div>
@@ -155,6 +157,11 @@ onUpdated(() => {
 
 
 <style module="style" lang="scss">
+$width: 270px;
+$height: 432px;
+$info-height: 254px;
+$info-blur-height: $info-height - 145px;
+
 .brand {
     display: flex;
     justify-content: center;
@@ -165,7 +172,9 @@ onUpdated(() => {
 
     >p {
         transition: all 0.3s;
+
         rotate: 45deg;
+        
         color: rgba(80, 85, 90, 0.6);
         font-family: Roboto Slab;
         font-size: 90px;
@@ -179,13 +188,13 @@ onUpdated(() => {
     display: block;
     position: relative;
     transition: all 0.3s;
-    opacity: 0.5;
+    opacity: 0.3;
 
     left: 120px;
-    top: -100px;
+    top: -160px;
 
-    width: 200px;
-    height: 200px;
+    width: 436px;
+    height: 436px;
 
     background-color: rgb(var(--v-theme-primary));
 
@@ -200,10 +209,10 @@ onUpdated(() => {
     transition: all 0.3s;
     z-index: 4;
 
-    top: 53px;
+    top: 40px;
 
-    width: 200px;
-    height: 200px;
+    width: 270px;
+    height: 270px;
 
     margin-left: auto;
     margin-right: auto;
@@ -222,13 +231,12 @@ onUpdated(() => {
     transition: top 0.3s, background-color 0.1s;
 
     
-    top: 285px;
+    top: calc(100% - $info-blur-height);
     
     border-radius: 10px 10px 0px 0px;
 
     margin-left: auto;
     margin-right: auto;
-
 
     background-color: rgba(var(--v-theme-dark), 0);
 }
@@ -237,8 +245,8 @@ onUpdated(() => {
     display: block;
     overflow: hidden;
 
-    width: 220px;
-    height: 365px;
+    width: 270px;
+    height: 432px;
 
     border-radius: 10px;
 
@@ -266,14 +274,14 @@ onUpdated(() => {
     .sneaker-image {
         top: -5px;
 
-        width: 180px;
-        height: 180px;
+        width: 210px;
+        height: 210px;
 
         rotate: 0deg;
     }
 
     .sneaker-info {
-        top: 165px;
+        top: calc(100% - $info-height);
         background-color: rgba(var(--v-theme-dark), 0.5);
     }
 }

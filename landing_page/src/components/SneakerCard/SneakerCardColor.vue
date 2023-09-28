@@ -54,9 +54,9 @@ onUpdated(() => {
 
 <template>
     <div :class="`${style['sneaker-card-color']} ${props.class}`">
-        <label v-if="colors.length <= 4">COLOR</label>
-        <v-sheet max-width="220px" color="transparent">
-            <v-slide-group :class="style['slide-group']" center-active show-arrows>
+        <label v-if="colors.length <= 5">COLOR</label>
+        <v-sheet max-width="260px" color="transparent">
+            <v-slide-group :class="style['slide-group']" center-active :show-arrows="colors.length>5">
                 <v-slide-group-item 
                     v-for="([colorKey, colorValue, available]) in colors" 
                     :key="colorKey"
@@ -76,6 +76,7 @@ onUpdated(() => {
 
 <style module="style" lang="scss">
 $gap: 10px;
+$size: 30px;
 
 .sneaker-card-color {
     display: flex;
@@ -87,7 +88,7 @@ $gap: 10px;
     >label {
         color: rgb(var(--v-theme-tertiary));
         font-family: Roboto Slab;
-        font-size: 13px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -103,10 +104,10 @@ $gap: 10px;
         transition: all 0.3s;
         filter: grayscale(0);
 
-        width: 25px;
-        height: 25px;
+        width: $size;
+        height: $size;
 
-        border-radius: 12.5px;
+        border-radius: calc($size/2);
         border-style: solid;
         border-width: 0px;
         border-color: rgba(var(--v-theme-white), 1);
