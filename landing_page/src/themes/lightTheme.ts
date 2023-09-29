@@ -7,8 +7,10 @@ const lightTheme:ThemeDefinition = {
         white: '#ffffff',
         primary: '#8EACCD',
         secondary: '#F9F3CC',
-        background: '#D2E0FB',
         tertiary: '#D7E5CA',
+
+        background: '#D2E0FB',
+        surface: '#829796',
         
         price: '#FFAD93',
         'card-background': '#829796',

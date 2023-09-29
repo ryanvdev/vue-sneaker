@@ -38,6 +38,9 @@ watchEffect(async () => {
         </v-row>
     </v-container>
     <v-container>
+        <h3></h3>
+    </v-container>
+    <v-container>
         <h3 class="py-10 text-h3">Products</h3>
         <v-row>
             <v-col 

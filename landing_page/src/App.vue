@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
-import { VProgressLinear } from 'vuetify/components';
+import { VProgressLinear, VApp } from 'vuetify/components';
 import { useRootStore } from './stores/root_store';
 import { computed } from 'vue';
 import { useDisplay } from 'vuetify';
@@ -29,17 +29,15 @@ const mobileDesktopClassName = computed<string>(() => {
         :indeterminate="rootStore.isLoading"
     />
 
-    <div :class="className(mobileDesktopClassName, `device-${deviceSize}`, style['app'])">
+    <v-app 
+        :class="className(mobileDesktopClassName, `device-${deviceSize}`, 'w-screen')"
+        theme="dark"
+    >
         <RouterView />
-    </div>
+    </v-app>
 </template>
 
 <style module="style" lang="scss">
-.app{
-    display: block;
-    width: 100%;
-    height: auto;
-}
 .process {
     position: fixed;
     z-index: 100;

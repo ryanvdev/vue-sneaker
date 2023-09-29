@@ -1,19 +1,20 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
+import {VLayout, VMain} from 'vuetify/components';
 import AppBar from '@/components/AppBar.vue';
+import AppFooter from '@/components/AppFooter.vue';
+import { className } from '@/utils/template_utils';
 
 </script>
 
 <template>
-    <div :class="style['page']">
-        <app-bar :class="style['app-bar']" />
-        <main :class="style['main']">
+    <v-layout class="w-screen flex-column align-center">
+        <app-bar :class="className(style['app-bar'], 'w-100')" />
+        <v-main class="w-100">
             <router-view/>
-        </main>
-        <footer>
-            .................................
-        </footer>
-    </div>
+        </v-main>
+        <app-footer/>
+    </v-layout>
 </template>
 
 
@@ -32,11 +33,5 @@ import AppBar from '@/components/AppBar.vue';
     position: sticky;
     z-index: 10;
     top: 0px;
-}
-.main{
-    display: block;
-
-    width: 100%;
-    height: auto;
 }
 </style>
