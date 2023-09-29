@@ -1,0 +1,60 @@
+{
+    "id": "labore-ea-nostrud-445",
+    "slug": "labore-ea-nostrud-445",
+    "brand": "LABORE",
+    "name": "Ea Nostrud",
+    "defaultColor": "aqua",
+    "defaultImage": "aqua",
+    "variationLibrary": {
+        "colors": {
+            "aqua": "aqua",
+            "orange": "orange",
+            "pink": "pink",
+            "red": "red",
+            "green": "green",
+            "black": "black"
+        },
+        "sizes": { "XS": "XS", "XXXL": "XXXL", "XL": "XL", "S": "S", "XXL": "XXL" },
+        "images": {
+            "aqua": "/img/demo-sneaker/blue.png",
+            "orange": "/img/demo-sneaker/red.png",
+            "pink": "/img/demo-sneaker/pink.png",
+            "red": "/img/demo-sneaker/red.png",
+            "green": "/img/demo-sneaker/green.png",
+            "black": "/img/demo-sneaker/black.png"
+        }
+    },
+    "variations": [
+        { "id": "XS-aqua-7142", "color": "aqua", "size": "XS", "image": "aqua", "price": 7229000 },
+        { "id": "XS-orange-7143", "color": "orange", "size": "XS", "image": "orange", "price": 6988000 },
+        { "id": "XS-pink-7144", "color": "pink", "size": "XS", "image": "pink", "price": 8648000 },
+        { "id": "XS-red-7145", "color": "red", "size": "XS", "image": "red", "price": 5458000 },
+        { "id": "XS-green-7146", "color": "green", "size": "XS", "image": "green", "price": 6444000 },
+        { "id": "XS-black-7147", "color": "black", "size": "XS", "image": "black", "price": 8231000 },
+        { "id": "XXXL-aqua-7148", "color": "aqua", "size": "XXXL", "image": "aqua", "price": 3864000 },
+        { "id": "XXXL-orange-7149", "color": "orange", "size": "XXXL", "image": "orange", "price": 2544000 },
+        { "id": "XXXL-pink-7150", "color": "pink", "size": "XXXL", "image": "pink", "price": 8437000 },
+        { "id": "XXXL-red-7151", "color": "red", "size": "XXXL", "image": "red", "price": 8384000 },
+        { "id": "XXXL-green-7152", "color": "green", "size": "XXXL", "image": "green", "price": 7105000 },
+        { "id": "XXXL-black-7153", "color": "black", "size": "XXXL", "image": "black", "price": 9253000 },
+        { "id": "XL-aqua-7154", "color": "aqua", "size": "XL", "image": "aqua", "price": 6324000 },
+        { "id": "XL-orange-7155", "color": "orange", "size": "XL", "image": "orange", "price": 4292000 },
+        { "id": "XL-pink-7156", "color": "pink", "size": "XL", "image": "pink", "price": 5015000 },
+        { "id": "XL-red-7157", "color": "red", "size": "XL", "image": "red", "price": 5479000 },
+        { "id": "XL-green-7158", "color": "green", "size": "XL", "image": "green", "price": 9563000 },
+        { "id": "XL-black-7159", "color": "black", "size": "XL", "image": "black", "price": 2949000 },
+        { "id": "S-aqua-7160", "color": "aqua", "size": "S", "image": "aqua", "price": 6057000 },
+        { "id": "S-orange-7161", "color": "orange", "size": "S", "image": "orange", "price": 3519000 },
+        { "id": "S-pink-7162", "color": "pink", "size": "S", "image": "pink", "price": 8742000 },
+        { "id": "S-red-7163", "color": "red", "size": "S", "image": "red", "price": 9620000 },
+        { "id": "S-green-7164", "color": "green", "size": "S", "image": "green", "price": 6985000 },
+        { "id": "S-black-7165", "color": "black", "size": "S", "image": "black", "price": 4133000 },
+        { "id": "XXL-aqua-7166", "color": "aqua", "size": "XXL", "image": "aqua", "price": 1663000 },
+        { "id": "XXL-orange-7167", "color": "orange", "size": "XXL", "image": "orange", "price": 7938000 },
+        { "id": "XXL-pink-7168", "color": "pink", "size": "XXL", "image": "pink", "price": 621000 },
+        { "id": "XXL-red-7169", "color": "red", "size": "XXL", "image": "red", "price": 3081000 },
+        { "id": "XXL-green-7170", "color": "green", "size": "XXL", "image": "green", "price": 5049000 },
+        { "id": "XXL-black-7171", "color": "black", "size": "XXL", "image": "black", "price": 1611000 }
+    ],
+    "description": "<p>Id aliqua eiusmod magna velit ut. Dolore sit Lorem nisi incididunt eiusmod id enim aute laborum laborum commodo sit ea non. Nostrud aliquip exercitation et laborum ut ad eu ut veniam minim irure. Pariatur sunt laborum aliquip et qui. Ut quis adipisicing et enim commodo. Dolor duis cupidatat sunt aliqua aute laborum sint tempor exercitation aliqua adipisicing.</p> <p>Lorem excepteur laborum veniam cillum culpa nisi laboris occaecat eu consequat amet. Eu cillum sunt qui anim ad irure in Lorem. Aliqua sunt nulla est mollit ipsum et nostrud ad. Cupidatat aute ut tempor exercitation do cupidatat quis laboris consequat culpa occaecat enim amet esse.</p> <p>Fugiat est in qui cupidatat exercitation nostrud laboris excepteur voluptate aute ullamco incididunt dolore enim. Fugiat proident reprehenderit nostrud consectetur reprehenderit elit ex. Nisi id ad voluptate sit ut ipsum deserunt veniam.</p> <p>Ea laboris nostrud laborum nostrud consequat do occaecat quis non pariatur dolore pariatur. Culpa qui adipisicing ad excepteur adipisicing dolore. Aliquip dolore in incididunt do cupidatat est consequat laborum.</p> <p>Sunt ad deserunt elit aute cillum eiusmod excepteur pariatur ea culpa cupidatat reprehenderit tempor. Mollit ut quis commodo ea esse irure aliquip adipisicing deserunt pariatur sunt dolore labore magna. Tempor sint sit nostrud amet mollit anim.</p> <p>Cillum minim ipsum est Lorem irure reprehenderit Lorem reprehenderit sint id adipisicing dolor voluptate. Consectetur qui laborum ullamco mollit deserunt cupidatat Lorem elit reprehenderit commodo cillum aute. Culpa labore cillum incididunt fugiat eu tempor aliquip. Cillum labore ullamco cillum reprehenderit duis esse quis ad proident nulla reprehenderit cillum.</p> <p>Id elit aliqua labore consequat. Cillum nulla nisi quis consequat aliquip irure anim incididunt aute adipisicing velit minim consequat occaecat. Ut deserunt pariatur veniam incididunt. Excepteur tempor commodo aute reprehenderit magna reprehenderit anim. Dolore amet Lorem fugiat veniam amet enim adipisicing pariatur Lorem sint ullamco cupidatat adipisicing id.</p> <p>Laborum id aute pariatur aliqua. Reprehenderit adipisicing est nulla incididunt occaecat. Reprehenderit adipisicing irure et esse tempor officia cillum id minim elit consequat laborum. Excepteur qui excepteur culpa enim ad consequat sit consequat voluptate mollit aliqua adipisicing. Cillum eiusmod ipsum nisi nisi consectetur consequat nulla labore elit Lorem et minim. Sint veniam sunt proident officia laboris commodo dolor est laboris occaecat proident consectetur aliqua.</p> <p>Laborum proident aute anim et officia ea duis consequat labore velit voluptate exercitation veniam duis. Aliqua magna sint nisi magna sint laborum deserunt pariatur commodo do proident. Veniam eu laboris nostrud nisi.</p> <p>Aute pariatur esse ullamco Lorem consequat. Ipsum id do consectetur consectetur do. Aliqua ut velit exercitation in proident ipsum quis quis exercitation. Nisi minim laborum quis ea fugiat laboris excepteur aliqua aliqua eu consequat magna consequat esse. Lorem consectetur reprehenderit aute veniam occaecat cupidatat est. Velit dolore dolore amet reprehenderit veniam. Magna ad ex anim nostrud proident ut ipsum.</p>"
+}

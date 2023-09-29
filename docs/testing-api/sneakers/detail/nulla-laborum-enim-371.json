@@ -1,0 +1,41 @@
+{
+    "id": "nulla-laborum-enim-371",
+    "slug": "nulla-laborum-enim-371",
+    "brand": "NULLA",
+    "name": "Laborum Enim",
+    "defaultColor": "orange",
+    "defaultImage": "orange",
+    "variationLibrary": {
+        "colors": { "orange": "orange", "black": "black", "red": "red" },
+        "sizes": { "XXL": "XXL", "M": "M", "XL": "XL", "L": "L", "XXXL": "XXXL", "S": "S", "XS": "XS" },
+        "images": {
+            "orange": "/img/demo-sneaker/red.png",
+            "black": "/img/demo-sneaker/black.png",
+            "red": "/img/demo-sneaker/red.png"
+        }
+    },
+    "variations": [
+        { "id": "XXL-orange-5983", "color": "orange", "size": "XXL", "image": "orange", "price": 8393000 },
+        { "id": "XXL-black-5984", "color": "black", "size": "XXL", "image": "black", "price": 3916000 },
+        { "id": "XXL-red-5985", "color": "red", "size": "XXL", "image": "red", "price": 8750000 },
+        { "id": "M-orange-5986", "color": "orange", "size": "M", "image": "orange", "price": 1962000 },
+        { "id": "M-black-5987", "color": "black", "size": "M", "image": "black", "price": 7099000 },
+        { "id": "M-red-5988", "color": "red", "size": "M", "image": "red", "price": 7939000 },
+        { "id": "XL-orange-5989", "color": "orange", "size": "XL", "image": "orange", "price": 1221000 },
+        { "id": "XL-black-5990", "color": "black", "size": "XL", "image": "black", "price": 9584000 },
+        { "id": "XL-red-5991", "color": "red", "size": "XL", "image": "red", "price": 4546000 },
+        { "id": "L-orange-5992", "color": "orange", "size": "L", "image": "orange", "price": 9893000 },
+        { "id": "L-black-5993", "color": "black", "size": "L", "image": "black", "price": 1576000 },
+        { "id": "L-red-5994", "color": "red", "size": "L", "image": "red", "price": 351000 },
+        { "id": "XXXL-orange-5995", "color": "orange", "size": "XXXL", "image": "orange", "price": 7019000 },
+        { "id": "XXXL-black-5996", "color": "black", "size": "XXXL", "image": "black", "price": 1495000 },
+        { "id": "XXXL-red-5997", "color": "red", "size": "XXXL", "image": "red", "price": 7999000 },
+        { "id": "S-orange-5998", "color": "orange", "size": "S", "image": "orange", "price": 5691000 },
+        { "id": "S-black-5999", "color": "black", "size": "S", "image": "black", "price": 8988000 },
+        { "id": "S-red-6000", "color": "red", "size": "S", "image": "red", "price": 5798000 },
+        { "id": "XS-orange-6001", "color": "orange", "size": "XS", "image": "orange", "price": 2666000 },
+        { "id": "XS-black-6002", "color": "black", "size": "XS", "image": "black", "price": 3334000 },
+        { "id": "XS-red-6003", "color": "red", "size": "XS", "image": "red", "price": 5779000 }
+    ],
+    "description": "<p>Occaecat esse tempor nisi elit nisi amet. Officia nulla qui consequat officia commodo. Eu magna laboris elit aute. Consectetur fugiat qui consectetur incididunt occaecat consectetur. Velit consectetur aliquip ipsum voluptate deserunt.</p> <p>Cupidatat in et veniam ea mollit aliquip consequat ipsum elit. Exercitation sint qui mollit cupidatat incididunt consequat pariatur do. In consectetur irure et id esse voluptate dolor. Adipisicing irure eu cupidatat laborum non aliquip ipsum in cupidatat elit dolor eu ullamco amet. Excepteur nisi incididunt proident nulla voluptate laboris ullamco aliquip nisi. Exercitation labore do pariatur consequat ad Lorem sit adipisicing irure.</p> <p>Nisi officia aute incididunt velit amet officia mollit velit voluptate proident tempor excepteur. Fugiat aliquip proident ad eu officia. Minim reprehenderit est cillum Lorem ex.</p> <p>Esse culpa proident aliqua do dolore commodo proident. Culpa aute magna Lorem ad esse eu. Quis incididunt sunt duis veniam nisi minim voluptate pariatur non minim labore id. Eiusmod adipisicing qui adipisicing elit esse ut. In commodo cupidatat anim amet et elit irure duis laboris ipsum.</p> <p>Non dolore in aute Lorem mollit sunt tempor culpa do. Dolor id commodo tempor quis sint nisi Lorem amet. Reprehenderit incididunt sunt nisi reprehenderit in nisi pariatur quis. Occaecat dolore labore cupidatat aliqua amet eu exercitation sunt fugiat ipsum non. Aute ullamco qui voluptate veniam incididunt anim ipsum culpa ex.</p> <p>Aute laborum cupidatat cupidatat proident officia quis non ad. Quis pariatur tempor magna Lorem deserunt anim aliquip occaecat duis qui. Occaecat ex cupidatat velit et commodo. Sunt commodo fugiat incididunt excepteur enim voluptate qui ipsum. Proident laboris consectetur ea culpa consequat culpa qui sunt Lorem dolore ipsum irure et.</p> <p>Laborum ut aliquip dolor velit sunt ad id commodo quis mollit. Adipisicing consequat est voluptate velit ad commodo duis enim consectetur. Ea amet cillum qui amet. Consectetur ipsum magna officia do culpa. Est elit minim laboris proident ut. Deserunt aute ad pariatur nostrud in est. Tempor exercitation non veniam aliqua tempor Lorem aute cupidatat mollit.</p> <p>Minim id in proident ex reprehenderit amet consequat aliqua mollit incididunt aute aute amet. Occaecat aute tempor laborum et esse veniam dolore officia pariatur ullamco duis sunt minim. Deserunt deserunt occaecat cupidatat mollit in enim. Anim proident Lorem exercitation sint mollit cupidatat eu adipisicing aliqua est.</p> <p>Ut cillum cillum sit pariatur ad sunt ea laborum non irure. Aliquip Lorem dolor Lorem qui ex non velit ea quis eiusmod. Deserunt nisi consequat et deserunt ipsum dolor laborum dolor. Culpa qui reprehenderit esse pariatur ipsum veniam dolore aliqua fugiat dolore non id commodo.</p> <p>Irure eiusmod aute id proident eu nulla. Excepteur ullamco sit reprehenderit dolore nisi enim laboris Lorem cupidatat. Aliquip duis Lorem laboris tempor. Nisi consectetur eiusmod tempor sit aliqua labore officia aute amet officia ut et ullamco. Ex consectetur irure ut anim sint ipsum eiusmod ea ad duis officia. Consectetur esse eiusmod voluptate minim consequat. Aliquip enim consectetur reprehenderit ipsum ipsum est incididunt nisi est ipsum sunt.</p>"
+}

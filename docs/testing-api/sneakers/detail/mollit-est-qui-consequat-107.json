@@ -1,0 +1,33 @@
+{
+    "id": "mollit-est-qui-consequat-107",
+    "slug": "mollit-est-qui-consequat-107",
+    "brand": "MOLLIT",
+    "name": "Est Qui Consequat",
+    "defaultColor": "red",
+    "defaultImage": "red",
+    "variationLibrary": {
+        "colors": { "red": "red", "black": "black", "aqua": "aqua", "blue": "blue" },
+        "sizes": { "L": "L", "XL": "XL", "S": "S" },
+        "images": {
+            "red": "/img/demo-sneaker/red.png",
+            "black": "/img/demo-sneaker/black.png",
+            "aqua": "/img/demo-sneaker/blue.png",
+            "blue": "/img/demo-sneaker/blue.png"
+        }
+    },
+    "variations": [
+        { "id": "L-red-1743", "color": "red", "size": "L", "image": "red", "price": 4406000 },
+        { "id": "L-black-1744", "color": "black", "size": "L", "image": "black", "price": 3282000 },
+        { "id": "L-aqua-1745", "color": "aqua", "size": "L", "image": "aqua", "price": 6875000 },
+        { "id": "L-blue-1746", "color": "blue", "size": "L", "image": "blue", "price": 321000 },
+        { "id": "XL-red-1747", "color": "red", "size": "XL", "image": "red", "price": 7191000 },
+        { "id": "XL-black-1748", "color": "black", "size": "XL", "image": "black", "price": 3281000 },
+        { "id": "XL-aqua-1749", "color": "aqua", "size": "XL", "image": "aqua", "price": 3924000 },
+        { "id": "XL-blue-1750", "color": "blue", "size": "XL", "image": "blue", "price": 406000 },
+        { "id": "S-red-1751", "color": "red", "size": "S", "image": "red", "price": 8319000 },
+        { "id": "S-black-1752", "color": "black", "size": "S", "image": "black", "price": 2276000 },
+        { "id": "S-aqua-1753", "color": "aqua", "size": "S", "image": "aqua", "price": 9266000 },
+        { "id": "S-blue-1754", "color": "blue", "size": "S", "image": "blue", "price": 6679000 }
+    ],
+    "description": "<p>Incididunt ipsum aliqua mollit laborum. Officia cillum ut eu aliqua sunt ea. Est velit ipsum commodo aute velit cupidatat ut esse consectetur sunt adipisicing velit cillum. Incididunt anim labore ea aliquip nostrud ex. Amet ut veniam excepteur sit ad magna. Ad magna ex laboris amet minim in eiusmod anim veniam ea excepteur pariatur cupidatat. Commodo anim quis ullamco aliqua aliquip pariatur ipsum nostrud commodo.</p> <p>Reprehenderit eu pariatur elit enim aute consequat ut quis magna. Aliqua do deserunt velit aute adipisicing ut elit nisi amet ipsum incididunt commodo excepteur Lorem. Ad ex id est sit eu non aliqua elit sint excepteur ad consectetur qui. Eu officia irure excepteur aliqua eiusmod deserunt ipsum pariatur nulla esse id deserunt est.</p> <p>Enim labore laboris esse ad in nisi mollit enim. Minim cupidatat Lorem sunt deserunt tempor consequat. Velit adipisicing mollit qui veniam. Tempor cupidatat elit eu Lorem consectetur nulla qui Lorem fugiat. Cillum in duis esse irure commodo. Culpa et consectetur ut voluptate anim sint ipsum aliquip mollit reprehenderit irure cillum. Dolore proident deserunt culpa consectetur quis in.</p> <p>Fugiat anim sint aute minim non pariatur. Labore consectetur amet anim aute ex sit nulla ea. Eu non veniam labore voluptate deserunt esse ea nulla dolor irure aliquip. Consequat consectetur excepteur reprehenderit qui cillum officia enim veniam non. Et ad qui ad cillum culpa adipisicing enim excepteur labore sit cillum officia et eu.</p> <p>Incididunt in amet ad occaecat laboris nulla consectetur exercitation eiusmod in velit cupidatat. Adipisicing mollit nulla sint pariatur pariatur reprehenderit eu est do officia cillum nisi. Cillum exercitation quis dolor et aute do irure magna ipsum aute adipisicing veniam. Eu do eiusmod nulla est magna laboris culpa duis. Amet culpa dolor ut ad. Laboris officia eiusmod quis eiusmod anim anim. Adipisicing et veniam enim elit id nulla sunt deserunt aliqua nulla consectetur.</p> <p>In magna cupidatat ut proident exercitation reprehenderit pariatur tempor sunt. Anim proident fugiat laborum nostrud et eu aliqua. Ex id voluptate quis ullamco in ex anim id mollit minim duis in. Veniam qui proident culpa voluptate aliqua ex. Velit consectetur est ea dolor aute cupidatat. Ex dolor consectetur consectetur ipsum cupidatat proident proident eiusmod officia nostrud ut reprehenderit elit. Id elit veniam consectetur ullamco occaecat officia laborum deserunt occaecat incididunt qui.</p> <p>Minim ea Lorem cupidatat amet est duis minim proident. Nulla exercitation excepteur cupidatat id culpa et deserunt in cupidatat consequat magna ea. Mollit dolor sit dolor exercitation dolore. Laborum aliqua deserunt exercitation mollit adipisicing esse eiusmod.</p> <p>Consequat consequat et tempor aute eu consectetur ex eu minim proident ad ullamco ut. Aliqua veniam duis incididunt ipsum eiusmod reprehenderit et eu quis sunt. Incididunt commodo nulla aliqua cillum culpa nisi nulla anim fugiat. Cupidatat dolor do excepteur magna pariatur laborum in voluptate. Eiusmod commodo labore enim sint sit amet.</p> <p>Enim ea mollit eu irure consequat nisi. Enim laborum excepteur non duis. Incididunt irure esse sint esse duis.</p> <p>Exercitation incididunt deserunt do dolor ea commodo adipisicing voluptate culpa. Exercitation laborum dolor occaecat adipisicing reprehenderit ex. Irure enim ea commodo in sunt dolor tempor nisi sunt. Cupidatat in excepteur ipsum elit ad esse officia. Esse excepteur ea ut dolor duis pariatur.</p> <p>Velit occaecat laboris quis laborum quis elit exercitation adipisicing amet mollit adipisicing eu labore. Cillum veniam eiusmod aliqua in incididunt nostrud voluptate. Lorem commodo id laboris eiusmod. Dolor nostrud culpa ea veniam velit veniam est pariatur. Ea fugiat qui ea dolor minim et fugiat consectetur amet. Aliquip commodo ullamco amet nostrud enim cupidatat culpa velit anim commodo labore duis voluptate.</p>"
+}

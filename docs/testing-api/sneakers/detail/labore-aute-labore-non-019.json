@@ -1,0 +1,35 @@
+{
+    "id": "labore-aute-labore-non-019",
+    "slug": "labore-aute-labore-non-019",
+    "brand": "LABORE",
+    "name": "Aute Labore Non",
+    "defaultColor": "aqua",
+    "defaultImage": "aqua",
+    "variationLibrary": {
+        "colors": { "aqua": "aqua", "orange": "orange", "green": "green" },
+        "sizes": { "XL": "XL", "XXXL": "XXXL", "S": "S", "XS": "XS", "M": "M" },
+        "images": {
+            "aqua": "/img/demo-sneaker/blue.png",
+            "orange": "/img/demo-sneaker/red.png",
+            "green": "/img/demo-sneaker/green.png"
+        }
+    },
+    "variations": [
+        { "id": "XL-aqua-372", "color": "aqua", "size": "XL", "image": "aqua", "price": 1813000 },
+        { "id": "XL-orange-373", "color": "orange", "size": "XL", "image": "orange", "price": 8265000 },
+        { "id": "XL-green-374", "color": "green", "size": "XL", "image": "green", "price": 2102000 },
+        { "id": "XXXL-aqua-375", "color": "aqua", "size": "XXXL", "image": "aqua", "price": 9986000 },
+        { "id": "XXXL-orange-376", "color": "orange", "size": "XXXL", "image": "orange", "price": 3987000 },
+        { "id": "XXXL-green-377", "color": "green", "size": "XXXL", "image": "green", "price": 273000 },
+        { "id": "S-aqua-378", "color": "aqua", "size": "S", "image": "aqua", "price": 7211000 },
+        { "id": "S-orange-379", "color": "orange", "size": "S", "image": "orange", "price": 4797000 },
+        { "id": "S-green-380", "color": "green", "size": "S", "image": "green", "price": 2873000 },
+        { "id": "XS-aqua-381", "color": "aqua", "size": "XS", "image": "aqua", "price": 3788000 },
+        { "id": "XS-orange-382", "color": "orange", "size": "XS", "image": "orange", "price": 2300000 },
+        { "id": "XS-green-383", "color": "green", "size": "XS", "image": "green", "price": 9781000 },
+        { "id": "M-aqua-384", "color": "aqua", "size": "M", "image": "aqua", "price": 481000 },
+        { "id": "M-orange-385", "color": "orange", "size": "M", "image": "orange", "price": 2188000 },
+        { "id": "M-green-386", "color": "green", "size": "M", "image": "green", "price": 2535000 }
+    ],
+    "description": "<p>Fugiat velit ex aute pariatur reprehenderit voluptate sit. Fugiat veniam nulla aliqua amet anim. Officia exercitation ad velit sint anim amet commodo excepteur. Ea et esse amet ut eu sit duis aute ipsum cillum sit. Esse do deserunt nulla nulla commodo consectetur eu do velit laborum sunt. Ad proident minim eiusmod velit enim exercitation reprehenderit nulla nisi consectetur nostrud eu qui ipsum. Consequat adipisicing est dolore eu pariatur eiusmod exercitation aliqua excepteur dolor.</p> <p>Dolor quis eiusmod do nisi in veniam id Lorem anim dolore magna est labore. Cupidatat dolore minim ad et aliquip reprehenderit elit ullamco consequat et. Fugiat ullamco eu excepteur nostrud dolor ipsum esse. Nostrud cupidatat fugiat adipisicing fugiat amet. Exercitation esse exercitation do Lorem nulla pariatur mollit ipsum. Ad minim et cupidatat nostrud deserunt enim pariatur elit nisi magna.</p> <p>Culpa officia proident qui nulla nostrud ullamco ea velit. Exercitation deserunt fugiat et dolor anim Lorem ut dolor sit magna nisi sunt. Dolore in laborum voluptate dolor in id adipisicing ipsum cupidatat esse nisi. Incididunt et incididunt qui esse dolor. Sunt quis adipisicing amet et.</p> <p>Officia amet nostrud enim mollit amet dolor nulla nisi enim id est anim ipsum Lorem. Duis officia ullamco cillum sunt voluptate. Nulla tempor adipisicing esse eiusmod exercitation veniam id culpa occaecat nostrud sit.</p> <p>Anim id et aliqua sunt aliquip. Et mollit cupidatat consequat reprehenderit ut pariatur id reprehenderit. Ad ullamco ad nisi aliquip nostrud in non tempor culpa esse Lorem cupidatat.</p> <p>Id id consectetur excepteur non minim id ad magna eiusmod consequat sunt velit ex Lorem. Ad mollit consequat laborum eu amet ut consectetur nisi nisi. Cillum reprehenderit laboris excepteur aliquip.</p> <p>Consequat magna aliquip duis laboris eiusmod magna. Pariatur amet qui fugiat labore sint id irure. Non Lorem pariatur deserunt deserunt ut exercitation qui.</p> <p>Sit aliqua excepteur est qui commodo magna velit ipsum consectetur dolore excepteur sint. Labore laboris incididunt nostrud minim officia consequat dolor excepteur culpa aliqua pariatur. Qui laborum laborum deserunt veniam incididunt culpa proident eu.</p> <p>Nisi excepteur mollit sint ut exercitation eu et. Eiusmod Lorem enim labore aliquip nostrud tempor exercitation magna aliquip laboris deserunt commodo culpa eiusmod. Commodo aute cillum ad anim et ad sunt veniam nostrud et eiusmod commodo. Id magna eiusmod ex eiusmod minim. Duis sint labore cupidatat irure ex.</p> <p>Cillum qui ex do sint amet enim voluptate consectetur adipisicing do reprehenderit nulla. Id cupidatat officia aliqua culpa veniam pariatur voluptate aliqua consectetur incididunt Lorem cupidatat id. Aute exercitation aliquip in voluptate exercitation dolore qui ea sint ipsum consectetur. Veniam dolore ut veniam fugiat anim minim ut ut laborum elit et. Tempor incididunt enim laboris culpa ad culpa laborum sunt id sint commodo duis.</p> <p>Laboris mollit id pariatur eu mollit mollit irure et elit. Qui culpa anim aliqua dolor sint enim. Consectetur aliqua commodo magna exercitation velit Lorem dolor sunt. Cupidatat labore fugiat nostrud exercitation nostrud laboris dolore. Ad sint est sint nisi consequat quis aute pariatur fugiat elit eiusmod.</p>"
+}

@@ -1,0 +1,32 @@
+{
+    "id": "eu-nulla-sint-002",
+    "slug": "eu-nulla-sint-002",
+    "brand": "EU",
+    "name": "Nulla Sint",
+    "defaultColor": "red",
+    "defaultImage": "red",
+    "variationLibrary": {
+        "colors": { "red": "red", "green": "green", "orange": "orange", "pink": "pink", "black": "black" },
+        "sizes": { "XXL": "XXL", "S": "S" },
+        "images": {
+            "red": "/img/demo-sneaker/red.png",
+            "green": "/img/demo-sneaker/green.png",
+            "orange": "/img/demo-sneaker/red.png",
+            "pink": "/img/demo-sneaker/pink.png",
+            "black": "/img/demo-sneaker/black.png"
+        }
+    },
+    "variations": [
+        { "id": "XXL-red-22", "color": "red", "size": "XXL", "image": "red", "price": 2258000 },
+        { "id": "XXL-green-23", "color": "green", "size": "XXL", "image": "green", "price": 1193000 },
+        { "id": "XXL-orange-24", "color": "orange", "size": "XXL", "image": "orange", "price": 4155000 },
+        { "id": "XXL-pink-25", "color": "pink", "size": "XXL", "image": "pink", "price": 9205000 },
+        { "id": "XXL-black-26", "color": "black", "size": "XXL", "image": "black", "price": 3519000 },
+        { "id": "S-red-27", "color": "red", "size": "S", "image": "red", "price": 3985000 },
+        { "id": "S-green-28", "color": "green", "size": "S", "image": "green", "price": 599000 },
+        { "id": "S-orange-29", "color": "orange", "size": "S", "image": "orange", "price": 8515000 },
+        { "id": "S-pink-30", "color": "pink", "size": "S", "image": "pink", "price": 5121000 },
+        { "id": "S-black-31", "color": "black", "size": "S", "image": "black", "price": 1473000 }
+    ],
+    "description": "<p>Commodo laboris quis incididunt labore quis labore esse exercitation anim ex nulla. Fugiat aliquip dolore irure exercitation et quis eu culpa Lorem pariatur. Ullamco in quis quis proident laboris aliqua pariatur tempor Lorem sunt nostrud ad enim. Excepteur consequat duis non nulla minim ex ullamco ad aute magna adipisicing ea ad. Laborum quis aute dolore culpa deserunt mollit minim tempor veniam sint consequat excepteur ad.</p> <p>Et excepteur duis dolore sint sint ad occaecat incididunt aute. Ipsum ad consectetur ullamco aliqua aliqua eiusmod cupidatat nisi. Esse elit esse deserunt dolore incididunt et cillum minim reprehenderit ea in cupidatat.</p> <p>Sit eiusmod enim eiusmod non. Culpa ipsum sint culpa esse nisi ipsum quis ullamco. Aliquip nostrud sunt occaecat fugiat anim occaecat laboris quis tempor. Elit dolore consequat duis id ea sunt.</p> <p>Tempor sit pariatur aliquip irure aliquip eu cillum. Fugiat laborum sit tempor aute tempor magna ullamco incididunt pariatur excepteur esse nisi cupidatat ut. Pariatur dolore dolore laboris et sunt aute nostrud est amet do eu elit.</p> <p>Labore deserunt amet occaecat eu qui labore. Eu labore non anim esse culpa laborum. Ad veniam Lorem veniam et. Anim ut reprehenderit incididunt incididunt ad in id. Officia proident nostrud aute non fugiat do cillum veniam id ullamco. Ut labore laboris deserunt enim adipisicing in elit nulla. Proident velit irure veniam ut sunt id occaecat enim Lorem.</p> <p>Ea ex in officia consectetur cillum labore sunt occaecat ut. Quis amet occaecat esse cupidatat proident. Aute ut minim aliqua officia qui ea id commodo. Non in officia tempor fugiat. Ullamco culpa nostrud exercitation nisi deserunt. Sunt aliquip ea cillum laborum exercitation.</p> <p>Duis pariatur est voluptate eu Lorem culpa exercitation cupidatat et proident. Enim nostrud magna eu magna aute. Adipisicing adipisicing eu fugiat excepteur ea duis elit excepteur. Aliqua in incididunt mollit reprehenderit aliquip veniam deserunt sint dolor laboris irure aliquip mollit. Eiusmod pariatur eiusmod eiusmod qui minim eiusmod dolore id.</p> <p>Excepteur incididunt Lorem ipsum culpa sint proident officia reprehenderit irure aliqua tempor. Duis minim excepteur nisi ipsum ex culpa. Reprehenderit Lorem dolore consequat Lorem pariatur consequat laborum veniam veniam ullamco mollit. Nisi nulla est ex exercitation tempor voluptate.</p> <p>Labore sunt dolore magna laboris excepteur aliquip esse ut. Incididunt culpa veniam pariatur Lorem eu magna. Tempor exercitation officia excepteur et ullamco cupidatat adipisicing amet aliqua consectetur commodo in ad sint. Pariatur nulla ut sint veniam cillum pariatur ipsum cillum quis cupidatat anim do. Ad proident voluptate pariatur incididunt aliqua Lorem dolor labore sit. Est cupidatat elit exercitation irure velit ad tempor ex elit est fugiat ex ullamco. Voluptate nulla consequat magna sit adipisicing ipsum nisi velit mollit laborum dolor.</p> <p>Nulla ad labore nulla officia anim ea adipisicing cupidatat veniam. Ut sit excepteur ut do reprehenderit voluptate. Reprehenderit fugiat occaecat non enim velit non cupidatat officia amet ex occaecat. Ipsum culpa sunt proident aute tempor magna ad id pariatur ut fugiat esse consectetur. Incididunt non eiusmod elit ipsum ad reprehenderit Lorem. Officia esse eiusmod Lorem sint cillum ut quis velit sunt pariatur aliqua duis.</p>"
+}

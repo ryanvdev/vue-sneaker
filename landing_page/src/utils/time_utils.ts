@@ -1,6 +1,6 @@
 function asyncSleep(millisecond:number):Promise<void> {
-    return new Promise((resolve, reject) => {
-        const timeOutId = setTimeout(() => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
             resolve();
         }, millisecond);
     });

@@ -1,0 +1,60 @@
+{
+    "id": "labore-sunt-qui-magna-158",
+    "slug": "labore-sunt-qui-magna-158",
+    "brand": "LABORE",
+    "name": "Sunt Qui Magna",
+    "defaultColor": "green",
+    "defaultImage": "green",
+    "variationLibrary": {
+        "colors": {
+            "green": "green",
+            "aqua": "aqua",
+            "orange": "orange",
+            "pink": "pink",
+            "blue": "blue",
+            "black": "black"
+        },
+        "sizes": { "XXL": "XXL", "XS": "XS", "M": "M", "L": "L", "XXXL": "XXXL" },
+        "images": {
+            "green": "/img/demo-sneaker/green.png",
+            "aqua": "/img/demo-sneaker/blue.png",
+            "orange": "/img/demo-sneaker/red.png",
+            "pink": "/img/demo-sneaker/pink.png",
+            "blue": "/img/demo-sneaker/blue.png",
+            "black": "/img/demo-sneaker/black.png"
+        }
+    },
+    "variations": [
+        { "id": "XXL-green-2474", "color": "green", "size": "XXL", "image": "green", "price": 9967000 },
+        { "id": "XXL-aqua-2475", "color": "aqua", "size": "XXL", "image": "aqua", "price": 9091000 },
+        { "id": "XXL-orange-2476", "color": "orange", "size": "XXL", "image": "orange", "price": 1890000 },
+        { "id": "XXL-pink-2477", "color": "pink", "size": "XXL", "image": "pink", "price": 5336000 },
+        { "id": "XXL-blue-2478", "color": "blue", "size": "XXL", "image": "blue", "price": 251000 },
+        { "id": "XXL-black-2479", "color": "black", "size": "XXL", "image": "black", "price": 3129000 },
+        { "id": "XS-green-2480", "color": "green", "size": "XS", "image": "green", "price": 2762000 },
+        { "id": "XS-aqua-2481", "color": "aqua", "size": "XS", "image": "aqua", "price": 4301000 },
+        { "id": "XS-orange-2482", "color": "orange", "size": "XS", "image": "orange", "price": 3368000 },
+        { "id": "XS-pink-2483", "color": "pink", "size": "XS", "image": "pink", "price": 8401000 },
+        { "id": "XS-blue-2484", "color": "blue", "size": "XS", "image": "blue", "price": 3422000 },
+        { "id": "XS-black-2485", "color": "black", "size": "XS", "image": "black", "price": 154000 },
+        { "id": "M-green-2486", "color": "green", "size": "M", "image": "green", "price": 1051000 },
+        { "id": "M-aqua-2487", "color": "aqua", "size": "M", "image": "aqua", "price": 9731000 },
+        { "id": "M-orange-2488", "color": "orange", "size": "M", "image": "orange", "price": 8224000 },
+        { "id": "M-pink-2489", "color": "pink", "size": "M", "image": "pink", "price": 3268000 },
+        { "id": "M-blue-2490", "color": "blue", "size": "M", "image": "blue", "price": 8736000 },
+        { "id": "M-black-2491", "color": "black", "size": "M", "image": "black", "price": 4939000 },
+        { "id": "L-green-2492", "color": "green", "size": "L", "image": "green", "price": 8057000 },
+        { "id": "L-aqua-2493", "color": "aqua", "size": "L", "image": "aqua", "price": 357000 },
+        { "id": "L-orange-2494", "color": "orange", "size": "L", "image": "orange", "price": 5966000 },
+        { "id": "L-pink-2495", "color": "pink", "size": "L", "image": "pink", "price": 8687000 },
+        { "id": "L-blue-2496", "color": "blue", "size": "L", "image": "blue", "price": 691000 },
+        { "id": "L-black-2497", "color": "black", "size": "L", "image": "black", "price": 301000 },
+        { "id": "XXXL-green-2498", "color": "green", "size": "XXXL", "image": "green", "price": 4847000 },
+        { "id": "XXXL-aqua-2499", "color": "aqua", "size": "XXXL", "image": "aqua", "price": 7494000 },
+        { "id": "XXXL-orange-2500", "color": "orange", "size": "XXXL", "image": "orange", "price": 2209000 },
+        { "id": "XXXL-pink-2501", "color": "pink", "size": "XXXL", "image": "pink", "price": 8798000 },
+        { "id": "XXXL-blue-2502", "color": "blue", "size": "XXXL", "image": "blue", "price": 9929000 },
+        { "id": "XXXL-black-2503", "color": "black", "size": "XXXL", "image": "black", "price": 5621000 }
+    ],
+    "description": "<p>Adipisicing eu irure cillum adipisicing sit incididunt fugiat ullamco sunt veniam in pariatur non ex. Fugiat ex irure irure duis aliquip cupidatat mollit duis nostrud irure qui laborum quis. Quis nisi anim consectetur eu sint est cupidatat ipsum laborum aute non.</p> <p>Irure elit nostrud aliquip do dolor tempor ad. Ea sunt aliqua officia consectetur. Duis commodo dolore dolore do nulla culpa fugiat commodo mollit. Duis occaecat reprehenderit dolore ad cupidatat aute aliqua quis eu commodo nisi exercitation dolore. Labore adipisicing ut nulla est commodo irure amet incididunt. Eiusmod laborum reprehenderit ea do elit mollit cillum magna dolore. Velit id non ullamco dolore amet voluptate voluptate nulla veniam aute.</p> <p>Pariatur amet consequat pariatur eiusmod nisi consectetur ut culpa et cupidatat id occaecat. Est pariatur culpa nostrud dolor dolor adipisicing velit non mollit dolore aute. Voluptate ea magna amet aliquip aute eiusmod sint. Amet pariatur laboris proident ullamco nisi labore velit nulla eiusmod in laboris laboris. Officia labore aliqua aliqua enim.</p> <p>Adipisicing cupidatat irure duis Lorem aliqua do incididunt dolor cillum amet et ex proident. Aute labore do esse ut dolore non adipisicing. Occaecat ea Lorem qui nisi consequat do. Id et do in magna cupidatat veniam deserunt. Laboris excepteur ex eiusmod ut fugiat nostrud pariatur est velit tempor voluptate cillum elit. Est Lorem proident qui dolor dolore pariatur proident laborum pariatur et ea veniam. Consequat excepteur ut quis sint.</p> <p>Amet aliquip laboris sint enim labore aliquip. Irure magna amet consequat sunt aute anim eiusmod eiusmod elit ut occaecat. Non eu ex exercitation consequat id est esse consectetur consectetur fugiat Lorem nisi. Irure consequat pariatur est exercitation aute voluptate magna est elit duis ullamco. Laborum incididunt duis do nostrud proident est voluptate duis quis consequat nulla aliquip eu. Et reprehenderit exercitation commodo nulla enim consequat.</p> <p>Elit ex anim esse irure incididunt ut incididunt tempor cillum esse. Reprehenderit occaecat aliquip do aliqua quis sint reprehenderit tempor officia reprehenderit in. Nulla eiusmod in eu consectetur fugiat ullamco amet magna excepteur nisi minim est est Lorem. Eu velit laborum occaecat aute.</p> <p>Ea in incididunt ut non dolor fugiat aute officia. Non elit labore esse qui minim veniam excepteur tempor ut incididunt. Mollit pariatur cillum velit pariatur aliqua dolor occaecat laborum occaecat est adipisicing excepteur qui sunt.</p> <p>Elit dolor non laborum non ut officia commodo. Tempor ex dolor velit nulla sunt nisi. Nisi cupidatat sunt minim sit culpa consequat consequat do incididunt qui elit. In dolor nostrud ullamco veniam amet nulla esse exercitation nisi qui esse non labore et. Dolore reprehenderit ex ex voluptate qui laboris aliquip incididunt dolore elit id. Qui ea laboris nulla ad veniam culpa.</p> <p>Aliquip veniam reprehenderit do voluptate. Aliqua fugiat mollit veniam laborum duis ad incididunt aliquip in aliquip velit aliqua incididunt. Veniam nostrud sunt magna voluptate. Qui qui dolore cupidatat dolore laborum aliquip enim voluptate qui. Deserunt mollit aliqua in sint eiusmod incididunt reprehenderit magna eiusmod excepteur cupidatat. Pariatur eu nostrud mollit commodo commodo officia sit ex Lorem sint duis ullamco.</p> <p>Ullamco dolore in do cupidatat id eu mollit magna labore cupidatat sunt. Amet aute aliqua labore velit incididunt deserunt. Voluptate duis quis anim culpa pariatur. Voluptate dolor est esse nulla ipsum ad deserunt Lorem exercitation culpa quis.</p> <p>Officia cillum fugiat nulla anim enim reprehenderit tempor elit. In non voluptate consequat eiusmod duis consectetur incididunt consectetur ex eiusmod ex non quis. Consectetur id tempor fugiat occaecat eu Lorem adipisicing anim exercitation.</p> <p>Sit aute labore reprehenderit ea aute nulla et eiusmod mollit laborum esse veniam. Pariatur ut Lorem nulla laborum reprehenderit nostrud excepteur nulla ipsum. Cupidatat culpa quis nisi eiusmod.</p> <p>Aute dolor nostrud ex amet aliqua cillum non magna exercitation elit ut occaecat. Amet Lorem pariatur eu cupidatat sint quis qui ut. Officia occaecat id ad non cillum adipisicing magna aute.</p>"
+}

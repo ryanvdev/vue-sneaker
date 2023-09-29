@@ -1,0 +1,42 @@
+{
+    "id": "dolor-magna-magna-175",
+    "slug": "dolor-magna-magna-175",
+    "brand": "DOLOR",
+    "name": "Magna Magna",
+    "defaultColor": "aqua",
+    "defaultImage": "aqua",
+    "variationLibrary": {
+        "colors": {
+            "aqua": "aqua",
+            "orange": "orange",
+            "blue": "blue",
+            "black": "black",
+            "red": "red",
+            "green": "green"
+        },
+        "sizes": { "S": "S", "XXXL": "XXXL" },
+        "images": {
+            "aqua": "/img/demo-sneaker/blue.png",
+            "orange": "/img/demo-sneaker/red.png",
+            "blue": "/img/demo-sneaker/blue.png",
+            "black": "/img/demo-sneaker/black.png",
+            "red": "/img/demo-sneaker/red.png",
+            "green": "/img/demo-sneaker/green.png"
+        }
+    },
+    "variations": [
+        { "id": "S-aqua-2868", "color": "aqua", "size": "S", "image": "aqua", "price": 1236000 },
+        { "id": "S-orange-2869", "color": "orange", "size": "S", "image": "orange", "price": 6546000 },
+        { "id": "S-blue-2870", "color": "blue", "size": "S", "image": "blue", "price": 7948000 },
+        { "id": "S-black-2871", "color": "black", "size": "S", "image": "black", "price": 4604000 },
+        { "id": "S-red-2872", "color": "red", "size": "S", "image": "red", "price": 8507000 },
+        { "id": "S-green-2873", "color": "green", "size": "S", "image": "green", "price": 5233000 },
+        { "id": "XXXL-aqua-2874", "color": "aqua", "size": "XXXL", "image": "aqua", "price": 5301000 },
+        { "id": "XXXL-orange-2875", "color": "orange", "size": "XXXL", "image": "orange", "price": 4323000 },
+        { "id": "XXXL-blue-2876", "color": "blue", "size": "XXXL", "image": "blue", "price": 1452000 },
+        { "id": "XXXL-black-2877", "color": "black", "size": "XXXL", "image": "black", "price": 1688000 },
+        { "id": "XXXL-red-2878", "color": "red", "size": "XXXL", "image": "red", "price": 5332000 },
+        { "id": "XXXL-green-2879", "color": "green", "size": "XXXL", "image": "green", "price": 8095000 }
+    ],
+    "description": "<p>Elit tempor labore nulla magna labore in amet. Deserunt non anim ea excepteur aliqua eiusmod. Sit commodo do culpa ex Lorem tempor fugiat nulla mollit nulla sit deserunt excepteur eiusmod. Quis eiusmod quis consectetur incididunt sint laborum sunt exercitation. Labore quis cupidatat cupidatat id cupidatat id cillum duis adipisicing in pariatur officia enim. Nulla non nostrud esse aute irure aliqua est officia esse occaecat occaecat. Pariatur qui id est laboris veniam deserunt ut nisi ea quis.</p> <p>Proident ipsum magna ullamco mollit. Aute pariatur incididunt magna eu laboris consequat dolore dolore duis laboris enim deserunt occaecat elit. Amet proident do excepteur nostrud ut adipisicing adipisicing mollit nisi. Labore sit deserunt esse enim incididunt Lorem proident laborum officia nostrud nisi. Non labore occaecat est commodo minim deserunt voluptate. Aute id excepteur cillum ad consequat exercitation sint do enim amet ipsum aliqua. Magna nulla irure deserunt anim laboris irure voluptate.</p> <p>Consectetur et et consequat non. Reprehenderit culpa culpa eiusmod minim deserunt. Anim adipisicing quis eiusmod veniam irure enim mollit laborum ad nostrud dolor id. Consectetur Lorem nostrud aute laborum cillum magna qui excepteur excepteur mollit.</p> <p>Consectetur do laborum Lorem ipsum in ullamco. Amet eu sit voluptate cillum consectetur esse culpa. Sint non dolor officia consequat eiusmod nulla id ex.</p> <p>Ad reprehenderit sit Lorem ut. Incididunt commodo nostrud ut cillum reprehenderit tempor ad laboris irure nostrud ipsum. Ex proident officia aliqua nulla qui nostrud veniam anim ex officia duis culpa.</p> <p>Tempor officia ea anim esse elit excepteur reprehenderit. Deserunt do quis commodo mollit esse do est ea. Cupidatat deserunt cillum laboris laborum voluptate reprehenderit Lorem tempor sint est Lorem ea ex sint. Incididunt nulla tempor nostrud ipsum in dolor ullamco. Sunt aliquip magna culpa sint reprehenderit fugiat eiusmod. Culpa labore sint in deserunt.</p> <p>Quis magna aliquip eu proident enim non reprehenderit eiusmod consequat exercitation irure quis. Aute aliquip nostrud commodo nulla anim exercitation Lorem. Fugiat ex veniam laboris dolore duis. Sint commodo ullamco exercitation ipsum non deserunt dolor sint in fugiat officia exercitation adipisicing aute.</p> <p>Aliqua eiusmod dolore reprehenderit adipisicing nostrud veniam. Sit consequat proident amet velit adipisicing. Duis irure eiusmod eiusmod qui elit officia consequat.</p> <p>Deserunt sunt reprehenderit enim laborum ex sunt enim eiusmod proident sint fugiat irure elit deserunt. Sunt elit eiusmod cupidatat quis sint enim ullamco deserunt nulla Lorem enim et quis veniam. Magna elit dolor incididunt laborum fugiat enim tempor reprehenderit esse. Ea in aliqua non mollit exercitation anim sit aliquip do voluptate commodo sit magna. Voluptate sit duis Lorem commodo minim sint et ut commodo proident.</p> <p>Labore ullamco esse minim enim aliquip aliquip id duis ipsum incididunt aliqua eiusmod cillum. Esse fugiat do nisi deserunt quis proident ad sit fugiat dolore. Ullamco nisi cillum qui ipsum Lorem aliquip qui reprehenderit ullamco commodo laboris ex.</p> <p>Incididunt quis consectetur id culpa sit in amet aute elit minim culpa pariatur reprehenderit. Sint occaecat eu commodo ex labore consectetur officia culpa commodo Lorem consequat dolore enim. Mollit mollit labore nostrud velit tempor ad.</p> <p>Est id ipsum minim consectetur id excepteur aliquip duis nostrud excepteur eu pariatur. Consectetur aliqua voluptate occaecat ut deserunt voluptate culpa eu eiusmod veniam elit. Sunt nostrud magna culpa pariatur nisi adipisicing incididunt velit. Est dolor reprehenderit minim amet. Mollit non amet dolor minim nulla aliqua est magna minim amet.</p> <p>Dolor exercitation proident esse sunt ex nulla laborum pariatur nisi irure. Dolor quis deserunt exercitation eu elit adipisicing velit deserunt. Exercitation ipsum pariatur labore nostrud laborum pariatur do occaecat nisi elit dolore sint. Sit ullamco ut eiusmod excepteur qui aliquip.</p> <p>Laborum duis aliquip deserunt quis mollit. Culpa id mollit minim deserunt laboris incididunt nostrud et amet. Ad dolor id eu et ipsum mollit pariatur aute id. Magna elit fugiat non laborum do ea nisi ea anim adipisicing est ullamco voluptate sint. Culpa mollit consequat cupidatat dolore sit minim non eiusmod quis minim.</p> <p>Amet velit adipisicing dolore officia incididunt eiusmod consequat est id id elit nulla non excepteur. Proident dolor consequat excepteur aliqua adipisicing. Dolore mollit amet aliqua nisi laboris est voluptate nisi culpa. Quis enim non quis consequat mollit eiusmod nulla sint ipsum eu duis officia exercitation culpa. Aliquip Lorem ullamco aute ex duis sint elit dolor commodo sint. Velit est nulla velit exercitation veniam nulla ea sit. Labore sint proident ipsum ea sunt nulla id.</p> <p>Tempor laborum proident ipsum ullamco nulla. Est eiusmod amet est dolore qui. Exercitation nisi velit aliquip occaecat pariatur ullamco ex ea in et eu labore id enim. Velit irure ad eiusmod elit dolor commodo irure nulla eiusmod consectetur.</p> <p>Commodo pariatur Lorem quis non ullamco eu deserunt. Aliqua incididunt dolor irure esse officia consequat esse velit cupidatat ad id aliqua et. Quis irure voluptate id ullamco enim sit in exercitation.</p> <p>Exercitation qui id velit sit mollit aute aliquip ex sunt. Do amet reprehenderit enim veniam consequat est est consectetur labore duis occaecat culpa enim. Do ex ipsum elit proident exercitation anim. Aliquip Lorem minim commodo dolor magna sunt tempor dolor nostrud laboris et. Quis deserunt et mollit exercitation sunt sunt laboris exercitation ea incididunt est. Qui magna veniam aute velit. Consequat nostrud in nulla culpa.</p>"
+}

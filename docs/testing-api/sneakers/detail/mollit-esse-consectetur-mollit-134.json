@@ -1,0 +1,54 @@
+{
+    "id": "mollit-esse-consectetur-mollit-134",
+    "slug": "mollit-esse-consectetur-mollit-134",
+    "brand": "MOLLIT",
+    "name": "Esse Consectetur Mollit",
+    "defaultColor": "green",
+    "defaultImage": "green",
+    "variationLibrary": {
+        "colors": {
+            "green": "green",
+            "blue": "blue",
+            "aqua": "aqua",
+            "black": "black",
+            "orange": "orange",
+            "pink": "pink"
+        },
+        "sizes": { "M": "M", "XL": "XL", "L": "L", "XXL": "XXL" },
+        "images": {
+            "green": "/img/demo-sneaker/green.png",
+            "blue": "/img/demo-sneaker/blue.png",
+            "aqua": "/img/demo-sneaker/blue.png",
+            "black": "/img/demo-sneaker/black.png",
+            "orange": "/img/demo-sneaker/red.png",
+            "pink": "/img/demo-sneaker/pink.png"
+        }
+    },
+    "variations": [
+        { "id": "M-green-2160", "color": "green", "size": "M", "image": "green", "price": 8405000 },
+        { "id": "M-blue-2161", "color": "blue", "size": "M", "image": "blue", "price": 6479000 },
+        { "id": "M-aqua-2162", "color": "aqua", "size": "M", "image": "aqua", "price": 3284000 },
+        { "id": "M-black-2163", "color": "black", "size": "M", "image": "black", "price": 6391000 },
+        { "id": "M-orange-2164", "color": "orange", "size": "M", "image": "orange", "price": 6343000 },
+        { "id": "M-pink-2165", "color": "pink", "size": "M", "image": "pink", "price": 8659000 },
+        { "id": "XL-green-2166", "color": "green", "size": "XL", "image": "green", "price": 3191000 },
+        { "id": "XL-blue-2167", "color": "blue", "size": "XL", "image": "blue", "price": 2416000 },
+        { "id": "XL-aqua-2168", "color": "aqua", "size": "XL", "image": "aqua", "price": 2157000 },
+        { "id": "XL-black-2169", "color": "black", "size": "XL", "image": "black", "price": 6989000 },
+        { "id": "XL-orange-2170", "color": "orange", "size": "XL", "image": "orange", "price": 9600000 },
+        { "id": "XL-pink-2171", "color": "pink", "size": "XL", "image": "pink", "price": 7532000 },
+        { "id": "L-green-2172", "color": "green", "size": "L", "image": "green", "price": 1217000 },
+        { "id": "L-blue-2173", "color": "blue", "size": "L", "image": "blue", "price": 7556000 },
+        { "id": "L-aqua-2174", "color": "aqua", "size": "L", "image": "aqua", "price": 300000 },
+        { "id": "L-black-2175", "color": "black", "size": "L", "image": "black", "price": 5862000 },
+        { "id": "L-orange-2176", "color": "orange", "size": "L", "image": "orange", "price": 3514000 },
+        { "id": "L-pink-2177", "color": "pink", "size": "L", "image": "pink", "price": 9521000 },
+        { "id": "XXL-green-2178", "color": "green", "size": "XXL", "image": "green", "price": 5368000 },
+        { "id": "XXL-blue-2179", "color": "blue", "size": "XXL", "image": "blue", "price": 6505000 },
+        { "id": "XXL-aqua-2180", "color": "aqua", "size": "XXL", "image": "aqua", "price": 613000 },
+        { "id": "XXL-black-2181", "color": "black", "size": "XXL", "image": "black", "price": 7499000 },
+        { "id": "XXL-orange-2182", "color": "orange", "size": "XXL", "image": "orange", "price": 7796000 },
+        { "id": "XXL-pink-2183", "color": "pink", "size": "XXL", "image": "pink", "price": 95000 }
+    ],
+    "description": "<p>Magna velit laborum non consectetur dolor est commodo proident magna proident duis pariatur laborum. Nisi consequat excepteur proident esse officia nulla. Veniam labore irure et sint sint. Ex eu ea excepteur laborum enim incididunt ea ipsum do magna qui ea et aute. Ut dolor nostrud Lorem et aliqua dolore exercitation reprehenderit. Enim elit minim occaecat pariatur occaecat tempor. Fugiat excepteur occaecat Lorem quis voluptate ea excepteur incididunt.</p> <p>Nisi ipsum voluptate sit sunt excepteur non aliquip ipsum consectetur mollit voluptate. Sunt ipsum proident eiusmod excepteur ex dolore est aliqua do enim. Non cupidatat aute voluptate duis minim ea tempor velit esse aute irure. Consectetur in aliqua nostrud cupidatat ullamco. Dolore cupidatat pariatur adipisicing labore qui ipsum.</p> <p>Labore occaecat laboris sunt commodo nostrud veniam. Consectetur incididunt enim elit velit officia pariatur nisi enim eiusmod. Laborum in commodo nulla deserunt aliquip dolore do non fugiat deserunt. Ullamco laboris est Lorem sint quis esse minim occaecat labore adipisicing consectetur occaecat excepteur. Ex incididunt sunt tempor esse cillum non consequat adipisicing reprehenderit proident.</p> <p>Duis amet veniam aliqua deserunt quis excepteur consectetur ipsum. Non deserunt do commodo amet mollit culpa aliqua laborum proident minim ex reprehenderit incididunt. Est excepteur incididunt aliqua officia ipsum qui. Sunt eu et occaecat irure laborum esse eu consequat sunt.</p> <p>Elit magna aute ipsum commodo esse laborum est exercitation duis nisi et elit qui nisi. Ex duis ex eiusmod ea laboris commodo culpa occaecat culpa deserunt nostrud. Ea aliquip esse adipisicing dolore. In consectetur ad qui pariatur minim commodo et. Esse laboris nostrud ea Lorem laboris adipisicing est deserunt labore dolor sit duis in do. Officia elit nisi consectetur duis pariatur cillum aute fugiat est commodo duis consequat.</p> <p>Fugiat ullamco adipisicing irure ipsum adipisicing duis ipsum aliquip tempor. In occaecat do cupidatat tempor. Irure culpa sint cupidatat sit.</p> <p>Aute quis et minim ex Lorem irure ea excepteur officia. Cillum qui esse tempor aliquip ex amet eu enim. Labore laborum esse consequat dolor cupidatat incididunt fugiat cupidatat eu labore veniam est dolore.</p> <p>Ea aliqua duis adipisicing nostrud commodo enim. Eu nostrud tempor do irure dolore officia. Minim sint nisi deserunt cupidatat aute ea consequat aute Lorem in tempor irure. Sint deserunt deserunt ut eiusmod eiusmod aliquip fugiat duis excepteur. Ut adipisicing ad aliquip esse consequat amet id do.</p> <p>Mollit ullamco sit et non aliqua amet tempor occaecat veniam exercitation eu dolor laborum amet. Adipisicing aliquip ut cupidatat pariatur minim dolore dolore aliqua. Excepteur tempor nisi sint sunt consequat eiusmod exercitation aliquip dolor nisi.</p> <p>Et nostrud exercitation aliqua tempor non amet ea est aute commodo adipisicing cillum pariatur. Culpa reprehenderit nisi deserunt qui voluptate dolore non elit elit. Exercitation non reprehenderit amet tempor fugiat anim ea reprehenderit proident sint ullamco do. Mollit sit cupidatat qui fugiat occaecat consequat ad aute est incididunt ad exercitation id. Occaecat reprehenderit dolore et aute. Irure adipisicing ut ex labore eu velit adipisicing est consequat.</p> <p>Eu ullamco aliquip id veniam. Enim consequat excepteur sint pariatur veniam nulla duis minim adipisicing mollit. Qui voluptate non non ipsum aute sit excepteur eiusmod nulla cillum velit. Nostrud enim do ad qui ipsum. Eu ipsum consectetur mollit sint sint dolor aute irure duis dolore anim aute veniam.</p> <p>Ad cillum consectetur sit laboris non veniam dolore consequat elit veniam anim culpa officia. Consequat magna veniam veniam culpa officia reprehenderit. Deserunt consequat ad amet ipsum dolor nisi. Consectetur labore velit nisi irure ut non officia. Ipsum nostrud qui fugiat anim sit occaecat eu non duis ut aliqua. Aliqua amet reprehenderit exercitation culpa culpa deserunt incididunt tempor aute excepteur in enim.</p>"
+}

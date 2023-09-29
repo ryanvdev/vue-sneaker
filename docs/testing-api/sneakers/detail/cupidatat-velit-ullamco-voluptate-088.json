@@ -1,0 +1,46 @@
+{
+    "id": "cupidatat-velit-ullamco-voluptate-088",
+    "slug": "cupidatat-velit-ullamco-voluptate-088",
+    "brand": "CUPIDATAT",
+    "name": "Velit Ullamco Voluptate",
+    "defaultColor": "red",
+    "defaultImage": "red",
+    "variationLibrary": {
+        "colors": {
+            "red": "red",
+            "orange": "orange",
+            "green": "green",
+            "black": "black",
+            "blue": "blue",
+            "pink": "pink",
+            "aqua": "aqua"
+        },
+        "sizes": { "XL": "XL", "M": "M" },
+        "images": {
+            "red": "/img/demo-sneaker/red.png",
+            "orange": "/img/demo-sneaker/red.png",
+            "green": "/img/demo-sneaker/green.png",
+            "black": "/img/demo-sneaker/black.png",
+            "blue": "/img/demo-sneaker/blue.png",
+            "pink": "/img/demo-sneaker/pink.png",
+            "aqua": "/img/demo-sneaker/blue.png"
+        }
+    },
+    "variations": [
+        { "id": "XL-red-1411", "color": "red", "size": "XL", "image": "red", "price": 4480000 },
+        { "id": "XL-orange-1412", "color": "orange", "size": "XL", "image": "orange", "price": 9447000 },
+        { "id": "XL-green-1413", "color": "green", "size": "XL", "image": "green", "price": 4999000 },
+        { "id": "XL-black-1414", "color": "black", "size": "XL", "image": "black", "price": 8451000 },
+        { "id": "XL-blue-1415", "color": "blue", "size": "XL", "image": "blue", "price": 598000 },
+        { "id": "XL-pink-1416", "color": "pink", "size": "XL", "image": "pink", "price": 8145000 },
+        { "id": "XL-aqua-1417", "color": "aqua", "size": "XL", "image": "aqua", "price": 4168000 },
+        { "id": "M-red-1418", "color": "red", "size": "M", "image": "red", "price": 1316000 },
+        { "id": "M-orange-1419", "color": "orange", "size": "M", "image": "orange", "price": 2176000 },
+        { "id": "M-green-1420", "color": "green", "size": "M", "image": "green", "price": 2882000 },
+        { "id": "M-black-1421", "color": "black", "size": "M", "image": "black", "price": 1852000 },
+        { "id": "M-blue-1422", "color": "blue", "size": "M", "image": "blue", "price": 8792000 },
+        { "id": "M-pink-1423", "color": "pink", "size": "M", "image": "pink", "price": 8432000 },
+        { "id": "M-aqua-1424", "color": "aqua", "size": "M", "image": "aqua", "price": 3800000 }
+    ],
+    "description": "<p>Adipisicing pariatur consectetur cillum est cillum duis dolore duis. In nisi cillum aliquip culpa. Aliqua labore Lorem qui eu non dolor anim aliquip esse nisi ea elit officia qui. Fugiat nostrud proident minim aliqua laboris exercitation sint consectetur et. Cupidatat anim tempor eu ullamco laborum culpa nulla esse.</p> <p>Do laborum est ea consequat aliqua laboris et voluptate anim cupidatat eiusmod magna. Laboris dolore pariatur laborum Lorem sunt aliqua dolore. Ullamco reprehenderit minim ea culpa velit in duis nulla fugiat aute. Ex irure in aliquip fugiat occaecat velit nisi Lorem anim ipsum cillum do sint sunt. Ullamco cupidatat eiusmod occaecat voluptate in dolor non labore veniam Lorem quis. Id eu voluptate eu sunt cillum ea mollit sit et id nulla.</p> <p>Tempor exercitation Lorem qui commodo quis occaecat ut. Aute deserunt et eiusmod velit. Deserunt et duis cupidatat duis esse aute velit incididunt.</p> <p>Lorem reprehenderit incididunt ullamco irure officia nulla culpa amet aliqua dolor. Laborum tempor labore commodo nulla nisi aute anim incididunt. Dolor laboris deserunt elit aliquip est dolore aliquip aliquip Lorem.</p> <p>Nostrud minim mollit dolore veniam id quis enim eu nulla exercitation eiusmod aliqua. Quis aliquip labore officia duis non ad quis amet. Exercitation dolor ut consectetur pariatur mollit eu proident Lorem fugiat reprehenderit eiusmod. Ea eiusmod incididunt ea Lorem fugiat eiusmod esse. Consequat eu proident non magna elit occaecat velit. Voluptate occaecat ipsum aliqua ex.</p> <p>Magna ex ad non aliquip est dolore. Veniam ut nisi mollit do ipsum excepteur amet officia ea labore aliqua. Aliquip dolor officia aliqua enim consectetur occaecat culpa aute voluptate magna nulla incididunt. Do occaecat magna aute culpa ex reprehenderit nostrud consequat eu cillum ut elit consequat amet. Voluptate non esse amet culpa. Ex cillum reprehenderit magna est. Laboris adipisicing magna magna in sint nostrud amet anim sint reprehenderit mollit mollit do minim.</p> <p>Sunt consequat voluptate nulla aliqua amet nostrud Lorem velit. Labore consequat do ipsum aliqua deserunt sunt officia est cupidatat Lorem. Dolor esse enim cupidatat exercitation voluptate. Excepteur ut nulla aliquip nisi proident.</p> <p>Nulla nostrud dolor consectetur eu ad laborum ad elit aute tempor. Velit tempor reprehenderit commodo laboris. Mollit esse commodo laborum ad adipisicing. Anim dolor est aliqua non quis laborum in laborum. Nostrud laborum dolore Lorem amet ut quis laboris. Ullamco officia eiusmod velit non aliquip eu ex id deserunt.</p> <p>Ullamco qui pariatur qui occaecat fugiat velit fugiat sunt consectetur ad aute aute occaecat. Lorem in aliqua aliquip proident sit voluptate magna quis occaecat occaecat magna in consectetur magna. Ipsum veniam velit qui dolore tempor Lorem pariatur cillum ut incididunt. Commodo cupidatat sit consequat adipisicing dolor enim.</p> <p>Sint irure culpa incididunt aliquip. Et minim in nulla qui fugiat culpa ipsum. Ea eu amet occaecat adipisicing. Sunt aliquip nostrud ea sunt ea dolor amet anim qui.</p> <p>Commodo pariatur mollit do fugiat culpa tempor tempor aliqua duis. Nostrud aute id ipsum magna minim veniam mollit aliqua culpa. Laboris exercitation fugiat est voluptate ex sint anim exercitation. Incididunt fugiat commodo occaecat minim ullamco quis tempor veniam eiusmod ullamco enim ut.</p> <p>Officia esse ea cupidatat consequat occaecat enim et. Cupidatat anim ullamco cupidatat culpa ipsum aliquip excepteur sint enim. Amet anim pariatur et aute Lorem ea ea consequat occaecat culpa. Sit minim tempor reprehenderit elit. Adipisicing eu aute eiusmod cillum commodo exercitation reprehenderit esse reprehenderit.</p>"
+}

@@ -1,0 +1,32 @@
+{
+    "id": "enim-sint-ipsum-velit-219",
+    "slug": "enim-sint-ipsum-velit-219",
+    "brand": "ENIM",
+    "name": "Sint Ipsum Velit",
+    "defaultColor": "pink",
+    "defaultImage": "pink",
+    "variationLibrary": {
+        "colors": { "pink": "pink", "blue": "blue", "orange": "orange", "black": "black", "red": "red" },
+        "sizes": { "M": "M", "XXL": "XXL" },
+        "images": {
+            "pink": "/img/demo-sneaker/pink.png",
+            "blue": "/img/demo-sneaker/blue.png",
+            "orange": "/img/demo-sneaker/red.png",
+            "black": "/img/demo-sneaker/black.png",
+            "red": "/img/demo-sneaker/red.png"
+        }
+    },
+    "variations": [
+        { "id": "M-pink-3592", "color": "pink", "size": "M", "image": "pink", "price": 6913000 },
+        { "id": "M-blue-3593", "color": "blue", "size": "M", "image": "blue", "price": 4029000 },
+        { "id": "M-orange-3594", "color": "orange", "size": "M", "image": "orange", "price": 8665000 },
+        { "id": "M-black-3595", "color": "black", "size": "M", "image": "black", "price": 8556000 },
+        { "id": "M-red-3596", "color": "red", "size": "M", "image": "red", "price": 1118000 },
+        { "id": "XXL-pink-3597", "color": "pink", "size": "XXL", "image": "pink", "price": 9170000 },
+        { "id": "XXL-blue-3598", "color": "blue", "size": "XXL", "image": "blue", "price": 9291000 },
+        { "id": "XXL-orange-3599", "color": "orange", "size": "XXL", "image": "orange", "price": 6671000 },
+        { "id": "XXL-black-3600", "color": "black", "size": "XXL", "image": "black", "price": 3266000 },
+        { "id": "XXL-red-3601", "color": "red", "size": "XXL", "image": "red", "price": 6293000 }
+    ],
+    "description": "<p>Dolore ad sint aute nisi enim fugiat ullamco sit mollit pariatur consequat. Adipisicing laboris ea nisi ad enim. Ex tempor aute deserunt cillum. Nostrud aute laboris irure mollit laboris laborum nisi adipisicing ex eiusmod. Aliquip deserunt duis quis cillum tempor. Eu dolor esse adipisicing laboris consectetur anim.</p> <p>Amet do sint qui dolore id magna elit. Ullamco aute exercitation exercitation dolore. Ad cillum esse incididunt eiusmod do nisi et amet.</p> <p>Eu culpa esse nostrud veniam velit quis minim commodo ad voluptate do nisi nostrud cillum. Labore deserunt eiusmod aliqua ipsum proident officia culpa nulla nulla irure veniam sunt id deserunt. Nisi reprehenderit non labore in ullamco culpa exercitation commodo commodo ad laboris sint sit. Ullamco eiusmod esse officia velit aliquip voluptate minim cillum ea eu quis officia deserunt.</p> <p>Officia velit reprehenderit quis qui consectetur dolor. Dolor enim in ipsum velit adipisicing sint labore eiusmod cupidatat aliqua. Eu commodo nisi amet id quis cillum et sint sint consectetur amet fugiat. Nisi est mollit exercitation anim. Cillum do adipisicing nostrud est laboris esse laborum. Incididunt aliqua eu ea nulla esse id anim magna consequat veniam nostrud tempor sunt elit.</p> <p>Do enim magna enim amet occaecat incididunt deserunt ea ipsum deserunt velit veniam. Veniam laboris fugiat dolor enim aliquip sit laborum non. Duis voluptate cupidatat qui dolor ea nisi et velit. Aliquip dolore laboris eu ex ipsum ea. Adipisicing officia tempor Lorem non proident elit adipisicing sunt culpa. Tempor sint sit non excepteur pariatur labore et sint ut esse ea qui esse ex. Consequat aute sit mollit ut non aliquip veniam ea proident ad cillum excepteur.</p> <p>Duis adipisicing aliquip adipisicing dolor adipisicing velit aliquip ad excepteur. Proident velit consequat esse dolore nulla ad do pariatur in exercitation eu. Mollit nisi dolore in veniam tempor. Sint est elit velit non exercitation in velit. Id proident officia reprehenderit id nostrud. Labore cillum proident proident amet fugiat excepteur et nulla nulla laborum ut.</p> <p>Nostrud est non aliqua culpa tempor laboris ut ipsum cillum velit. Dolore cupidatat esse cillum quis voluptate esse ad magna. Fugiat voluptate velit adipisicing exercitation ut nulla aliqua aliqua adipisicing. Dolore sint ad ipsum ipsum. Esse Lorem anim laborum labore dolor velit nisi aute exercitation. Id id dolore est ex fugiat aliquip ipsum veniam incididunt incididunt id eu anim. Reprehenderit do ut aliqua Lorem est irure sit.</p> <p>Do nulla mollit non sunt anim consequat labore eiusmod ea commodo enim. Proident aliqua ea Lorem aute enim ipsum. Tempor sit consectetur sunt cupidatat.</p> <p>Ad anim dolore incididunt sint elit velit cupidatat est magna. Magna exercitation eiusmod reprehenderit irure. Consequat magna aliquip proident nisi pariatur ex irure officia magna.</p> <p>Cupidatat laboris dolore magna mollit pariatur ex irure esse officia eu velit esse do incididunt. Enim excepteur ullamco Lorem elit ad. Excepteur aliquip eiusmod est ut aute aute labore. Ipsum laboris nulla sit ad voluptate deserunt labore. Voluptate occaecat irure laboris et do amet pariatur. Anim consequat aute veniam enim.</p>"
+}

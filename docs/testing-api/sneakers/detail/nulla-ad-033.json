@@ -1,0 +1,42 @@
+{
+    "id": "nulla-ad-033",
+    "slug": "nulla-ad-033",
+    "brand": "NULLA",
+    "name": "Ad",
+    "defaultColor": "red",
+    "defaultImage": "red",
+    "variationLibrary": {
+        "colors": {
+            "red": "red",
+            "aqua": "aqua",
+            "blue": "blue",
+            "green": "green",
+            "pink": "pink",
+            "orange": "orange"
+        },
+        "sizes": { "M": "M", "XS": "XS" },
+        "images": {
+            "red": "/img/demo-sneaker/red.png",
+            "aqua": "/img/demo-sneaker/blue.png",
+            "blue": "/img/demo-sneaker/blue.png",
+            "green": "/img/demo-sneaker/green.png",
+            "pink": "/img/demo-sneaker/pink.png",
+            "orange": "/img/demo-sneaker/red.png"
+        }
+    },
+    "variations": [
+        { "id": "M-red-625", "color": "red", "size": "M", "image": "red", "price": 518000 },
+        { "id": "M-aqua-626", "color": "aqua", "size": "M", "image": "aqua", "price": 8855000 },
+        { "id": "M-blue-627", "color": "blue", "size": "M", "image": "blue", "price": 4400000 },
+        { "id": "M-green-628", "color": "green", "size": "M", "image": "green", "price": 4206000 },
+        { "id": "M-pink-629", "color": "pink", "size": "M", "image": "pink", "price": 5985000 },
+        { "id": "M-orange-630", "color": "orange", "size": "M", "image": "orange", "price": 3228000 },
+        { "id": "XS-red-631", "color": "red", "size": "XS", "image": "red", "price": 3868000 },
+        { "id": "XS-aqua-632", "color": "aqua", "size": "XS", "image": "aqua", "price": 3017000 },
+        { "id": "XS-blue-633", "color": "blue", "size": "XS", "image": "blue", "price": 4404000 },
+        { "id": "XS-green-634", "color": "green", "size": "XS", "image": "green", "price": 8696000 },
+        { "id": "XS-pink-635", "color": "pink", "size": "XS", "image": "pink", "price": 7160000 },
+        { "id": "XS-orange-636", "color": "orange", "size": "XS", "image": "orange", "price": 2027000 }
+    ],
+    "description": "<p>Fugiat veniam officia aliquip ut laboris ut. Non ipsum ut ex voluptate amet minim pariatur dolor sunt est commodo occaecat anim do. Id deserunt ea fugiat adipisicing duis sunt ipsum commodo velit ullamco cillum labore cupidatat quis. Adipisicing in reprehenderit ea anim duis anim ex id esse sit et.</p> <p>Minim irure nisi velit reprehenderit qui dolore cillum velit sunt in esse. Incididunt minim laborum dolore labore ex culpa ipsum occaecat non tempor reprehenderit culpa commodo. Aute laborum aliquip quis fugiat proident culpa excepteur quis dolor enim. Sit nulla labore velit qui cillum. Velit nisi aute enim nulla dolor minim officia magna nostrud. Cillum mollit non consectetur irure cupidatat.</p> <p>Qui pariatur nostrud in nisi sunt aliqua commodo. Tempor sunt magna id laboris ex ut ex ea commodo. Exercitation adipisicing voluptate elit commodo incididunt anim adipisicing sit nisi proident irure. Veniam mollit cupidatat ea reprehenderit aliquip sint est esse eu nostrud nulla magna eiusmod veniam. Cillum ea in enim ex. Eiusmod laborum dolor proident tempor sunt culpa veniam esse.</p> <p>Aliquip tempor excepteur tempor duis magna. Labore nostrud exercitation id qui ullamco veniam mollit esse elit mollit mollit minim. Mollit eiusmod tempor proident aute veniam. Elit minim ullamco elit non proident mollit nostrud quis. Occaecat consequat ipsum aute enim duis deserunt cupidatat ullamco occaecat pariatur qui. Esse elit esse consectetur magna est reprehenderit esse elit minim consequat ea do qui proident. In nulla nisi adipisicing elit nulla pariatur officia tempor ut pariatur duis consequat adipisicing.</p> <p>Incididunt fugiat magna et eiusmod deserunt enim mollit. Consequat ad irure pariatur et officia ullamco tempor incididunt quis nisi amet. Excepteur proident eu pariatur commodo et nisi ullamco occaecat cupidatat. Exercitation veniam qui aute nulla magna do sint qui consectetur enim nostrud occaecat fugiat irure.</p> <p>Minim amet id labore laboris incididunt et deserunt ullamco laborum laboris pariatur ad cillum. Labore laboris ad et magna sunt amet dolore veniam enim. Culpa adipisicing proident laborum ut Lorem ad sit ex qui cupidatat veniam aliqua dolor sint. Tempor incididunt occaecat nostrud sunt excepteur nostrud in id sint excepteur sunt nostrud. Pariatur ex pariatur sunt eiusmod ea id anim ad tempor mollit nulla.</p> <p>Excepteur ex officia reprehenderit proident. Proident aliqua exercitation mollit consectetur esse qui deserunt eu. Pariatur mollit mollit proident et. Irure laborum enim officia minim et. Enim non esse enim velit adipisicing culpa nostrud ad. Amet eiusmod tempor fugiat adipisicing laborum officia. Veniam aliquip pariatur voluptate voluptate esse commodo esse occaecat excepteur ex ex officia.</p> <p>Aliquip laborum commodo id proident consequat nisi aute exercitation fugiat cillum Lorem. Sunt dolore fugiat magna deserunt exercitation eiusmod enim nisi culpa magna excepteur sit sit. Ex incididunt consectetur qui officia tempor amet exercitation. Nulla incididunt elit enim pariatur elit cillum quis nulla incididunt consectetur duis elit labore. Elit exercitation sit ex culpa qui magna sint irure officia laboris labore proident esse anim. Qui do reprehenderit mollit incididunt mollit aliquip cillum esse Lorem cupidatat.</p> <p>Incididunt nisi consectetur commodo ullamco eu cillum officia do occaecat tempor. Qui sunt Lorem non incididunt tempor qui dolore consectetur voluptate qui aliquip eiusmod labore ad. Irure excepteur labore duis amet nulla nostrud laborum nostrud exercitation cupidatat adipisicing cupidatat. Nulla exercitation elit laboris elit et non ea aliquip velit officia.</p> <p>Laboris esse amet sint enim deserunt in do qui deserunt ex. Eiusmod fugiat sunt sint enim dolore quis. Ullamco id deserunt quis consequat aute. Mollit non cupidatat excepteur et cillum magna cillum sit irure mollit fugiat excepteur deserunt aute. Sit aliquip magna reprehenderit fugiat anim duis nisi non pariatur eiusmod reprehenderit eiusmod qui. In cillum exercitation sint cillum qui qui qui adipisicing quis magna aute.</p>"
+}

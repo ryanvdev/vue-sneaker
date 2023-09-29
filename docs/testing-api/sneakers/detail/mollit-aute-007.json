@@ -1,0 +1,54 @@
+{
+    "id": "mollit-aute-007",
+    "slug": "mollit-aute-007",
+    "brand": "MOLLIT",
+    "name": "Aute",
+    "defaultColor": "green",
+    "defaultImage": "green",
+    "variationLibrary": {
+        "colors": {
+            "green": "green",
+            "black": "black",
+            "red": "red",
+            "orange": "orange",
+            "pink": "pink",
+            "blue": "blue"
+        },
+        "sizes": { "XL": "XL", "L": "L", "XXL": "XXL", "XXXL": "XXXL" },
+        "images": {
+            "green": "/img/demo-sneaker/green.png",
+            "black": "/img/demo-sneaker/black.png",
+            "red": "/img/demo-sneaker/red.png",
+            "orange": "/img/demo-sneaker/red.png",
+            "pink": "/img/demo-sneaker/pink.png",
+            "blue": "/img/demo-sneaker/blue.png"
+        }
+    },
+    "variations": [
+        { "id": "XL-green-142", "color": "green", "size": "XL", "image": "green", "price": 5458000 },
+        { "id": "XL-black-143", "color": "black", "size": "XL", "image": "black", "price": 5753000 },
+        { "id": "XL-red-144", "color": "red", "size": "XL", "image": "red", "price": 8888000 },
+        { "id": "XL-orange-145", "color": "orange", "size": "XL", "image": "orange", "price": 5595000 },
+        { "id": "XL-pink-146", "color": "pink", "size": "XL", "image": "pink", "price": 6318000 },
+        { "id": "XL-blue-147", "color": "blue", "size": "XL", "image": "blue", "price": 6262000 },
+        { "id": "L-green-148", "color": "green", "size": "L", "image": "green", "price": 1806000 },
+        { "id": "L-black-149", "color": "black", "size": "L", "image": "black", "price": 6790000 },
+        { "id": "L-red-150", "color": "red", "size": "L", "image": "red", "price": 2512000 },
+        { "id": "L-orange-151", "color": "orange", "size": "L", "image": "orange", "price": 4011000 },
+        { "id": "L-pink-152", "color": "pink", "size": "L", "image": "pink", "price": 1041000 },
+        { "id": "L-blue-153", "color": "blue", "size": "L", "image": "blue", "price": 4546000 },
+        { "id": "XXL-green-154", "color": "green", "size": "XXL", "image": "green", "price": 5482000 },
+        { "id": "XXL-black-155", "color": "black", "size": "XXL", "image": "black", "price": 9115000 },
+        { "id": "XXL-red-156", "color": "red", "size": "XXL", "image": "red", "price": 5666000 },
+        { "id": "XXL-orange-157", "color": "orange", "size": "XXL", "image": "orange", "price": 4908000 },
+        { "id": "XXL-pink-158", "color": "pink", "size": "XXL", "image": "pink", "price": 2338000 },
+        { "id": "XXL-blue-159", "color": "blue", "size": "XXL", "image": "blue", "price": 5716000 },
+        { "id": "XXXL-green-160", "color": "green", "size": "XXXL", "image": "green", "price": 9669000 },
+        { "id": "XXXL-black-161", "color": "black", "size": "XXXL", "image": "black", "price": 87000 },
+        { "id": "XXXL-red-162", "color": "red", "size": "XXXL", "image": "red", "price": 3687000 },
+        { "id": "XXXL-orange-163", "color": "orange", "size": "XXXL", "image": "orange", "price": 9443000 },
+        { "id": "XXXL-pink-164", "color": "pink", "size": "XXXL", "image": "pink", "price": 4011000 },
+        { "id": "XXXL-blue-165", "color": "blue", "size": "XXXL", "image": "blue", "price": 5282000 }
+    ],
+    "description": "<p>Fugiat ad incididunt irure fugiat esse irure ex sunt amet. Culpa in id incididunt enim cillum excepteur nisi aliqua voluptate veniam in cupidatat dolor dolore. Ea eu commodo do commodo minim enim fugiat laborum cillum. Aliquip eu adipisicing ullamco id occaecat sint excepteur eiusmod enim.</p> <p>Dolor exercitation et ad consequat non ipsum sit velit officia. Minim qui laboris cillum sint consequat ipsum laborum ipsum aute tempor minim aliqua mollit non. Pariatur occaecat exercitation velit magna sit voluptate excepteur duis nulla. Occaecat laborum quis non voluptate ex proident ut.</p> <p>Reprehenderit cupidatat sint cillum exercitation ad officia nostrud fugiat. Adipisicing enim adipisicing excepteur labore reprehenderit est et consequat sit. Minim dolore voluptate voluptate minim cupidatat incididunt enim adipisicing occaecat veniam.</p> <p>Fugiat magna enim adipisicing ullamco laborum officia consequat ipsum. Tempor magna cupidatat consequat anim esse esse laborum occaecat aliquip laborum. Culpa ullamco aliquip aliquip tempor. Ut officia dolor ut irure consectetur. Ea velit in occaecat aute qui sunt ad adipisicing do ex exercitation cillum. Non labore ea Lorem minim. Ullamco dolor irure ad consectetur qui officia.</p> <p>Ipsum et occaecat amet id. Do esse irure incididunt excepteur occaecat cillum est. Velit cupidatat cupidatat proident in. Est sint tempor ex id. Elit enim aliqua laboris elit esse laborum exercitation occaecat.</p> <p>Aliquip qui adipisicing ut aute non esse veniam voluptate ex proident duis dolor. Sunt ad deserunt est proident nulla eu. Elit aliqua magna ipsum cillum id amet amet ex cupidatat occaecat. Fugiat in ipsum occaecat occaecat aliquip laborum aliqua aliqua duis. Consequat consectetur ut laboris do nostrud culpa minim in quis exercitation voluptate irure voluptate. Sint ex laborum laboris in adipisicing enim sit cillum anim magna minim enim. Irure ut id aute incididunt pariatur occaecat.</p> <p>Consectetur eiusmod commodo ex cupidatat tempor aliqua nostrud sint. Consectetur eu proident veniam quis enim elit cillum esse velit sunt sit ad in. Magna dolor cupidatat quis cupidatat. Amet id elit ex dolor fugiat. Enim ipsum reprehenderit enim veniam ea dolore magna elit ad amet qui quis ullamco. Eiusmod labore est reprehenderit excepteur.</p> <p>Pariatur exercitation sint occaecat culpa mollit officia voluptate eiusmod exercitation elit commodo laboris quis. Exercitation culpa exercitation proident nostrud tempor amet dolore amet ut sint voluptate. Elit velit eu id reprehenderit nostrud deserunt ex aliquip reprehenderit aliquip quis adipisicing ad adipisicing. Elit magna id aliquip ea ea dolor elit commodo. Veniam laborum deserunt veniam consectetur. Pariatur Lorem ex sint quis aliquip eiusmod nulla ullamco et duis culpa veniam irure. Cillum quis do sint aliqua non consectetur reprehenderit culpa fugiat officia.</p> <p>Amet duis pariatur officia dolor tempor tempor. Ea laborum dolore dolor ex sit ad nisi deserunt nisi pariatur ipsum amet culpa reprehenderit. Minim consectetur minim eiusmod tempor incididunt nisi tempor velit. Consequat et nulla eiusmod laborum et anim id non ea ut id dolore. Cupidatat ex adipisicing aute in Lorem aute sint id esse labore.</p> <p>Laboris consequat esse ipsum tempor. Eu consectetur esse nisi in deserunt culpa sunt nostrud. Dolor sunt incididunt commodo tempor occaecat nulla Lorem ullamco veniam. Excepteur aute officia commodo sit. Duis sunt duis proident nulla voluptate deserunt duis elit.</p> <p>Nisi reprehenderit esse mollit nostrud. Pariatur eiusmod laboris cillum amet. Elit et mollit in mollit aliquip proident ullamco id Lorem voluptate laborum est.</p>"
+}

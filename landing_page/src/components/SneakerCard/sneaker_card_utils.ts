@@ -39,13 +39,6 @@ export const formatPrice = (price: number) => {
 
 // ============= Sneaker Event =============
 
-// The event data that the customer has not selected the size and color on the SneakerCard 
-// or on the Sneaker detail page
-const defaultSneakerEvent: SneakerEvent = {
-    index: -1,
-    variationId: undefined,
-    variation: undefined,
-}
 /**
  * 
  * @param color The colorId that the customer selected. The colorId must get from variations is passed from props of SneakerCard
