@@ -20,7 +20,7 @@ watchEffect(async () => {
     <v-container>
         <v-row class="flex-sm-nowrap-reverse flex-sm-nowrap-reverse">
             <v-col
-                align-self="end"
+                align-self="center"
                 cols="12"
                 md="6" lg="6" xl="6" xxl="6" xxxl="7"
             >
@@ -44,7 +44,7 @@ watchEffect(async () => {
                 v-for="item of homeStore.suggestions"
                 :key="item.id" 
                 cols="12"
-                md="4" lg="3" xl="2" xxl="2"
+                sm="6" md="4" lg="3" xl="2" xxl="2"
                 class="d-flex justify-center"
             >
                 <sneaker-card v-bind="item" />

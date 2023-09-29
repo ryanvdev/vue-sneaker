@@ -47,7 +47,7 @@ onUpdated(() => {
 <template>
     <div :class="`${style['sneaker-card-size']} ${props.class}`">
         <div :class="style['label']" v-if="sizes.length<=5">SIZE</div>
-        <v-sheet max-width="260px" color="transparent">
+        <v-sheet max-width="100%" color="transparent">
             <v-slide-group center-active show-arrows>
                 <v-slide-group-item
                     v-for="([sizeKey, sizeValue, available]) in sizes" 

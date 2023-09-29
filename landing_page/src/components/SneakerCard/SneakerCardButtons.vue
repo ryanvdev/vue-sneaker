@@ -51,7 +51,7 @@ const props = defineProps<SneakerCardButtonsProps>();
     
     > button{
         display: flex;
-        width: 105px;
+        width: calc(50% - 30px);
         height: 35px;
         justify-content: center;
         align-items: center;

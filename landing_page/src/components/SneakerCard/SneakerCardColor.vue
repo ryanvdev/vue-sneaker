@@ -55,7 +55,7 @@ onUpdated(() => {
 <template>
     <div :class="`${style['sneaker-card-color']} ${props.class}`">
         <div :class="style['label']" v-if="colors.length <= 5">COLOR</div>
-        <v-sheet max-width="260px" color="transparent">
+        <v-sheet max-width="100%" color="transparent">
             <v-slide-group :class="style['slide-group']" center-active :show-arrows="colors.length>5">
                 <v-slide-group-item 
                     v-for="([colorKey, colorValue, available]) in colors" 

@@ -8,6 +8,7 @@ import SneakerCardInfo from './SneakerCardInfo.vue';
 import { injectionKey, localLogger, computeAvailableVariationLibrary, getSelectedVariation } from './sneaker_card_utils';
 import { createSneakerUrl } from '@/utils/sneaker_util';
 import { useCartStore } from '@/stores/cart_store';
+import { className } from '@/utils/template_utils';
 
 interface Props extends Sneaker{
 
@@ -29,6 +30,7 @@ const color = ref<string | undefined>();
 
 // similar to the color ref
 const size = ref<string | undefined>();
+
 
 /**
  * The variations remaining when the customer has selected color or size on the SneakerCard
@@ -154,7 +156,9 @@ onUpdated(() => {
 </script>
 
 <template>
-    <div :class="`${style['sneaker-card']} stack`">
+    <div 
+        :class="className('stack', style['sneaker-card'])"
+    >
         <div>
             <div :class="style['ellipse']" :style="{
                 backgroundColor: ellipseColor
@@ -167,9 +171,7 @@ onUpdated(() => {
             </div>
         </div>
         <div>
-            <div :class="style['sneaker-image']">
-                <img :src="image" :alt="name" />
-            </div>
+            <div :class="style['sneaker-image']" :style="{'--local-image': `url('${image}')`}"></div>
         </div>
         <div>
             <SneakerCardInfo :class="style['sneaker-info']" />
@@ -179,30 +181,32 @@ onUpdated(() => {
 
 
 <style module="style" lang="scss">
-$width: 270px;
-$height: 432px;
 $info-height: 254px;
 $info-blur-height: $info-height - 145px;
 
-.brand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sneaker-card{
+    --local-width: 270px;
+}
 
+.brand {
+    display: block;
     width: 100%;
     height: 100%;
 
     >p {
+        position: relative;
+        top: 8%;
+        left: 0%;
         transition: all 0.3s;
 
-        rotate: 45deg;
+        rotate: -33deg;
         
-        color: rgba(80, 85, 90, 0.6);
+        color: rgba(80, 85, 90, 0.5);
         font-family: Roboto Slab;
-        font-size: 90px;
+        font-size: 50px;
         font-style: normal;
         font-weight: 700;
-        line-height: normal;
+        mix-blend-mode: multiply;
     }
 }
 
@@ -231,20 +235,21 @@ $info-blur-height: $info-height - 145px;
     transition: all 0.3s;
     z-index: 4;
 
-    top: 40px;
+    top: 20%;
 
-    width: 270px;
-    height: 270px;
+    width: 80%;
+    aspect-ratio: 1;
 
     margin-left: auto;
     margin-right: auto;
 
     rotate: -20deg;
 
-    >img {
-        max-width: 100%;
-        max-height: 100%;
-    }
+    background-image: var(--local-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
 }
 
 .sneaker-info {
@@ -267,8 +272,8 @@ $info-blur-height: $info-height - 145px;
     display: block;
     overflow: hidden;
 
-    width: 270px;
-    height: 432px;
+    width: var(--local-width);
+    aspect-ratio: 0.6;
 
     border-radius: 10px;
 
@@ -279,10 +284,21 @@ $info-blur-height: $info-height - 145px;
     }
 }
 
-.sneaker-card:hover {
+
+:global(.device-sm) .sneaker-card,
+:global(.device-xs) .sneaker-card {
+    --local-width: 100%;
+}
+
+
+
+:global(.is-mobile) .sneaker-card,
+:global(.is-desktop) .sneaker-card:hover {
     .brand>p {
+        top: 5px;
+        left: 10px;
         rotate: 0deg;
-        font-size: 70px;
+        font-size: 40px;
     }
 
     .ellipse {
@@ -294,10 +310,9 @@ $info-blur-height: $info-height - 145px;
     }
 
     .sneaker-image {
-        top: -5px;
+        top: 0%;
 
-        width: 210px;
-        height: 210px;
+        width: 80%;
 
         rotate: 0deg;
     }
