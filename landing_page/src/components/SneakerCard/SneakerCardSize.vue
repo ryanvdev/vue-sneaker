@@ -46,7 +46,7 @@ onUpdated(() => {
 
 <template>
     <div :class="`${style['sneaker-card-size']} ${props.class}`">
-        <label v-if="sizes.length<=5">SIZE</label>
+        <div :class="style['label']" v-if="sizes.length<=5">SIZE</div>
         <v-sheet max-width="260px" color="transparent">
             <v-slide-group center-active show-arrows>
                 <v-slide-group-item
@@ -80,7 +80,7 @@ $size: 30px;
 
     width: 100%;
 
-    >label {
+    > .label {
         color: rgb(var(--v-theme-tertiary));
         font-family: Roboto Slab;
         font-size: 14px;

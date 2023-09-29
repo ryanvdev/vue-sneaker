@@ -26,7 +26,7 @@ const props = defineProps<Props>();
                     <HeaderButtons :class="style['buttons']"/>
                 </div>
                 <div>
-                    <SearchField :class="style['search-field']"/>
+                    <SearchField id="search" name="search" :class="style['search-field']"/>
                 </div>
             </div>
         </v-container>

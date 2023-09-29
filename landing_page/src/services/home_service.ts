@@ -17,10 +17,9 @@ export const fetchSuggestions = async ():Promise<Sneaker[]> => {
     // If hasn't
     const res = await homeFetcher.get(url);
 
-    const data = (res.data as Sneaker[]).slice(0, 20);
+    const data = (res.data as Sneaker[]).slice(20, 40);
+
+    // Save data to cache
     memoCache.set(cacheKey, data);
-
-    console.log(data.length)
-
     return data;
 }

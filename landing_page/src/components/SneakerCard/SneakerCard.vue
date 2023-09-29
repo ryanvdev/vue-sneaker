@@ -1,9 +1,13 @@
 <script setup lang="ts" >
 import type {Sneaker, SneakerVariation, SneakerVariationLibrary} from '@/types/sneaker';
-import { provide, onUpdated, defineProps, computed, ref, watch } from 'vue';
+import { provide, onUpdated, defineProps, computed, ref } from 'vue';
+import { toast } from 'vue3-toastify';
+import { useRouter } from 'vue-router';
+
 import SneakerCardInfo from './SneakerCardInfo.vue';
 import { injectionKey, localLogger, computeAvailableVariationLibrary, getSelectedVariation } from './sneaker_card_utils';
 import { createSneakerUrl } from '@/utils/sneaker_util';
+import { useCartStore } from '@/stores/cart_store';
 
 interface Props extends Sneaker{
 
@@ -12,6 +16,9 @@ interface Props extends Sneaker{
 defineOptions({
     inheritAttrs: false,
 });
+
+const router = useRouter();
+const cartStore = useCartStore();
 
 const props = defineProps<Props>();
 
@@ -99,18 +106,33 @@ const btnBuyIsReady = computed<boolean>(() => {
     return false;
 });
 
-const handleBuyNowClick = () => {
-    // const selectedVariation = getSelectedVariation(color.value, size.value, props.variations);
-    // if(!selectedVariation) 
+const addToCart = async ():Promise<boolean> => {
+    const selectedVariation = getSelectedVariation(color.value, size.value, props.variations);
+
+    // If the customer has not selected the color and size yet. 
+    if(!selectedVariation) {
+        toast.warning('You need to select the color and size first !');
+        return false;
+    }
+
+    // If ok //
+    await cartStore.add(props.id, selectedVariation.id);
+    const selectedColorName = props.variationLibrary.colors[selectedVariation.color];
+    const selectedSizeName = props.variationLibrary.sizes[selectedVariation.size];
+    toast.success(`Added ${selectedColorName} ${props.name} size ${selectedSizeName} to cart`);
+
+    return true;
 }
 
-const handleAddToCartClick = () => {
-    
+const handleBuyNowClick = async () => {   
+    const success = await addToCart();
+    if(!success) return;
+    router.push('/cart');
 }
 
-watch(color, (value) => {
-    localLogger.info('color', value);
-}, { immediate: true });
+const handleAddToCartClick = async () => {
+    await addToCart();
+}
 
 provide(injectionKey, {
     name,

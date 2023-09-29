@@ -19,7 +19,9 @@
     "sass": "^1.68.0",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5",
-    "vuetify": "^3.3.17"
+    "vue3-toastify": "^0.1.13",
+    "vuetify": "^3.3.17",
+    "zod": "^3.22.2"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.199",

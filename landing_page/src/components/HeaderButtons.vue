@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
-import { VBadge, VIcon, VBtn } from 'vuetify/components';
+import { defineProps } from 'vue';
+import CartButton from './CartButton.vue';
 
 interface Props {
     class?: string;
@@ -11,11 +11,7 @@ const props = defineProps<Props>();
 
 <template>
     <div :class="`${style['header-buttons']} ${props.class}`">
-        <VBtn height="60px" stacked variant="text" to="/cart" color="rgb(var(--v-theme-tertiary))">
-            <VBadge :content="80" color="rgb(var(--v-theme-tertiary))">
-                <VIcon icon="mdi-cart" size="40px" color="rgb(var(--v-theme-tertiary))"/>
-            </VBadge>
-        </VBtn>
+        <cart-button/>
     </div>
 </template>
 

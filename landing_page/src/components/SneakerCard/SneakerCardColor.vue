@@ -54,7 +54,7 @@ onUpdated(() => {
 
 <template>
     <div :class="`${style['sneaker-card-color']} ${props.class}`">
-        <label v-if="colors.length <= 5">COLOR</label>
+        <div :class="style['label']" v-if="colors.length <= 5">COLOR</div>
         <v-sheet max-width="260px" color="transparent">
             <v-slide-group :class="style['slide-group']" center-active :show-arrows="colors.length>5">
                 <v-slide-group-item 
@@ -85,7 +85,7 @@ $size: 30px;
     align-items: center;
     gap: $gap;
 
-    >label {
+    >.label {
         color: rgb(var(--v-theme-tertiary));
         font-family: Roboto Slab;
         font-size: 14px;

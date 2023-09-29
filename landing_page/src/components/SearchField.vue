@@ -4,6 +4,8 @@ import { RouterLink } from 'vue-router';
 
 
 interface Props {
+    id?:string;
+    name?:string;
     class?:string;
     placeholder?: string;
 }
@@ -38,6 +40,8 @@ const suggestions = computed<[string, string, string][]>(() => {
                 <input 
                     type="text" 
                     autocomplete="off" 
+                    :id="props.id"
+                    :name="props.name"
                     :placeholder="props.placeholder"
                     v-model="inputValue"
                     @focus="isFocused=true"
