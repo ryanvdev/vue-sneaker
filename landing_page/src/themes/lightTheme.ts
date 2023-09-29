@@ -9,9 +9,11 @@ const lightTheme:ThemeDefinition = {
         secondary: '#F9F3CC',
         background: '#D2E0FB',
         tertiary: '#D7E5CA',
+        
         price: '#FFAD93',
         'card-background': '#829796',
 
+        'text-heading': '#8EACCD',
     },
 }
 

@@ -45,3 +45,11 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
+
+// @override vuetify text-h-*
+@for $i from 1 through 6{
+  .text-h#{$i}{
+    color: rgb(var(--v-theme-text-heading));
+  }
+}
+
