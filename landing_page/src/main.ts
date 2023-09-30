@@ -1,6 +1,8 @@
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 import Vue3Toastify, {type ToastContainerOptions} from 'vue3-toastify';
+import {VueQueryPlugin} from '@tanstack/vue-query';
+
 import { vuetify } from './plugins/vuetify';
 import { Ripple } from 'vuetify/directives';
 import { router } from './utils/router';
@@ -17,6 +19,7 @@ const pinia = createPinia();
 const app = createApp(App);
 
 // middlewares
+app.use(vuetify);
 app.use(Vue3Toastify, {
     autoClose: 5000,
     position: 'top-right',
@@ -30,9 +33,10 @@ app.use(Vue3Toastify, {
     newestOnTop: false,
 
 } as ToastContainerOptions );
-app.use(vuetify);
-app.use(router);
+
 app.use(pinia);
+app.use(VueQueryPlugin);
+app.use(router);
 
 // directives =======
 

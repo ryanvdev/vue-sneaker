@@ -40,7 +40,7 @@ const props = defineProps<SneakerCardButtonsProps>();
 <style module="style" lang="scss">
 .sneaker-card-buttons{
     --primary-color: rgba(var(--v-theme-secondary), 0.8);
-    --secondary-color: rgb(var(--v-theme-card-background));
+    --secondary-color: rgb(var(--v-theme-on-secondary));
     --on-hover-color: rgba(var(--v-theme-secondary), 1);
 
 

@@ -1,6 +1,7 @@
-import { defineStore } from 'pinia';
-import * as HomeService from '@/services/home_service';
 import type {Sneaker} from '@/types/sneaker';
+
+import { defineStore } from 'pinia';
+import HomeService from '@/services/home_service';
 
 export interface HomeStoreState{
     suggestions: Sneaker[],

@@ -1,21 +1,38 @@
 <script setup lang="ts">
-import { VBtn, VBadge, VIcon } from 'vuetify/components';
+import {defineProps} from 'vue';
+import {VBadge, VIcon} from 'vuetify/components';
+
 import { useCartStore } from '@/stores/cart_store';
+
+interface Props{
+    class?:string;
+}
+
+const props = defineProps<Props>();
 const cartStore = useCartStore();
 </script>
 
 
 <template>
-    <v-btn height="60px" stacked variant="text" to="/cart" color="rgb(var(--v-theme-tertiary))">
-        <v-badge 
-            :content="cartStore.items.length" 
-            color="rgb(var(--v-theme-tertiary))"
-        >
-            <v-icon 
-                icon="mdi-cart" 
-                size="40px" 
-                color="rgb(var(--v-theme-tertiary))"
-            />
-        </v-badge>
-    </v-btn>
+    <v-tooltip text="Cart" location="bottom center">
+        <template v-slot:activator="{props: tooltipProps}">
+            <v-btn 
+                v-bind="tooltipProps"
+                height="60px" width="80px"
+                stacked 
+                rounded="lg" variant="text"
+                to="/cart"
+                :class="props.class"
+            >
+                <v-badge 
+                    :content="cartStore.items.length" 
+                >
+                    <v-icon 
+                        icon="mdi-cart" 
+                        size="40px" 
+                    />
+                </v-badge>
+            </v-btn>
+        </template>
+    </v-tooltip>
 </template>

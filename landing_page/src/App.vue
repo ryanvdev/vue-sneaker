@@ -31,7 +31,7 @@ const mobileDesktopClassName = computed<string>(() => {
 
     <v-app 
         :class="className(mobileDesktopClassName, `device-${deviceSize}`, 'w-screen')"
-        theme="dark"
+        :theme="rootStore.theme"
     >
         <RouterView />
     </v-app>

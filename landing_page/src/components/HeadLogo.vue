@@ -8,6 +8,7 @@ interface Props {
     logo?: string;
     webName?: string;
     href?: string;
+    displayWebName?:boolean;
 }
 
 
@@ -30,7 +31,11 @@ const props = withDefaults(defineProps<Props>(), {
     >
         <div :class="style['wrapper']">
             <img :src="props.logo" :alt="props.webName"/>
-            <span v-show="props.webName.length>0">{{ props.webName }}</span>
+            <span 
+                v-show="Boolean(props.displayWebName)"
+            >
+                {{ props.webName }}
+            </span>
         </div>
     </v-btn>
 </template>

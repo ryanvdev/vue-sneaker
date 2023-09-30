@@ -1,6 +1,6 @@
 import { ThemeDefinition } from "vuetify";
 
-const lightTheme:ThemeDefinition = {
+export const blueTheme:ThemeDefinition = {
     dark: false,
     colors: {
         dark: '#333333',
@@ -18,5 +18,3 @@ const lightTheme:ThemeDefinition = {
         'text-heading': '#8EACCD',
     },
 }
-
-export default lightTheme;

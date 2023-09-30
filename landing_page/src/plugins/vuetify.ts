@@ -1,25 +1,41 @@
 import { createVuetify } from 'vuetify';
-import {fa} from 'vuetify/iconsets/fa';
-import {mdi} from 'vuetify/iconsets/mdi';
-import lightTheme from '@/themes/lightTheme';
+import {
+    VCol, VRow, VContainer, VBtn, VSlideGroup, VSlideGroupItem,
+    VTooltip, VBadge, VIcon, VMenu, VList, VListItem
+} from 'vuetify/components';
+
+import { fa } from 'vuetify/iconsets/fa';
+import { mdi } from 'vuetify/iconsets/mdi';
 
 import 'vuetify/styles';
 import '@fortawesome/fontawesome-free/css/all.css';
-// import '@mdi/font/css/materialdesignicons.css';
+import { themes } from '@/themes';
 
 export const vuetify = createVuetify({
-  ssr: true,
-  icons: {
-    defaultSet: 'mdi',
-    sets: {
-      fa,
-      mdi,
+    ssr: true,
+    components: {
+        VCol,
+        VRow,
+        VContainer,
+        VBtn,
+        VSlideGroup,
+        VSlideGroupItem,
+        VTooltip,
+        VBadge,
+        VIcon,
+        VMenu,
+        VList,
+        VListItem
     },
-  },
-  theme: {
-    defaultTheme: 'lightTheme',
-    themes: {
-      lightTheme
+    icons: {
+        defaultSet: 'mdi',
+        sets: {
+            fa,
+            mdi,
+        },
+    },
+    theme: {
+        defaultTheme: 'dark',
+        themes: themes
     }
-  }
 });

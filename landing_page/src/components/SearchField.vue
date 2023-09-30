@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { className } from '@/utils/template_utils';
 import { ref, computed, defineProps, withDefaults } from 'vue';
 import { RouterLink } from 'vue-router';
 
@@ -8,14 +9,25 @@ interface Props {
     name?:string;
     class?:string;
     placeholder?: string;
+
+    isFocused?:boolean;
 }
 
 const props = withDefaults(defineProps<Props>(), {
     placeholder: 'Type something...',
 });
 
+const emit = defineEmits<{
+    'update:isFocused': [e:boolean]
+}>();
+
 const inputValue = ref<string>('');
-const isFocused = ref<boolean>(false);
+const isFocused = computed<boolean>({
+    get: () => props.isFocused,
+    set: (v) => {
+        emit('update:isFocused', v);
+    }
+});
 
 
 // TODO: 
@@ -33,9 +45,14 @@ const suggestions = computed<[string, string, string][]>(() => {
 <template>
     <div :class="`${style['search-field']} ${style[isFocused?'focus':'blur']} ${props.class||''}`">
         <div :class="style['cover-wrapper']">
-            <div :class="style['cover']" v-show="isFocused" @mousedown="isFocused = false"></div>
+            <div 
+                :class="style['cover']"
+                v-show="isFocused"
+                @mousedown="isFocused=false"
+            >
+            </div>
         </div>
-        <div :class="style['wrapper']">
+        <div :class="className(style['wrapper'], isFocused?'elevation-2':'elevation-0')">
             <div :class="style['input-wrapper']">
                 <input 
                     type="text" 

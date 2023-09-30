@@ -1,81 +1,61 @@
 <script setup lang="ts">
-import { defineProps } from 'vue';
-import {VContainer} from 'vuetify/components';
+import { defineProps, ref } from 'vue';
 
 import { className } from '@/utils/template_utils';
+import { useAppBarStore } from '@/stores/app_bar_store';
+import { useRootStore } from '@/stores/root_store';
 
 import HeadLogo from './HeadLogo.vue';
-import HeaderButtons from './HeaderButtons.vue';
 import SearchField from './SearchField.vue';
+import CartButton from '@/components/CartButton.vue';
+import ThemeButton from './ThemeButton.vue';
 
 interface Props {
     class?:string;
 }
 
+const rootStore = useRootStore();
+const appBarStore = useAppBarStore();
 const props = defineProps<Props>();
 
+
+const searchIsFocusing = ref<boolean>(false);
 
 </script>
 
 <template>
-    <header :class="className(style['header'],  props.class)">
-        <v-container :class="style['wrapper']">
-            <div :class="`stack ${style['stack']}`">
-                <div>
-                    <HeadLogo :class="style['logo']"/>
-                    <HeaderButtons :class="style['buttons']"/>
-                </div>
-                <div>
-                    <SearchField id="search" name="search" :class="style['search-field']"/>
-                </div>
-            </div>
+    <header :class="className('w-100', 'bg-surface', props.class)">
+        <v-container no-gutters>
+            <v-row no-gutters>
+                <v-col cols="12" lg="9" xl="8">
+                    <v-row no-gutters>
+                        <v-col v-show="!searchIsFocusing||(!rootStore.isMobile)" cols="3" sm="2" md="2" lg="4" xl="5">
+                            <head-logo :display-web-name="!rootStore.isMobile"/>
+                        </v-col>
+                        <v-col>
+                            <search-field 
+                                id="search"
+                                name="search"
+                                class="w-100"
+                                v-model:is-focused="searchIsFocusing"
+                            />
+                        </v-col>
+                    </v-row>
+                </v-col>
+                <v-col v-if="!rootStore.isMobile" class="d-flex justify-end" style="gap: 10px;">
+                    <cart-button/>
+                    <theme-button/>
+                </v-col>
+            </v-row>
+            <v-row v-if="!rootStore.isMobile" no-gutters>
+                <v-col cols="12">
+                    <v-slide-group show-arrows class="mt-3">
+                        <v-slide-group-item v-for="item of appBarStore.brandsQuery.data">
+                            <v-btn elevation="0" color="light" rounded="md" class="ma-2">{{ item }}</v-btn>
+                        </v-slide-group-item>
+                    </v-slide-group>
+                </v-col>
+            </v-row>
         </v-container>
     </header>
 </template>
-
-<style module="style" lang="scss">
-.header{
-    display: block;
-
-    width: 100vw;
-    height: 80px;
-
-    background-color: rgb(var(--v-theme-primary));
-}
-
-.wrapper{
-    height: 100%;
-    padding-top: 10px;
-}
-
-.stack {
-    display: block;
-    width: 100%;
-    height: 60px;
-}
-
-
-.logo{
-    position: relative;
-    z-index: 1;
-    float: left;
-}
-
-.search-field{
-    position: relative;
-    z-index: 1;
-
-    width: 550px;
-
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.buttons{
-    position: relative;
-    z-index: 1;
-    float: right;
-}
-
-
-</style>

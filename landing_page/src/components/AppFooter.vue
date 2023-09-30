@@ -77,7 +77,7 @@ const socialMediaIcons: {
 
 
 <template>
-    <v-footer class="d-block w-screen">
+    <v-footer class="d-block w-100">
         <v-container>
             <v-row>
                 <v-col cols="12" xxl="6" xl="5" lg="5" md="12">

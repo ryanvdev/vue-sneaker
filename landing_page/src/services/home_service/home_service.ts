@@ -1,5 +1,5 @@
 import type {Sneaker} from '@/types/sneaker';
-import { homeFetcher } from './fetchers';
+import { homeFetcher } from './home_fetcher';
 import { memoCache } from '@/utils/cache_utils';
 
 

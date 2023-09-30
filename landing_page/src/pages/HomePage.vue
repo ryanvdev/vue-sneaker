@@ -4,7 +4,7 @@ import { VContainer, VCol, VRow } from 'vuetify/components';
 
 import { useHomeStore } from '@/stores/home_store';
 
-import SneakerCard from '@/components/SneakerCard';
+import SneakerCard from '@/components/SneakerCard/SneakerCard.vue';
 import BigSneaker from '@/components/BigSneaker.vue';
 
 
