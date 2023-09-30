@@ -14,7 +14,7 @@ export const useRootStore = defineStore(ROOT_STORE_KEY, () => {
     const { name: deviceSize } = useDisplay();
 
     const _requestsProcessing = ref<Map<string, {createdAt:number, url:string}>>(new Map());
-    const theme = ref<ThemeKey>('dark');
+    const theme = ref<ThemeKey>('blue');
 
     const isLoading = computed<boolean>(() => {
         return _requestsProcessing.value.size > 0;
