@@ -1,7 +1,6 @@
 import { type ThemeDefinition } from "vuetify";
 import {  blueTheme } from "./blueTheme";
 import { useValue } from "@/utils/common_utils";
-import z from "zod";
 
 type Themes = Record<string, ThemeDefinition>;
 
