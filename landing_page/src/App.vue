@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
 import { VProgressLinear, VApp } from 'vuetify/components';
-import { useRootStore } from './stores/root_store';
 import { computed } from 'vue';
 import { useDisplay } from 'vuetify';
+import { useRootStore } from './stores/root_store';
 import { className } from './utils/template_utils';
+import { systemThemeKey } from '@/themes';
 
 const rootStore = useRootStore();
 const { name: deviceSize } = useDisplay();
@@ -18,7 +19,15 @@ const mobileDesktopClassName = computed<string>(() => {
         }
         default: return 'is-desktop'
     }
-})
+});
+
+const theme = computed<string>(() => {
+    if(rootStore.localData.theme==='system'){
+        return systemThemeKey
+    }
+    return rootStore.localData.theme;
+});
+
 </script>
 
 <template>
@@ -31,7 +40,7 @@ const mobileDesktopClassName = computed<string>(() => {
 
     <v-app 
         :class="className(mobileDesktopClassName, `device-${deviceSize}`, 'w-screen')"
-        :theme="rootStore.theme"
+        :theme="theme"
     >
         <RouterView />
     </v-app>

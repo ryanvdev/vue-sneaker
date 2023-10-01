@@ -54,7 +54,7 @@ onUpdated(() => {
 
 <template>
     <div :class="`${style['sneaker-card-color']} ${props.class}`">
-        <div :class="style['label']" v-if="colors.length <= 5">COLOR</div>
+        <div v-if="colors.length<=4" :class="style['label']" >COLOR</div>
         <v-sheet max-width="100%" color="transparent">
             <v-slide-group :class="style['slide-group']" center-active :show-arrows="colors.length>5">
                 <v-slide-group-item 
@@ -81,9 +81,11 @@ $size: 30px;
 .sneaker-card-color {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: $gap;
+
+    width: 100%;
 
     >.label {
         color: rgb(var(--v-theme-tertiary));

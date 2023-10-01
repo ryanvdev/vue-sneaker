@@ -26,10 +26,12 @@ const cartStore = useCartStore();
             >
                 <v-badge 
                     :content="cartStore.items.length" 
+                    color="secondary"
                 >
                     <v-icon 
                         icon="mdi-cart" 
                         size="40px" 
+                        color="secondary"
                     />
                 </v-badge>
             </v-btn>

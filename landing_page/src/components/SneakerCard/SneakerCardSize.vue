@@ -46,7 +46,7 @@ onUpdated(() => {
 
 <template>
     <div :class="`${style['sneaker-card-size']} ${props.class}`">
-        <div :class="style['label']" v-if="sizes.length<=5">SIZE</div>
+        <div v-if="sizes.length<=4" :class="style['label']">SIZE</div>
         <v-sheet max-width="100%" color="transparent">
             <v-slide-group center-active show-arrows>
                 <v-slide-group-item
@@ -104,7 +104,7 @@ $size: 30px;
         height: $size;
 
         border-radius: 5px;
-        border-color: rgb(var(--v-theme-white));
+        border-color: currentColor;
         border-style: solid;
         border-width: 2px;
 
@@ -112,7 +112,7 @@ $size: 30px;
 
         margin: 0px calc($gap/2);
 
-        color: rgb(var(--v-theme-dark));
+        color: rgb(var(--v-theme-surface));
         font-family: Roboto Slab;
         font-size: 16px;
         font-style: normal;
@@ -120,18 +120,18 @@ $size: 30px;
         line-height: normal;
         white-space: nowrap;
 
-        background-color: rgba(var(--v-theme-white), 1);
+        background-color: rgb(var(--v-theme-on-surface));
         
-
         &.selected {
-            color: rgb(var(--v-theme-white));
-            background-color: rgb(var(--v-theme-primary));
+            color: rgb(var(--v-theme-on-surface));
+            background-color: rgb(var(--v-theme-surface));
         }
         &.unavailable {
             cursor: default;
             border-radius: calc($gap/2);
             color: transparent;
             background-color: transparent;
+            border-color: rgb(var(--v-theme-on-surface));
         }
         &:hover {
             border-color: rgb(var(--v-theme-secondary));

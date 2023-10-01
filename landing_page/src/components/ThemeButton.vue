@@ -4,6 +4,7 @@ import type { ThemeKey } from '@/themes';
 import {defineProps, } from 'vue';
 import {useRootStore} from '@/stores/root_store';
 import {themesList} from '@/themes';
+import { className } from '@/utils/template_utils';
 
 interface Props{
     class?:string;
@@ -30,23 +31,25 @@ const id = (props.id||'theme-btn-') + 'change-theme';
                 width="80px"
                 height="60px"
                 rounded="lg"
-                :class="props.class"
+                :class="className(props.class)"
             >
                 <template v-slot:default>
-                    <v-icon size="40px"></v-icon>
+                    <v-icon size="40px" color="secondary"></v-icon>
                 </template>
             </v-btn>
         </template>
     </v-tooltip>
 
-    <v-menu :activator="'#' + id">
+    <v-menu :activator="'#' + id" location="bottom right">
         <v-list 
-            @click:select="rootStore.theme = ($event.id as ThemeKey)"
+            active-color="secondary"
+            @click:select="rootStore.localData.theme=($event.id as ThemeKey)"
         >
             <v-list-item
                 v-for="({key, icon, label}) of themesList"
                 :key="key"
                 :value="key"
+                :active="key===rootStore.localData.theme"
             >
                 <template v-slot:prepend>
                     <v-icon :icon="icon"/>

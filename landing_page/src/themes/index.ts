@@ -1,6 +1,7 @@
-import { type ThemeDefinition } from "vuetify"
-import { blueTheme } from "./blueTheme";
+import { type ThemeDefinition } from "vuetify";
+import {  blueTheme } from "./blueTheme";
 import { useValue } from "@/utils/common_utils";
+import z from "zod";
 
 type Themes = Record<string, ThemeDefinition>;
 
@@ -20,10 +21,16 @@ export interface ThemesConfig{
 
 export type ThemeKey = keyof (typeof themeConfigs);
 
-
-
+export const systemThemeKey = useValue(() => {
+    const isDarkTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    return isDarkTheme?'dark':'light';
+})
 
 export const themeConfigs = {
+    system: {
+        label: 'System theme',
+        icon: 'mdi:mdi-theme-light-dark'
+    },
     dark: {
         label: 'Dark',
         icon: 'mdi:mdi-weather-night'
@@ -65,3 +72,5 @@ export const themesList = useValue<readonly Readonly<ThemeInfo>[]>(() => {
 
     return Object.freeze(result);
 });
+
+export const themeKeys = Object.freeze(Object.keys(themeConfigs));

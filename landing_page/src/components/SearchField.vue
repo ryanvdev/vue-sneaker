@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import { useRootStore } from '@/stores/root_store';
 import { className } from '@/utils/template_utils';
 import { ref, computed, defineProps, withDefaults } from 'vue';
-import { RouterLink } from 'vue-router';
 
 
 interface Props {
@@ -12,6 +12,8 @@ interface Props {
 
     isFocused?:boolean;
 }
+
+const rootStore = useRootStore();
 
 const props = withDefaults(defineProps<Props>(), {
     placeholder: 'Type something...',
@@ -52,7 +54,7 @@ const suggestions = computed<[string, string, string][]>(() => {
             >
             </div>
         </div>
-        <div :class="className(style['wrapper'], isFocused?'elevation-2':'elevation-0')">
+        <div :class="className(style['wrapper'], 'rounded-lg', isFocused?'elevation-2':'elevation-0')">
             <div :class="style['input-wrapper']">
                 <input 
                     type="text" 
@@ -63,20 +65,40 @@ const suggestions = computed<[string, string, string][]>(() => {
                     v-model="inputValue"
                     @focus="isFocused=true"
                 />
-                <button v-ripple>Search</button>
+                <v-btn 
+                    icon="mdi:mdi-magnify"
+                    variant="text"
+                    rounded="lg"
+                    color="surface"
+                    density="default"
+                    height="var(--input-height)"
+                    :width="rootStore.isMobile?'var(--input-height)':'calc(var(--input-height)*2)'"
+                    class="bg-secondary float-right"
+                >
+                    <template v-slot:default>
+                        <v-icon/>
+                    </template>
+                </v-btn>
             </div>
             <div :class="`${style['line-break']} ${isFocused&&style['display']}`"></div>
             <div :class="style['suggestion-wrapper']" v-show="isFocused">
                 <div :class="style['suggestion-placeholder']" v-show="suggestions.length===0">
                     {{ props.placeholder }}
                 </div>
-                <ul :class="style['suggestion']">
-                    <li v-for="[key, href, label] of suggestions" :key="key">
-                        <router-link v-ripple :to="href">
+                <v-list class="w-100" v-show="suggestions.length>0">
+                    <v-list-item 
+                        v-for="[key, href, label] of suggestions" 
+                        :key="key" 
+                        :href="href"
+                    >
+                        <template v-slot:prepend>
+                            <v-icon icon="mdi:mdi-magnify"/>
+                        </template>
+                        <v-list-item-title>
                             {{ label }}
-                        </router-link>
-                    </li>
-                </ul>
+                        </v-list-item-title>
+                    </v-list-item>
+                </v-list>
             </div>
         </div>
     </div>
@@ -127,54 +149,41 @@ const suggestions = computed<[string, string, string][]>(() => {
     z-index: 1;
 
     width: 100%;
-    height: auto;
+    height: fit-content;
 
-    border-radius: 5px;
+    border: thin solid rgba(var(--v-border-color), var(--v-border-opacity));
 
-    background-color: rgb(var(--v-theme-tertiary));
+    background-color: rgb(var(--v-theme-surface));
 }
 
 .input-wrapper {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 
     width: 100%;
     height: calc(var(--height) - 2px);
+
+    padding: 0px 10px;
 
     >input {
         display: block;
         float: left;
 
-        width: calc(100% - 130px);
+        width: 100%;
         height: var(--input-height);
 
         border: none;
         outline: none;
 
-        margin-left: 10px;
-        margin-top: 10px;
-
-        color: rgb(var(--v-theme-dark));
         background-color: transparent;
     }
+}
 
-    >button {
-        float: right;
-
-        width: 100px;
-        height: var(--input-height);
-
-        border: none;
-        border-radius: 5px;
-        outline: none;
-
-        margin-top: 10px;
-        margin-right: 10px;
-
-        font-size: 18px;
-        font-weight: 600;
-        color: rgb(var(--v-theme-tertiary));
-
-        background-color: rgb(var(--v-theme-primary));
+:global(.is-mobile) .input-wrapper {
+    >input{
+        width: calc(100% - var(--input-height) - 30px);
     }
 }
 
@@ -189,7 +198,7 @@ const suggestions = computed<[string, string, string][]>(() => {
     margin-right: auto;
 
     border-radius: 1px;
-    background-color: rgb(var(--v-theme-primary));
+    background-color: rgba(var(--v-theme-secondary), 0.8);
 
     &.display {
         width: calc(100% - 20px);
@@ -208,51 +217,9 @@ const suggestions = computed<[string, string, string][]>(() => {
     display: block;
     width: 100%;
 
-    color: rgba(0,0,0,0.3);
     font-size: 0.8em;
     line-height: var(--input-height);
     padding-left: 10px;
 }
 
-.suggestion {
-    display: block;
-    overflow: hidden;
-
-    width: 100%;
-    height: auto;
-
-    >li {
-        display: block;
-        width: 100%;
-        height: var(--input-height);
-
-        >a {
-            display: block;
-
-            width: 100%;
-            height: 100%;
-
-            padding-left: 10px;
-
-            line-height: var(--input-height);
-            color: rgba(0,30,30,0.8);
-
-            &:hover {
-                background-color: rgba(0, 0, 0, 0.05);
-            }
-        }
-    }
-}
-
-.search-field.focus{
-    .wrapper{
-        background-color: rgb(var(--v-theme-white));
-    }
-
-    .input-wrapper {
-        > button {
-            color: rgb(var(--v-theme-white));
-        };
-    }
-}
 </style>

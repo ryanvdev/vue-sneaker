@@ -188,6 +188,24 @@ $info-blur-height: $info-height - 145px;
     --local-width: 270px;
 }
 
+.sneaker-card {
+    display: block;
+    overflow: hidden;
+
+    width: var(--local-width);
+    aspect-ratio: 0.6;
+
+    border-radius: 10px;
+    border: thin solid rgba(var(--v-border-color), var(--v-border-opacity));
+
+    background-color: rgba(var(--v-theme-surface), 1);
+
+    >* {
+        overflow: hidden;
+    }
+}
+
+
 .brand {
     display: block;
     width: 100%;
@@ -265,24 +283,9 @@ $info-blur-height: $info-height - 145px;
     margin-left: auto;
     margin-right: auto;
 
-    background-color: rgba(var(--v-theme-dark), 0);
+    background-color: transparent;
 }
 
-.sneaker-card {
-    display: block;
-    overflow: hidden;
-
-    width: var(--local-width);
-    aspect-ratio: 0.6;
-
-    border-radius: 10px;
-
-    background-color: rgba(var(--v-theme-card-background));
-
-    >* {
-        overflow: hidden;
-    }
-}
 
 
 :global(.device-sm) .sneaker-card,
@@ -319,7 +322,7 @@ $info-blur-height: $info-height - 145px;
 
     .sneaker-info {
         top: calc(100% - $info-height);
-        background-color: rgba(var(--v-theme-dark), 0.5);
+        background-color: rgba(var(--v-theme-primary), 0.3);
     }
 }
 </style>

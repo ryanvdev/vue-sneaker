@@ -65,7 +65,7 @@ onUpdated(() => {
     text-overflow: ellipsis;
 
     &:hover{
-        color: rgb(var(--v-theme-secondary));
+        color: rgb(var(--v-theme-on-primary));
     }
 }
 
@@ -81,6 +81,6 @@ onUpdated(() => {
     font-style: normal;
     white-space: nowrap;
     text-align: center;
-    color: rgb(var(--v-theme-price));
+    color: orangered;
 }
 </style>

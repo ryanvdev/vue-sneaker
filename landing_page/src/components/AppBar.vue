@@ -24,7 +24,10 @@ const searchIsFocusing = ref<boolean>(false);
 </script>
 
 <template>
-    <header :class="className('w-100', 'bg-surface', props.class)">
+    <header 
+        :class="className('w-100', 'bg-surface', props.class)"
+        style="border-bottom: thin solid rgba(var(--v-border-color), var(--v-border-opacity));"
+    >
         <v-container no-gutters>
             <v-row no-gutters>
                 <v-col cols="12" lg="9" xl="8">

@@ -1,7 +1,7 @@
 import { ThemeDefinition } from "vuetify";
 
 export const blueTheme:ThemeDefinition = {
-    dark: false,
+    dark: true,
     colors: {
         dark: '#333333',
         white: '#ffffff',
