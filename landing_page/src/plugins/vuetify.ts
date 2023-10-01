@@ -1,7 +1,7 @@
 import { createVuetify } from 'vuetify';
 import {
     VCol, VRow, VContainer, VBtn, VSlideGroup, VSlideGroupItem,
-    VTooltip, VBadge, VIcon, VMenu, VList, VListItem
+    VTooltip, VBadge, VIcon, VMenu, VList, VListItem, VListItemTitle
 } from 'vuetify/components';
 
 import { fa } from 'vuetify/iconsets/fa';
@@ -25,7 +25,8 @@ export const vuetify = createVuetify({
         VIcon,
         VMenu,
         VList,
-        VListItem
+        VListItem,
+        VListItemTitle
     },
     icons: {
         defaultSet: 'mdi',
