@@ -35,7 +35,7 @@ export const errorMiddleware = (error:unknown) => {
         
         const rootStore = useRootStore();
         rootStore.removeRequest(requestId, 'succeed');
-        console.log('Request error', (error.config as any).__id );
+        console.error('Request error', (error.config as any).__id );
     }
     throw error;
 };

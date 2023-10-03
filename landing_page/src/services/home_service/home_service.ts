@@ -10,7 +10,6 @@ export const fetchSuggestions = async ():Promise<Sneaker[]> => {
 
     // If has cache
     if(memoCache.has(cacheKey)) {
-        console.info('use cache', cacheKey);
         return memoCache.get(cacheKey);
     }
     

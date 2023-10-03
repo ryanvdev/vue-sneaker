@@ -5,7 +5,7 @@ import {VueQueryPlugin} from '@tanstack/vue-query';
 
 import { vuetify } from './plugins/vuetify';
 import { Ripple } from 'vuetify/directives';
-import { router } from './utils/router';
+import { router } from './router';
 
 import { IS_DEV } from './utils/constants';
 import App from './App.vue';
@@ -13,7 +13,7 @@ import App from './App.vue';
 import 'vue3-toastify/dist/index.css';
 import './style.scss';
 
-console.info(`is dev = ${IS_DEV}`);
+console.info(`dev=${IS_DEV}`);
 
 const pinia = createPinia();
 const app = createApp(App);

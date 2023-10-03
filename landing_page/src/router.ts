@@ -4,6 +4,7 @@ import HomePage from '@/pages/HomePage.vue';
 import HomeLayout from '@/layouts/HomeLayout.vue';
 import NotFoundPage from '@/pages/NotFoundPage.vue';
 import TestPage from '@/pages/TestPage.vue';
+import ProductPage from '@/pages/ProductPage.vue';
 
 const basePaths = Object.freeze({
     sneaker: '/sneaker'
@@ -23,7 +24,7 @@ const routes = Object.freeze<RouteRecordRaw[]>([
             {
                 name: 'Sneaker',
                 path: basePaths.sneaker + '/:slug([a-z0-9-]+)',
-                component: NotFoundPage,
+                component: ProductPage,
             }
         ]
     },

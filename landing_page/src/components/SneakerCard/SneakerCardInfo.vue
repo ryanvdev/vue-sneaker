@@ -4,8 +4,9 @@ import { RouterLink } from 'vue-router';
 import SneakerCardSize from './SneakerCardSize.vue';
 import SneakerCardColor from './SneakerCardColor.vue';
 import SneakerCardButtons from './SneakerCardButtons.vue';
-import { injectionKey, localLogger, formatPrice } from './sneaker_card_utils';
+import { injectionKey, localLogger } from './sneaker_card_utils';
 import { computed } from 'vue';
+import { formatPrice } from '@/utils/sneaker_util';
 
 export interface SneakerCardInfoProps {
     class?: string;

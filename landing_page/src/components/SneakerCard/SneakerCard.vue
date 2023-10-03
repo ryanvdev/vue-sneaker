@@ -1,14 +1,16 @@
 <script setup lang="ts" >
 import type {Sneaker, SneakerVariation, SneakerVariationLibrary} from '@/types/sneaker';
+
 import { provide, onUpdated, defineProps, computed, ref } from 'vue';
 import { toast } from 'vue3-toastify';
 import { useRouter } from 'vue-router';
 
-import SneakerCardInfo from './SneakerCardInfo.vue';
-import { injectionKey, localLogger, computeAvailableVariationLibrary, getSelectedVariation } from './sneaker_card_utils';
-import { createSneakerUrl } from '@/utils/sneaker_util';
+import { computeAvailableVariationLibrary, createSneakerUrl, getSelectedVariation } from '@/utils/sneaker_util';
+
 import { useCartStore } from '@/stores/cart_store';
 import { className } from '@/utils/template_utils';
+import SneakerCardInfo from './SneakerCardInfo.vue';
+import { injectionKey, localLogger } from './sneaker_card_utils';
 
 interface Props extends Sneaker{
 

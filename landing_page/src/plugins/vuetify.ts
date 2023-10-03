@@ -1,8 +1,11 @@
 import { createVuetify } from 'vuetify';
 import {
     VCol, VRow, VContainer, VBtn, VSlideGroup, VSlideGroupItem,
-    VTooltip, VBadge, VIcon, VMenu, VList, VListItem, VListItemTitle
+    VTooltip, VBadge, VIcon, VMenu, VList, VListItem, VListItemTitle,
+    VSheet, VCarousel, VCarouselItem, VDivider
 } from 'vuetify/components';
+
+import { VSkeletonLoader } from 'vuetify/labs/VSkeletonLoader';
 
 import { fa } from 'vuetify/iconsets/fa';
 import { mdi } from 'vuetify/iconsets/mdi';
@@ -26,7 +29,12 @@ export const vuetify = createVuetify({
         VMenu,
         VList,
         VListItem,
-        VListItemTitle
+        VListItemTitle,
+        VSheet,
+        VCarousel,
+        VCarouselItem,
+        VDivider,
+        VSkeletonLoader,
     },
     icons: {
         defaultSet: 'mdi',
