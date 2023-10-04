@@ -18,10 +18,12 @@
   "devDependencies": {
     "@types/lodash": "^4.14.199",
     "@types/node": "^20.7.0",
+    "@types/react": "^18.2.24",
     "lodash": "^4.17.21",
     "prettier": "^3.0.3"
   },
   "dependencies": {
-    "lorem-ipsum": "^2.0.8"
+    "lorem-ipsum": "^2.0.8",
+    "ts-rssr": "^0.0.1"
   }
 }

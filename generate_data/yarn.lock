@@ -12,10 +12,34 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.7.0.tgz#c03de4572f114a940bc2ca909a33ddb2b925e470"
   integrity sha512-zI22/pJW2wUZOVyguFaUL1HABdmSVxpXrzIqkjsHmyUjNhPoWM1CKfvVuXfetHhIok4RY573cqS0mZ1SJEnoTg==
 
+"@types/prop-types@*":
+  version "15.7.8"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.8.tgz#805eae6e8f41bd19e88917d2ea200dc992f405d3"
+  integrity sha512-kMpQpfZKSCBqltAJwskgePRaYRFukDkm1oItcAbC3gNELR20XIBcN9VRgg4+m8DKsTfkWeA4m4Imp4DDuWy7FQ==
+
+"@types/react@^18.2.24":
+  version "18.2.24"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.24.tgz#3c7d68c02e0205a472f04abe4a0c1df35d995c05"
+  integrity sha512-Ee0Jt4sbJxMu1iDcetZEIKQr99J1Zfb6D4F3qfUWoR1JpInkY1Wdg4WwCyBjL257D0+jGqSl1twBjV8iCaC0Aw==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/scheduler@*":
+  version "0.16.4"
+  resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.4.tgz#fedc3e5b15c26dc18faae96bf1317487cb3658cf"
+  integrity sha512-2L9ifAGl7wmXwP4v3pN4p2FLhD0O1qsJpvKmNin5VA8+UvNVb447UDaAEV6UdrkA+m/Xs58U1RFps44x6TFsVQ==
+
 commander@^9.3.0:
   version "9.5.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-9.5.0.tgz#bc08d1eb5cedf7ccb797a96199d41c7bc3e60d30"
   integrity sha512-KRs7WVDKg86PWiuAqhDrAQnTXZKraVcCc6vFdL14qrZ/DcWwuRo7VoiYXalXO7S5GKpqYiVEwCbgFDfxNHKJBQ==
+
+csstype@^3.0.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.2.tgz#1d4bf9d572f11c14031f0436e1c10bc1f571f50b"
+  integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
 
 lodash@^4.17.21:
   version "4.17.21"
@@ -33,3 +57,22 @@ prettier@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.0.3.tgz#432a51f7ba422d1469096c0fdc28e235db8f9643"
   integrity sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==
+
+py-range-ts@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/py-range-ts/-/py-range-ts-1.0.0.tgz#db230861f2bb72b6b5c9fc10fd0f9a261d9dd2de"
+  integrity sha512-4PCur36rMN8AKFKmJ3sR31qT6NXt4aBRtt6dPt+fK86Zc2ucJ/d7ubY0Y2EtKAQVATuouRGFNjvWlnKeK1RjWg==
+
+strkits@^1.0.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/strkits/-/strkits-1.2.0.tgz#df78e9c05254bf6169c202687f8df616d1b899c9"
+  integrity sha512-yEddsG02Qt2GuCCCXJtqjMkhXAe/q2Sk7imAqsPUEzxSmD7IBnddF+xy0ts9F2IvG0AaxPLj5zNZMXg9Gu2amA==
+  dependencies:
+    py-range-ts "^1.0.0"
+
+ts-rssr@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/ts-rssr/-/ts-rssr-0.0.1.tgz#b2131ccf6f3de9bb30173fbfb97bdb00407b6569"
+  integrity sha512-uqG3imtNzm1cb1Tony9kMqrPD1Ytr+dtVvu6GOedSUIlX3UOEaGPa9KqGVN2COf8Kcm6AJdHLTv9k4EuQ29h1g==
+  dependencies:
+    strkits "^1.0.0"
