@@ -12,7 +12,11 @@ const homeStore = useHomeStore();
 
 watchEffect(async () => {
     await homeStore.fetchSuggestions();
-})
+});
+
+watchEffect(() => {
+    document.title = 'Vue Sneaker';
+});
 
 </script>
 

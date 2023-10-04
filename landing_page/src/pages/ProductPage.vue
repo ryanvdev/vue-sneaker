@@ -204,6 +204,14 @@ watch(data, (v) => {
 });
 
 
+watch(() => {
+    if(!data || !data.value) return 'Vue Sneaker';
+    return `${data.value.name} - Vue Sneaker`;
+},
+(v) => {
+    document.title = v;
+});
+
 const {} = myRoute.query;
 </script>
 

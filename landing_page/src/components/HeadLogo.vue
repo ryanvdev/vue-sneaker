@@ -13,8 +13,8 @@ interface Props {
 
 
 const props = withDefaults(defineProps<Props>(), {
-    logo: '/img/logo.png',
-    webName: 'WEB NAME',
+    logo: '/logo-128.png',
+    webName: 'Vue Sneaker',
     href: '/',
 });
 
@@ -56,6 +56,10 @@ const props = withDefaults(defineProps<Props>(), {
     >img{
         display: block;
         float: left;
+
+        width: auto;
+        height: 100%;
+        aspect-ratio: 1;
     }
     >span{
         display: block;
