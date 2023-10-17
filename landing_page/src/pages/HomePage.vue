@@ -1,21 +1,22 @@
 <script setup lang="ts">
-import { watchEffect } from 'vue';
-import { VContainer, VCol, VRow } from 'vuetify/components';
+import { watchEffect, onMounted } from 'vue';
+import { useRoute } from 'vue-router';
 
 import { useHomeStore } from '@/stores/home_store';
 
 import SneakerCard from '@/components/SneakerCard/SneakerCard.vue';
 import BigSneaker from '@/components/BigSneaker.vue';
+import { WEB_NAME } from '@/utils/constants';
 
-
+const route = useRoute();
 const homeStore = useHomeStore();
 
 watchEffect(async () => {
     await homeStore.fetchSuggestions();
 });
 
-watchEffect(() => {
-    document.title = 'Vue Sneaker';
+onMounted(() => {
+    document.title = route.name?.toString() || WEB_NAME;
 });
 
 </script>

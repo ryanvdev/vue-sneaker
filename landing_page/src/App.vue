@@ -6,19 +6,16 @@ import { useDisplay } from 'vuetify';
 import { useRootStore } from './stores/root_store';
 import { className } from './utils/template_utils';
 import { systemThemeKey } from '@/themes';
+import { MOBILE_DEVICES } from './utils/constants';
 
 const rootStore = useRootStore();
 const { name: deviceSize } = useDisplay();
 
 const mobileDesktopClassName = computed<string>(() => {
-    switch (deviceSize.value) {
-        case 'xs':
-        case 'sm':
-        case 'md': {
-            return 'is-mobile'
-        }
-        default: return 'is-desktop'
+    if(MOBILE_DEVICES.includes(deviceSize.value)){
+        return 'is-mobile'
     }
+    return 'is-desktop';
 });
 
 const theme = computed<string>(() => {

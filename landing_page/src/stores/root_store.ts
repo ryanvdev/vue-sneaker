@@ -1,6 +1,7 @@
 import { themeKeys } from '@/themes';
 import {Status} from '@/types/http_types';
 import { useValue } from '@/utils/common_utils';
+import { MOBILE_DEVICES } from '@/utils/constants';
 
 import { defineStore } from 'pinia';
 import { computed, reactive, ref, watch } from 'vue';
@@ -24,14 +25,7 @@ export const useRootStore = defineStore(ROOT_STORE_KEY, () => {
     });
 
     const isMobile = computed<boolean>(() => {
-        switch (deviceSize.value) {
-            case 'xs':
-            case 'sm':
-            case 'md': {
-                return true;
-            }
-            default: return false;
-        }
+        return MOBILE_DEVICES.includes(deviceSize.value);
     });
 
     const addRequest = (id:string, url:string) => {
