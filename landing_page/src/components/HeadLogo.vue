@@ -2,38 +2,33 @@
 import { defineProps, withDefaults } from 'vue';
 import { VBtn } from 'vuetify/components';
 
-
 interface Props {
     class?: string;
     logo?: string;
     webName?: string;
     href?: string;
-    displayWebName?:boolean;
+    displayWebName?: boolean;
 }
-
 
 const props = withDefaults(defineProps<Props>(), {
     logo: '/logo-128.png',
     webName: 'Vue Sneaker',
     href: '/',
 });
-
 </script>
 
 <template>
-    <v-btn 
-        :class="`${style['btn']} ${props.class}`" 
-        :to="props.href" 
-        variant="text" 
-        stacked 
+    <v-btn
+        :class="`${style['btn']} ${props.class}`"
+        :to="props.href"
+        variant="text"
+        stacked
         height="60px"
         color="rgb(var(--v-theme-tertiary))"
     >
         <div :class="style['wrapper']">
-            <img :src="props.logo" :alt="props.webName"/>
-            <span 
-                v-show="Boolean(props.displayWebName)"
-            >
+            <img :src="props.logo" :alt="props.webName" />
+            <span v-show="Boolean(props.displayWebName)">
                 {{ props.webName }}
             </span>
         </div>
@@ -41,19 +36,18 @@ const props = withDefaults(defineProps<Props>(), {
 </template>
 
 <style module="style" lang="scss">
-.btn{
-    > :global(.v-btn__overlay){
+.btn {
+    > :global(.v-btn__overlay) {
         background-color: transparent;
     }
 }
 
-
-.wrapper{
+.wrapper {
     display: block;
     width: fit-content;
     height: 60px;
 
-    >img{
+    > img {
         display: block;
         float: left;
 
@@ -61,18 +55,17 @@ const props = withDefaults(defineProps<Props>(), {
         height: 100%;
         aspect-ratio: 1;
     }
-    >span{
+    > span {
         display: block;
         float: left;
 
         width: fit-content;
         height: 60px;
-        
+
         line-height: 60px;
         font-weight: 700;
         font-size: 24px;
         color: rgb(var(--v-theme-tertiary));
     }
 }
-
 </style>

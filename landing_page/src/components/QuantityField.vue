@@ -28,7 +28,7 @@ const handleSubmit = () => {
     inputRef.value.blur();
 
     // case: Input empty
-    if(inputValue.length === 0){
+    if (inputValue.length === 0) {
         updateInputValue();
         return;
     }
@@ -72,7 +72,12 @@ onMounted(() => {
 <template>
     <form @submit.prepend="handleSubmit">
         <v-btn-group variant="outlined">
-            <v-btn icon="mdi-minus" value="decrease" @click="handleBtnClick(-1)" :disabled="props.modelValue <= props.min"/>
+            <v-btn
+                icon="mdi-minus"
+                value="decrease"
+                @click="handleBtnClick(-1)"
+                :disabled="props.modelValue <= props.min"
+            />
             <input
                 :class="`${styles['text-field']} text-center disable-spin-button ${props.class}`"
                 ref="inputRef"

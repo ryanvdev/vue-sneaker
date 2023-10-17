@@ -1,3 +1,1 @@
-
-
-export type Status = 'succeed'|'failed';
+export type Status = 'succeed' | 'failed';

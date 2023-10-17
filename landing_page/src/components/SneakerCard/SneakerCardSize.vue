@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import {inject, onUpdated, computed} from 'vue';
-import {VSlideGroup, VSlideGroupItem, VSheet} from 'vuetify/components';
+import { inject, onUpdated, computed } from 'vue';
+import { VSlideGroup, VSlideGroupItem, VSheet } from 'vuetify/components';
 import { injectionKey, localLogger } from './sneaker_card_utils';
 
 export interface SneakerCardSizeProps {
@@ -22,41 +22,41 @@ const sizes = computed<[string, string, boolean][]>(() => {
         return [
             sizeKey,
             sizeValue,
-            sizeKey in availableSizesValue, // If color available, return true. 
+            sizeKey in availableSizesValue, // If color available, return true.
         ] as [string, string, boolean];
     });
 });
 
-const handleClick = (sizeKey:string, select: (v:boolean) => any) => {
-    if(size.value === sizeKey){
+const handleClick = (sizeKey: string, select: (v: boolean) => any) => {
+    if (size.value === sizeKey) {
         size.value = undefined;
         select(false);
-    }
-    else {
+    } else {
         size.value = sizeKey;
         select(true);
     }
-}
+};
 
 onUpdated(() => {
     localLogger.info('SneakerCardSize updated');
 });
-
 </script>
 
 <template>
     <div :class="`${style['sneaker-card-size']} ${props.class}`">
-        <div v-if="sizes.length<=4" :class="style['label']">SIZE</div>
+        <div v-if="sizes.length <= 4" :class="style['label']">SIZE</div>
         <v-sheet max-width="100%" color="transparent">
             <v-slide-group center-active show-arrows>
                 <v-slide-group-item
-                    v-for="([sizeKey, sizeValue, available]) in sizes" 
+                    v-for="[sizeKey, sizeValue, available] in sizes"
                     :key="sizeKey"
-                    v-slot="{select}"
+                    v-slot="{ select }"
                 >
-                    <button 
-                        :class="`${style['size-btn']} ${sizeKey===size?style['selected']:''} ${!available?style['unavailable']:''}`"
-                        @click="if(available) handleClick(sizeKey, select);"
+                    <button
+                        :class="`${style['size-btn']} ${
+                            sizeKey === size ? style['selected'] : ''
+                        } ${!available ? style['unavailable'] : ''}`"
+                        @click="if (available) handleClick(sizeKey, select);"
                     >
                         {{ sizeValue }}
                     </button>
@@ -65,7 +65,6 @@ onUpdated(() => {
         </v-sheet>
     </div>
 </template>
-
 
 <style module="style" lang="scss">
 $gap: 10px;
@@ -121,7 +120,7 @@ $size: 30px;
         white-space: nowrap;
 
         background-color: rgb(var(--v-theme-on-surface));
-        
+
         &.selected {
             color: rgb(var(--v-theme-on-surface));
             background-color: rgb(var(--v-theme-surface));

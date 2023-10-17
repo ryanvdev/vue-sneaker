@@ -35,18 +35,18 @@ const routes = Object.freeze<RouteRecordRaw[]>([
                 path: basePaths.cart,
                 component: CartPage,
             },
-        ]
+        ],
     },
     {
         name: 'Test',
         path: '/test',
-        component: TestPage
+        component: TestPage,
     },
     {
         name: 'Not Found',
         path: '/:pathMatch(.*)*',
         component: NotFoundPage,
-    }
+    },
 ]);
 
 const router = VueRouter.createRouter({
@@ -54,9 +54,9 @@ const router = VueRouter.createRouter({
     routes: routes,
     scrollBehavior() {
         return {
-            top: 0
-        }
-    }
+            top: 0,
+        };
+    },
 });
 
-export {basePaths, router}
+export { basePaths, router };

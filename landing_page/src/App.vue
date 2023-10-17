@@ -12,30 +12,25 @@ const rootStore = useRootStore();
 const { name: deviceSize } = useDisplay();
 
 const mobileDesktopClassName = computed<string>(() => {
-    if(MOBILE_DEVICES.includes(deviceSize.value)){
-        return 'is-mobile'
+    if (MOBILE_DEVICES.includes(deviceSize.value)) {
+        return 'is-mobile';
     }
     return 'is-desktop';
 });
 
 const theme = computed<string>(() => {
-    if(rootStore.localData.theme==='system'){
-        return systemThemeKey
+    if (rootStore.localData.theme === 'system') {
+        return systemThemeKey;
     }
     return rootStore.localData.theme;
 });
-
 </script>
 
 <template>
     <!-- Top progress -->
-    <v-progress-linear 
-        :class="style['process']" 
-        color="red" 
-        :indeterminate="rootStore.isLoading"
-    />
+    <v-progress-linear :class="style['process']" color="red" :indeterminate="rootStore.isLoading" />
 
-    <v-app 
+    <v-app
         :class="className(mobileDesktopClassName, `device-${deviceSize}`, 'w-screen')"
         :theme="theme"
     >

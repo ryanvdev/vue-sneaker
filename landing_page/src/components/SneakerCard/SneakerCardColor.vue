@@ -22,49 +22,57 @@ const colors = computed<[string, string, boolean][]>(() => {
         return [
             colorKey,
             colorValue,
-            colorKey in availableColorsValue, // If color available, return true. 
+            colorKey in availableColorsValue, // If color available, return true.
         ] as [string, string, boolean];
     });
 });
 
-
-const computeClassName = (style: IndexSignature<string>, colorKey: string, available: boolean): string => {
+const computeClassName = (
+    style: IndexSignature<string>,
+    colorKey: string,
+    available: boolean,
+): string => {
     const selectedClassName = colorKey === color.value ? style['selected'] : '';
     const availableClassName = !available ? style['unavailable'] : '';
     return `${selectedClassName} ${availableClassName}`;
-}
+};
 
-
-const handleClick = (colorKey: string, select: (v:boolean) => any) => {
+const handleClick = (colorKey: string, select: (v: boolean) => any) => {
     if (color.value === colorKey) {
         color.value = undefined;
         select(false);
-    }
-    else {
+    } else {
         color.value = colorKey;
         select(true);
     }
-}
+};
 
 onUpdated(() => {
     localLogger.info('SneakerCardColor updated');
 });
-
 </script>
 
 <template>
     <div :class="`${style['sneaker-card-color']} ${props.class}`">
-        <div v-if="colors.length<=4" :class="style['label']" >COLOR</div>
+        <div v-if="colors.length <= 4" :class="style['label']">COLOR</div>
         <v-sheet max-width="100%" color="transparent">
-            <v-slide-group :class="style['slide-group']" center-active :show-arrows="colors.length>5">
-                <v-slide-group-item 
-                    v-for="([colorKey, colorValue, available]) in colors" 
+            <v-slide-group
+                :class="style['slide-group']"
+                center-active
+                :show-arrows="colors.length > 5"
+            >
+                <v-slide-group-item
+                    v-for="[colorKey, colorValue, available] in colors"
                     :key="colorKey"
-                    v-slot="{select}"
+                    v-slot="{ select }"
                 >
-                    <button 
-                        :class="`${style['color-btn']} ${computeClassName(style, colorKey, available)}`"
-                        :style="{ '--color': colorValue }" 
+                    <button
+                        :class="`${style['color-btn']} ${computeClassName(
+                            style,
+                            colorKey,
+                            available,
+                        )}`"
+                        :style="{ '--color': colorValue }"
                         @click="if (available) handleClick(colorKey, select);"
                     ></button>
                 </v-slide-group-item>
@@ -72,7 +80,6 @@ onUpdated(() => {
         </v-sheet>
     </div>
 </template>
-
 
 <style module="style" lang="scss">
 $gap: 10px;
@@ -87,7 +94,7 @@ $size: 30px;
 
     width: 100%;
 
-    >.label {
+    > .label {
         color: rgb(var(--v-theme-tertiary));
         font-family: Roboto Slab;
         font-size: 14px;

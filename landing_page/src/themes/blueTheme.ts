@@ -1,6 +1,6 @@
-import { ThemeDefinition } from "vuetify";
+import { ThemeDefinition } from 'vuetify';
 
-export const blueTheme:ThemeDefinition = {
+export const blueTheme: ThemeDefinition = {
     dark: true,
     colors: {
         dark: '#333333',
@@ -11,10 +11,10 @@ export const blueTheme:ThemeDefinition = {
 
         background: '#D2E0FB',
         surface: '#829796',
-        
+
         price: '#FFAD93',
         'card-background': '#829796',
 
         'text-heading': '#8EACCD',
     },
-}
+};

@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
-import Vue3Toastify, {type ToastContainerOptions} from 'vue3-toastify';
-import {VueQueryPlugin} from '@tanstack/vue-query';
+import Vue3Toastify, { type ToastContainerOptions } from 'vue3-toastify';
+import { VueQueryPlugin } from '@tanstack/vue-query';
 
 import { vuetify } from './plugins/vuetify';
 import { Ripple } from 'vuetify/directives';
@@ -31,8 +31,7 @@ app.use(Vue3Toastify, {
     pauseOnFocusLoss: true,
     clearOnUrlChange: false,
     newestOnTop: false,
-
-} as ToastContainerOptions );
+} as ToastContainerOptions);
 
 app.use(pinia);
 app.use(VueQueryPlugin);

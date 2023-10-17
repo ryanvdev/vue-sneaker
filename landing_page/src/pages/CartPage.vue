@@ -71,7 +71,7 @@ cartStore.items;
     <v-container v-if="isLoading"> loading.... </v-container>
     <v-container v-else-if="isSuccess">
         <v-row
-            v-for="({ cartItem, sneaker, variation, key, price }) of cartItemsInfo"
+            v-for="{ cartItem, sneaker, variation, key, price } of cartItemsInfo"
             :key="key"
             no-gutters
             align="center"

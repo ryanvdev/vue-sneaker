@@ -5,22 +5,19 @@ import { CartItem } from '@/stores/cart_store';
 import { Sneaker } from '@/types/sneaker';
 
 interface FetchCartItems {
-    (cartItems: DeepReadonly<CartItem[]>): Promise<Sneaker[]>,
-    queryKey: symbol,
+    (cartItems: DeepReadonly<CartItem[]>): Promise<Sneaker[]>;
+    queryKey: symbol;
 }
 
 const fetchCartItems = (async (cartItems) => {
     const sneakers = await ProductsService.fetchAllSneakers();
-    const setOfSneakerIds = new Set(cartItems.map(item => item.sneakerId));
+    const setOfSneakerIds = new Set(cartItems.map((item) => item.sneakerId));
 
-    const results: Sneaker[] = sneakers.filter((sneaker) =>
-        setOfSneakerIds.has(sneaker.id)
-    );
-    
+    const results: Sneaker[] = sneakers.filter((sneaker) => setOfSneakerIds.has(sneaker.id));
+
     return results;
 }) as FetchCartItems;
 
 fetchCartItems.queryKey = Symbol('fetchCartItems');
-
 
 export { fetchCartItems };
