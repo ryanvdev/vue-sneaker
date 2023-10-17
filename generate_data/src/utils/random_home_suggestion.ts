@@ -5,8 +5,8 @@ import { useValue } from './hooks';
 
 type ColorsLibraryType = typeof colorsLibrary;
 
-const brandSize = 20;
-const sampleSize = 500;
+const brandSize = 15;
+const sampleSize = 160;
 
 const sizesLibrary = Object.freeze(['XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL'] as const);
 const colorsLibrary = Object.freeze(['black', 'red', 'blue', 'green', 'aqua', 'pink', 'orange'] as const);
@@ -20,26 +20,35 @@ const imagesLibrary = Object.freeze<Record<ColorsLibraryType[number], string>>({
     orange: '/img/demo-sneaker/red.png',
 });
 
-const brandsLibrary = Object.freeze(useValue(() => {
-    return loremIpsum({
-        count: brandSize,
-        format: 'plain',
-        units: 'words',
-    })
-        .split(' ')
-        .map(item => item.toUpperCase());
+export const brandsLibrary = Object.freeze(useValue(() => {
+    const uniqueBrands = new Set<string>();
+
+    while(uniqueBrands.size < brandSize){
+        const name = loremIpsum({
+            count: 1,
+            units: 'words',
+            format: 'plain',
+        });
+        uniqueBrands.add(_.startCase(name));
+    }
+    
+    const result = Array.from(uniqueBrands).map(item => item.toUpperCase());
+    return Object.freeze(result);
 }));
 
-const namesLibrary = useValue(() => {
-    const result: string[] = [];
-    for (let i = 0; i < sampleSize; i++) {
+export const namesLibrary = useValue(() => {
+    const uniqueNames = new Set<string>();
+
+    while(uniqueNames.size < sampleSize){
         const name = loremIpsum({
             count: _.random(1, 3),
             units: 'words',
             format: 'plain',
         });
-        result.push(_.startCase(name));
+        uniqueNames.add(_.startCase(name));
     }
+    
+    const result = Array.from(uniqueNames);
     return Object.freeze(result);
 });
 
