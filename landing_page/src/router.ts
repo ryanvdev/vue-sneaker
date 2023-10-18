@@ -21,7 +21,7 @@ const routes = Object.freeze<RouteRecordRaw[]>([
         component: HomeLayout,
         children: [
             {
-                name: 'Home',
+                name: WEB_NAME,
                 path: '/',
                 component: HomePage,
             },

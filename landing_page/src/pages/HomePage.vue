@@ -51,7 +51,7 @@ onMounted(() => {
     <v-container>
         <v-row class="flex-sm-nowrap-reverse flex-sm-nowrap-reverse">
             <v-col align-self="center" cols="12" md="6" lg="6" xl="6" xxl="6" xxxl="7">
-                <div class="text-h3">Sneaker Collection</div>
+                <h1 class="text-h3">{{ WEB_NAME }}</h1>
                 <div class="my-4 text-body-1">
                     Labore eu ad fugiat labore ut ad consectetur ex adipisicing incididunt amet officia consequat.
                     Fugiat sit sint laborum anim occaecat sunt sint. Ipsum dolor velit esse sint laborum tempor

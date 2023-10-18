@@ -142,7 +142,8 @@ const socialMediaIcons: {
         <div class="d-block w-100">
             <v-divider />
             <p class="text-center text-body-1 py-2">
-                Copyright &copy; 2023 Nguyen Quoc Tuan - Ryan Nguyen -
+                <span>Design by TuanNguyen</span>
+                -
                 <a href="https://github.com/ryanvdev">github.com/ryanvdev</a>
             </p>
         </div>
