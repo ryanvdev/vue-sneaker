@@ -14,10 +14,7 @@ const props = defineProps<Props>();
                 <div :class="style['circle']"></div>
             </div>
             <div class="d-flex justify-center align-center">
-                <div
-                    :class="style['image']"
-                    :style="{ '--image': `url('/img/home-sneaker.png')` }"
-                ></div>
+                <div :class="style['image']" :style="{ '--image': `url('/img/home-sneaker.png')` }"></div>
             </div>
         </div>
     </div>
@@ -50,10 +47,8 @@ const props = defineProps<Props>();
     border-radius: 50%;
 
     background-color: rgba(var(--v-theme-primary), 0.9);
-    box-shadow: 0px 0px 10px rgba(var(--v-theme-primary), 0.8),
-        0px 0px 20px rgba(var(--v-theme-primary), 0.7),
-        0px 0px 30px rgba(var(--v-theme-primary), 0.6),
-        0px 0px 40px rgba(var(--v-theme-primary), 0.5);
+    box-shadow: 0px 0px 10px rgba(var(--v-theme-primary), 0.8), 0px 0px 20px rgba(var(--v-theme-primary), 0.7),
+        0px 0px 30px rgba(var(--v-theme-primary), 0.6), 0px 0px 40px rgba(var(--v-theme-primary), 0.5);
 }
 .image {
     display: flex;

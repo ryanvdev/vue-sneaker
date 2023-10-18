@@ -1,15 +1,11 @@
 <script setup lang="ts">
 import type { Sneaker, SneakerVariation, SneakerVariationLibrary } from '@/types/sneaker';
 
-import { provide, onUpdated, defineProps, computed, ref } from 'vue';
+import { provide, onUpdated, defineProps, computed, ref, DeepReadonly } from 'vue';
 import { toast } from 'vue3-toastify';
 import { useRouter } from 'vue-router';
 
-import {
-    computeAvailableVariationLibrary,
-    createSneakerUrl,
-    getSelectedVariation,
-} from '@/utils/sneaker_util';
+import { computeAvailableVariationLibrary, createSneakerUrl, getSelectedVariation } from '@/utils/sneaker_util';
 
 import { useCartStore } from '@/stores/cart_store';
 import { className } from '@/utils/template_utils';
@@ -38,7 +34,7 @@ const size = ref<string | undefined>();
 /**
  * The variations remaining when the customer has selected color or size on the SneakerCard
  */
-const variations = computed<SneakerVariation[]>(() => {
+const variations = computed<DeepReadonly<SneakerVariation[]>>(() => {
     const colorValue = color.value;
     const sizeValue = size.value;
 
@@ -173,10 +169,7 @@ onUpdated(() => {
             </div>
         </div>
         <div>
-            <div
-                :class="style['sneaker-image']"
-                :style="{ '--local-image': `url('${image}')` }"
-            ></div>
+            <div :class="style['sneaker-image']" :style="{ '--local-image': `url('${image}')` }"></div>
         </div>
         <div>
             <SneakerCardInfo :class="style['sneaker-info']" />

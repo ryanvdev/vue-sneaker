@@ -18,12 +18,10 @@ import {
 import { useValue } from '@/utils/common_utils';
 
 const quickLinks: { title: string; link: string }[] = useValue(() => {
-    return ['In mollit', 'eu velit occaecat', 'est non', 'eiusmod in', 'sint aliqua'].map(
-        (item) => ({
-            title: _.startCase(item),
-            link: '#' + _.kebabCase(item),
-        }),
-    );
+    return ['In mollit', 'eu velit occaecat', 'est non', 'eiusmod in', 'sint aliqua'].map((item) => ({
+        title: _.startCase(item),
+        link: '#' + _.kebabCase(item),
+    }));
 });
 
 const contactUs = [
@@ -87,18 +85,14 @@ const socialMediaIcons: {
                 <v-col cols="12" xxl="6" xl="5" lg="5" md="12">
                     <h4 class="text-h4">About Us</h4>
                     <p class="text-body1 py-2">
-                        Officia ullamco Lorem tempor in ipsum cupidatat. Officia aute aute quis
-                        cillum ad quis. Culpa labore consequat adipisicing nulla eu cupidatat qui in
-                        enim amet. Non esse nostrud ex consequat ex consectetur veniam quis cillum
-                        ullamco ex aliqua elit velit. Sit aute dolore pariatur ipsum officia
-                        voluptate elit. Id aute cupidatat eiusmod dolore magna eu anim irure non
-                        reprehenderit sint irure.
+                        Officia ullamco Lorem tempor in ipsum cupidatat. Officia aute aute quis cillum ad quis. Culpa
+                        labore consequat adipisicing nulla eu cupidatat qui in enim amet. Non esse nostrud ex consequat
+                        ex consectetur veniam quis cillum ullamco ex aliqua elit velit. Sit aute dolore pariatur ipsum
+                        officia voluptate elit. Id aute cupidatat eiusmod dolore magna eu anim irure non reprehenderit
+                        sint irure.
                     </p>
                     <v-slide-group show-arrows class="my-2">
-                        <v-slide-group-item
-                            v-for="{ key, icon, tooltip, href } of socialMediaIcons"
-                            :key="key"
-                        >
+                        <v-slide-group-item v-for="{ key, icon, tooltip, href } of socialMediaIcons" :key="key">
                             <v-tooltip :text="tooltip" location="top center">
                                 <template v-slot:activator="{ props }">
                                     <v-btn

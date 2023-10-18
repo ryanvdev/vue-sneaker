@@ -27,11 +27,7 @@ const colors = computed<[string, string, boolean][]>(() => {
     });
 });
 
-const computeClassName = (
-    style: IndexSignature<string>,
-    colorKey: string,
-    available: boolean,
-): string => {
+const computeClassName = (style: IndexSignature<string>, colorKey: string, available: boolean): string => {
     const selectedClassName = colorKey === color.value ? style['selected'] : '';
     const availableClassName = !available ? style['unavailable'] : '';
     return `${selectedClassName} ${availableClassName}`;
@@ -56,22 +52,14 @@ onUpdated(() => {
     <div :class="`${style['sneaker-card-color']} ${props.class}`">
         <div v-if="colors.length <= 4" :class="style['label']">COLOR</div>
         <v-sheet max-width="100%" color="transparent">
-            <v-slide-group
-                :class="style['slide-group']"
-                center-active
-                :show-arrows="colors.length > 5"
-            >
+            <v-slide-group :class="style['slide-group']" center-active :show-arrows="colors.length > 5">
                 <v-slide-group-item
                     v-for="[colorKey, colorValue, available] in colors"
                     :key="colorKey"
                     v-slot="{ select }"
                 >
                     <button
-                        :class="`${style['color-btn']} ${computeClassName(
-                            style,
-                            colorKey,
-                            available,
-                        )}`"
+                        :class="`${style['color-btn']} ${computeClassName(style, colorKey, available)}`"
                         :style="{ '--color': colorValue }"
                         @click="if (available) handleClick(colorKey, select);"
                     ></button>

@@ -30,10 +30,7 @@ const theme = computed<string>(() => {
     <!-- Top progress -->
     <v-progress-linear :class="style['process']" color="red" :indeterminate="rootStore.isLoading" />
 
-    <v-app
-        :class="className(mobileDesktopClassName, `device-${deviceSize}`, 'w-screen')"
-        :theme="theme"
-    >
+    <v-app :class="className(mobileDesktopClassName, `device-${deviceSize}`, 'w-screen')" :theme="theme">
         <RouterView />
     </v-app>
 </template>

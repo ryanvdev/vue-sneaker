@@ -18,9 +18,7 @@ const props = defineProps<SneakerCardButtonsProps>();
 
 <template>
     <div
-        :class="`${style['sneaker-card-buttons']} ${
-            style[btnBuyIsReady ? 'is-ready' : 'is-not-ready']
-        } ${props.class}`"
+        :class="`${style['sneaker-card-buttons']} ${style[btnBuyIsReady ? 'is-ready' : 'is-not-ready']} ${props.class}`"
     >
         <button v-ripple @click="handleBuyNowClick">Buy Now</button>
         <button v-ripple @click="handleAddToCartClick">Add To Cart</button>

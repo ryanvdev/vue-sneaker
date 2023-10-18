@@ -47,15 +47,11 @@ onUpdated(() => {
         <div v-if="sizes.length <= 4" :class="style['label']">SIZE</div>
         <v-sheet max-width="100%" color="transparent">
             <v-slide-group center-active show-arrows>
-                <v-slide-group-item
-                    v-for="[sizeKey, sizeValue, available] in sizes"
-                    :key="sizeKey"
-                    v-slot="{ select }"
-                >
+                <v-slide-group-item v-for="[sizeKey, sizeValue, available] in sizes" :key="sizeKey" v-slot="{ select }">
                     <button
-                        :class="`${style['size-btn']} ${
-                            sizeKey === size ? style['selected'] : ''
-                        } ${!available ? style['unavailable'] : ''}`"
+                        :class="`${style['size-btn']} ${sizeKey === size ? style['selected'] : ''} ${
+                            !available ? style['unavailable'] : ''
+                        }`"
                         @click="if (available) handleClick(sizeKey, select);"
                     >
                         {{ sizeValue }}

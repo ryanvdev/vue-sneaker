@@ -14,18 +14,10 @@ const props = withDefaults(defineProps<FlexContainerProps>(), {
 });
 
 const alignItemsValue =
-    props.alignVertical === 'top'
-        ? 'flex-start'
-        : props.alignVertical === 'bottom'
-        ? 'flex-end'
-        : 'center';
+    props.alignVertical === 'top' ? 'flex-start' : props.alignVertical === 'bottom' ? 'flex-end' : 'center';
 
 const justifyContentValue =
-    props.alignHorizon === 'left'
-        ? 'flex-start'
-        : props.alignHorizon === 'right'
-        ? 'flex-end'
-        : 'center';
+    props.alignHorizon === 'left' ? 'flex-start' : props.alignHorizon === 'right' ? 'flex-end' : 'center';
 </script>
 
 <template>

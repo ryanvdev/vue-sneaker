@@ -1,5 +1,6 @@
 import { SneakerVariation, SneakerVariationLibrary } from '@/types/sneaker';
 import { basePaths } from '../router';
+import { DeepReadonly } from 'vue';
 
 export const createSneakerUrl = (slug: string) => {
     return `${basePaths.sneaker}/${slug}`;
@@ -21,7 +22,7 @@ export const formatPrice = (price: number) => {
 export const getSelectedVariation = (
     color: string | undefined,
     size: string | undefined,
-    variations: SneakerVariation[],
+    variations: DeepReadonly<SneakerVariation[]>,
 ): SneakerVariation | undefined => {
     // Check if the customer has selected the color and size
     if (color === undefined || size === undefined) {
@@ -53,8 +54,8 @@ export const getSelectedVariation = (
  * @returns Available variation-library which is computed based on variations remaining
  */
 export const computeAvailableVariationLibrary = (
-    variations: SneakerVariation[],
-    variationLibrary: SneakerVariationLibrary,
+    variations: DeepReadonly<SneakerVariation[]>,
+    variationLibrary: DeepReadonly<SneakerVariationLibrary>,
 ): SneakerVariationLibrary => {
     const uniqueSizeIds = Array.from(new Set(variations.map((item) => item.size)));
     const uniqueColorIds = Array.from(new Set(variations.map((item) => item.color)));

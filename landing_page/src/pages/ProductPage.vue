@@ -8,11 +8,7 @@ import _ from 'lodash';
 import { fetchSneakerDetail, fetchSneakerDetailQueryKey } from '@/services/product_service';
 import { useRootStore } from '@/stores/root_store';
 import { SneakerVariation, SneakerVariationLibrary } from '@/types/sneaker';
-import {
-    computeAvailableVariationLibrary,
-    formatPrice,
-    getSelectedVariation,
-} from '@/utils/sneaker_util';
+import { computeAvailableVariationLibrary, formatPrice, getSelectedVariation } from '@/utils/sneaker_util';
 import { className } from '@/utils/template_utils';
 import { toast } from 'vue3-toastify';
 import { useCartStore } from '@/stores/cart_store';
@@ -306,29 +302,18 @@ const {} = myRoute.query;
                                             <div class="text-h6">Size</div>
                                         </v-col>
                                         <v-col>
-                                            <v-slide-group
-                                                show-arrows
-                                                color="secondary"
-                                                center-active
-                                            >
+                                            <v-slide-group show-arrows color="secondary" center-active>
                                                 <v-slide-group-item
-                                                    v-for="(
-                                                        { sizeKey, sizeValue, available }, index
-                                                    ) of sizes"
+                                                    v-for="({ sizeKey, sizeValue, available }, index) of sizes"
                                                     :key="`${index}-${sizeKey}`"
                                                     v-slot:default="{ isSelected, select }"
                                                 >
                                                     <v-btn
                                                         :variant="available ? 'flat' : 'outlined'"
-                                                        :color="
-                                                            isSelected ? 'primary' : 'secondary'
-                                                        "
+                                                        :color="isSelected ? 'primary' : 'secondary'"
                                                         :disabled="!available"
                                                         class="mx-2"
-                                                        @click="
-                                                            if (available)
-                                                                handleSizeChange(sizeKey, select);
-                                                        "
+                                                        @click="if (available) handleSizeChange(sizeKey, select);"
                                                     >
                                                         {{ sizeValue }}
                                                     </v-btn>
@@ -345,28 +330,19 @@ const {} = myRoute.query;
                                         <v-col>
                                             <v-slide-group show-arrows center-active>
                                                 <v-slide-group-item
-                                                    v-for="(
-                                                        { colorKey, colorValue, available }, index
-                                                    ) of colors"
+                                                    v-for="({ colorKey, colorValue, available }, index) of colors"
                                                     :key="`${index}-${colorKey}`"
                                                     v-slot:default="{ select, isSelected }"
                                                 >
                                                     <v-btn
                                                         :variant="
-                                                            available
-                                                                ? isSelected
-                                                                    ? 'elevated'
-                                                                    : 'flat'
-                                                                : 'outlined'
+                                                            available ? (isSelected ? 'elevated' : 'flat') : 'outlined'
                                                         "
                                                         :color="colorValue"
                                                         :disabled="!available"
                                                         class="ma-2"
                                                         rounded="pill"
-                                                        @click="
-                                                            if (available)
-                                                                handleColorChange(colorKey, select);
-                                                        "
+                                                        @click="if (available) handleColorChange(colorKey, select);"
                                                     >
                                                         {{ colorValue }}
                                                     </v-btn>
@@ -415,12 +391,7 @@ const {} = myRoute.query;
             </v-col>
 
             <v-col cols="12">
-                <v-sheet
-                    elevation="1"
-                    rounded="lg"
-                    class="pa-2 text-body-1 bg-surface"
-                    style="text-align: justify"
-                >
+                <v-sheet elevation="1" rounded="lg" class="pa-2 text-body-1 bg-surface" style="text-align: justify">
                     <h2 class="text-h4">Description</h2>
                     <article :class="style['article']" v-html="data?.description"></article>
                 </v-sheet>

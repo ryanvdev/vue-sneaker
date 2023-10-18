@@ -88,41 +88,24 @@ cartStore.items;
             <v-col>
                 <v-row no-gutters align="center">
                     <v-col v-if="!rootStore.isMobile" cols="12" md="1">
-                        <v-img
-                            :src="sneaker.variationLibrary.images[variation.image]"
-                            width="60px"
-                            aspect-ratio="1"
-                        />
+                        <v-img :src="sneaker.variationLibrary.images[variation.image]" width="60px" aspect-ratio="1" />
                     </v-col>
                     <v-col cols="12" sm="8" md="5" class="py-2 py-md-0">
-                        <router-link
-                            :to="createSneakerUrl(sneaker.slug)"
-                            class="d-block text-h5 w-100"
-                        >
+                        <router-link :to="createSneakerUrl(sneaker.slug)" class="d-block text-h5 w-100">
                             {{ sneaker.name }}
                         </router-link>
                     </v-col>
                     <v-col cols="12" sm="4" md="2" class="py-2 py-md-0">
                         <span :class="styles['price']">{{ price }}</span>
                     </v-col>
-                    <v-col
-                        cols="9"
-                        sm="8"
-                        md="3"
-                        class="d-flex justify-start justify-md-center py-2 py-md-0"
-                    >
+                    <v-col cols="9" sm="8" md="3" class="d-flex justify-start justify-md-center py-2 py-md-0">
                         <quantity-field
                             :model-value="cartItem.quantity"
                             @update:model-value="cartStore.updateQuantity(key, $event)"
                         />
                     </v-col>
                     <v-col cols="3" sm="4" md="1" class="d-flex justify-end py-2 py-md-0">
-                        <v-btn
-                            icon="mdi-delete"
-                            variant="plain"
-                            rounded="sm"
-                            @click="cartStore.remove(key)"
-                        />
+                        <v-btn icon="mdi-delete" variant="plain" rounded="sm" @click="cartStore.remove(key)" />
                     </v-col>
                 </v-row>
             </v-col>

@@ -32,17 +32,8 @@ const searchIsFocusing = ref<boolean>(false);
             <v-row no-gutters>
                 <v-col cols="12" md="9" lg="9" xl="8">
                     <v-row no-gutters>
-                        <v-col
-                            v-show="!searchIsFocusing || !rootStore.isMobile"
-                            cols="3"
-                            sm="2"
-                            md="2"
-                            lg="4"
-                            xl="5"
-                        >
-                            <head-logo
-                                :display-web-name="!rootStore.isMobile && deviceSize !== 'md'"
-                            />
+                        <v-col v-show="!searchIsFocusing || !rootStore.isMobile" cols="3" sm="2" md="2" lg="4" xl="5">
+                            <head-logo :display-web-name="!rootStore.isMobile && deviceSize !== 'md'" />
                         </v-col>
                         <v-col>
                             <search-field
@@ -62,10 +53,8 @@ const searchIsFocusing = ref<boolean>(false);
             <v-row v-if="!rootStore.isMobile" no-gutters>
                 <v-col cols="12">
                     <v-slide-group show-arrows class="mt-3">
-                        <v-slide-group-item v-for="item of appBarStore.brandsQuery.data">
-                            <v-btn elevation="0" color="light" rounded="md" class="ma-2">{{
-                                item
-                            }}</v-btn>
+                        <v-slide-group-item v-for="item of appBarStore.brands">
+                            <v-btn elevation="0" color="light" rounded="md" class="ma-2">{{ item }}</v-btn>
                         </v-slide-group-item>
                     </v-slide-group>
                 </v-col>

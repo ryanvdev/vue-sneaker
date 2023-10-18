@@ -1,10 +1,6 @@
 import { BASE_API_URL } from '@/utils/constants';
 import axios from 'axios';
-import {
-    errorMiddleware,
-    requestMiddleware,
-    responseMiddleware,
-} from '@/services/middleware/processing';
+import { errorMiddleware, requestMiddleware, responseMiddleware } from '@/services/middleware/processing';
 import _ from 'lodash';
 
 const homeFetcher = axios.create({

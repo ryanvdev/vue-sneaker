@@ -39,10 +39,7 @@ const id = (props.id || 'theme-btn-') + 'change-theme';
     </v-tooltip>
 
     <v-menu :activator="'#' + id" location="bottom right">
-        <v-list
-            active-color="secondary"
-            @click:select="rootStore.localData.theme = $event.id as ThemeKey"
-        >
+        <v-list active-color="secondary" @click:select="rootStore.localData.theme = $event.id as ThemeKey">
             <v-list-item
                 v-for="{ key, icon, label } of themesList"
                 :key="key"

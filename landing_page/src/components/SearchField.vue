@@ -42,19 +42,11 @@ const suggestions = computed<[string, string, string][]>(() => {
 </script>
 
 <template>
-    <div
-        :class="`${style['search-field']} ${style[isFocused ? 'focus' : 'blur']} ${
-            props.class || ''
-        }`"
-    >
+    <div :class="`${style['search-field']} ${style[isFocused ? 'focus' : 'blur']} ${props.class || ''}`">
         <div :class="style['cover-wrapper']">
             <div :class="style['cover']" v-show="isFocused" @mousedown="isFocused = false"></div>
         </div>
-        <div
-            :class="
-                className(style['wrapper'], 'rounded-lg', isFocused ? 'elevation-2' : 'elevation-0')
-            "
-        >
+        <div :class="className(style['wrapper'], 'rounded-lg', isFocused ? 'elevation-2' : 'elevation-0')">
             <div :class="style['input-wrapper']">
                 <input
                     type="text"
@@ -72,9 +64,7 @@ const suggestions = computed<[string, string, string][]>(() => {
                     color="surface"
                     density="default"
                     height="var(--input-height)"
-                    :width="
-                        rootStore.isMobile ? 'var(--input-height)' : 'calc(var(--input-height)*2)'
-                    "
+                    :width="rootStore.isMobile ? 'var(--input-height)' : 'calc(var(--input-height)*2)'"
                     class="bg-secondary float-right"
                 >
                     <template v-slot:default>
