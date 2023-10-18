@@ -1,31 +1,29 @@
 <script setup lang="ts">
 import type { ThemeKey } from '@/themes';
 
-import {defineProps, } from 'vue';
-import {useRootStore} from '@/stores/root_store';
-import {themesList} from '@/themes';
+import { defineProps } from 'vue';
+import { useRootStore } from '@/stores/root_store';
+import { themesList } from '@/themes';
 import { className } from '@/utils/template_utils';
 
-interface Props{
-    class?:string;
-    id?:string;
+interface Props {
+    class?: string;
+    id?: string;
 }
 
 const rootStore = useRootStore();
 const props = defineProps<Props>();
 
-const id = (props.id||'theme-btn-') + 'change-theme';
-
+const id = (props.id || 'theme-btn-') + 'change-theme';
 </script>
-
 
 <template>
     <v-tooltip text="Theme" location="bottom center">
-        <template v-slot:activator="{props:tooltipProps}">
-            <v-btn 
+        <template v-slot:activator="{ props: tooltipProps }">
+            <v-btn
                 :id="id"
                 v-bind="tooltipProps"
-                density="comfortable" 
+                density="comfortable"
                 icon="mdi-tshirt-crew"
                 variant="text"
                 width="80px"
@@ -41,23 +39,20 @@ const id = (props.id||'theme-btn-') + 'change-theme';
     </v-tooltip>
 
     <v-menu :activator="'#' + id" location="bottom right">
-        <v-list 
-            active-color="secondary"
-            @click:select="rootStore.localData.theme=($event.id as ThemeKey)"
-        >
+        <v-list active-color="secondary" @click:select="rootStore.localData.theme = $event.id as ThemeKey">
             <v-list-item
-                v-for="({key, icon, label}) of themesList"
+                v-for="{ key, icon, label } of themesList"
                 :key="key"
                 :value="key"
-                :active="key===rootStore.localData.theme"
+                :active="key === rootStore.localData.theme"
             >
                 <template v-slot:prepend>
-                    <v-icon :icon="icon"/>
+                    <v-icon :icon="icon" />
                 </template>
                 <v-list-item-title class="pr-15">
                     {{ label }}
                 </v-list-item-title>
             </v-list-item>
         </v-list>
-      </v-menu>
+    </v-menu>
 </template>

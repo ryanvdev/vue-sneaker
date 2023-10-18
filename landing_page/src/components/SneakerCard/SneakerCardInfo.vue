@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {inject, onUpdated} from 'vue';
+import { inject, onUpdated } from 'vue';
 import { RouterLink } from 'vue-router';
 import SneakerCardSize from './SneakerCardSize.vue';
 import SneakerCardColor from './SneakerCardColor.vue';
@@ -22,26 +22,24 @@ const { price, href, name } = inject(injectionKey)!;
 const localPrice = computed<string>(() => {
     const [price1, price2] = price.value;
 
-    if(price1 === price2) return formatPrice(price1);
-    return `${formatPrice(price1)} - ${formatPrice(price2)}`
+    if (price1 === price2) return formatPrice(price1);
+    return `${formatPrice(price1)} - ${formatPrice(price2)}`;
 });
 
 onUpdated(() => {
     localLogger.info('SneakerCardInfo updated');
-})
-
+});
 </script>
 
 <template>
     <div :class="`${style['sneaker-card-info']} ${props.class}`">
         <RouterLink :to="href" :class="style['sneaker-name']">{{ name }}</RouterLink>
         <p :class="style['sneaker-price']">{{ localPrice }}</p>
-        <SneakerCardSize/>
-        <SneakerCardColor/>
+        <SneakerCardSize />
+        <SneakerCardColor />
         <SneakerCardButtons />
     </div>
 </template>
-
 
 <style module="style" lang="scss">
 .sneaker-card-info {
@@ -65,7 +63,7 @@ onUpdated(() => {
     white-space: nowrap;
     text-overflow: ellipsis;
 
-    &:hover{
+    &:hover {
         color: rgb(var(--v-theme-on-primary));
     }
 }
@@ -74,7 +72,6 @@ onUpdated(() => {
     height: 35px;
     width: 100%;
 
-    
     font-family: Roboto Slab;
     font-size: 20px;
     font-weight: 700;

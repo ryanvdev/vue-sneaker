@@ -6,42 +6,31 @@ import { useDisplay } from 'vuetify';
 import { useRootStore } from './stores/root_store';
 import { className } from './utils/template_utils';
 import { systemThemeKey } from '@/themes';
+import { MOBILE_DEVICES } from './utils/constants';
 
 const rootStore = useRootStore();
 const { name: deviceSize } = useDisplay();
 
 const mobileDesktopClassName = computed<string>(() => {
-    switch (deviceSize.value) {
-        case 'xs':
-        case 'sm':
-        case 'md': {
-            return 'is-mobile'
-        }
-        default: return 'is-desktop'
+    if (MOBILE_DEVICES.includes(deviceSize.value)) {
+        return 'is-mobile';
     }
+    return 'is-desktop';
 });
 
 const theme = computed<string>(() => {
-    if(rootStore.localData.theme==='system'){
-        return systemThemeKey
+    if (rootStore.localData.theme === 'system') {
+        return systemThemeKey;
     }
     return rootStore.localData.theme;
 });
-
 </script>
 
 <template>
     <!-- Top progress -->
-    <v-progress-linear 
-        :class="style['process']" 
-        color="red" 
-        :indeterminate="rootStore.isLoading"
-    />
+    <v-progress-linear :class="style['process']" color="red" :indeterminate="rootStore.isLoading" />
 
-    <v-app 
-        :class="className(mobileDesktopClassName, `device-${deviceSize}`, 'w-screen')"
-        :theme="theme"
-    >
+    <v-app :class="className(mobileDesktopClassName, `device-${deviceSize}`, 'w-screen')" :theme="theme">
         <RouterView />
     </v-app>
 </template>

@@ -3,7 +3,6 @@ import { useRoute } from 'vue-router';
 
 const route = useRoute();
 const params = Object.entries(route.params);
-
 </script>
 
 <template>

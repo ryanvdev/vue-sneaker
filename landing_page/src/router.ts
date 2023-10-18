@@ -5,19 +5,23 @@ import HomeLayout from '@/layouts/HomeLayout.vue';
 import NotFoundPage from '@/pages/NotFoundPage.vue';
 import TestPage from '@/pages/TestPage.vue';
 import ProductPage from '@/pages/ProductPage.vue';
+import CartPage from './pages/CartPage.vue';
+import { WEB_NAME } from './utils/constants';
 
 const basePaths = Object.freeze({
-    sneaker: '/sneaker'
+    root: '/',
+    cart: '/cart',
+    sneaker: '/sneaker',
 } satisfies IndexSignature<string>);
 
 const routes = Object.freeze<RouteRecordRaw[]>([
     {
-        name: 'Home',
-        path: '/',
+        name: 'root',
+        path: basePaths.root,
         component: HomeLayout,
         children: [
             {
-                name: 'Home Page',
+                name: 'Home',
                 path: '/',
                 component: HomePage,
             },
@@ -25,19 +29,24 @@ const routes = Object.freeze<RouteRecordRaw[]>([
                 name: 'Sneaker',
                 path: basePaths.sneaker + '/:slug([a-z0-9-]+)',
                 component: ProductPage,
-            }
-        ]
+            },
+            {
+                name: `Cart - ${WEB_NAME}`,
+                path: basePaths.cart,
+                component: CartPage,
+            },
+        ],
     },
     {
         name: 'Test',
         path: '/test',
-        component: TestPage
+        component: TestPage,
     },
     {
         name: 'Not Found',
         path: '/:pathMatch(.*)*',
         component: NotFoundPage,
-    }
+    },
 ]);
 
 const router = VueRouter.createRouter({
@@ -45,9 +54,9 @@ const router = VueRouter.createRouter({
     routes: routes,
     scrollBehavior() {
         return {
-            top: 0
-        }
-    }
+            top: 0,
+        };
+    },
 });
 
-export {basePaths, router}
+export { basePaths, router };

@@ -1,61 +1,76 @@
 <script setup lang="ts">
-import { watchEffect } from 'vue';
-import { VContainer, VCol, VRow } from 'vuetify/components';
+import { onMounted } from 'vue';
+import { useRoute } from 'vue-router';
 
-import { useHomeStore } from '@/stores/home_store';
-
-import SneakerCard from '@/components/SneakerCard/SneakerCard.vue';
 import BigSneaker from '@/components/BigSneaker.vue';
+import { WEB_NAME } from '@/utils/constants';
+import { useQuery, useQueries } from '@tanstack/vue-query';
+import { fetchSneakersByBrand } from '@/services/products_service';
+import { useAppBarStore } from '@/stores/app_bar_store';
+import { fetchSuggestions } from '@/services/home_service';
+import SneakersSlideGroup from '@/components/SneakersSlideGroup.vue';
+import SneakersGroup from '@/components/SneakersGroup.vue';
 
+const LOCAL_KEY = 'home_page';
+const BRANDS_KEY = LOCAL_KEY + 'brand';
+const brandIndexs = [1, 3, 5, 7];
 
-const homeStore = useHomeStore();
+const route = useRoute();
+const appBarStore = useAppBarStore();
 
-watchEffect(async () => {
-    await homeStore.fetchSuggestions();
+const sneakersByBrand = useQueries({
+    queries: brandIndexs.map((index) => {
+        return {
+            queryKey: [index, appBarStore, fetchSneakersByBrand.queryKey, BRANDS_KEY, LOCAL_KEY],
+            queryFn: async () => {
+                const brandName = appBarStore.brands[index];
+                if (brandName == null) return null;
+                return await fetchSneakersByBrand(brandName);
+            },
+        };
+    }),
 });
 
-watchEffect(() => {
-    document.title = 'Vue Sneaker';
+const {
+    data: suggestions,
+    // isError: isSuggestionsError,
+    isSuccess: isSuggestionsSuccess,
+} = useQuery({
+    queryKey: [LOCAL_KEY, fetchSuggestions.queryKey],
+    queryFn: fetchSuggestions,
+    initialData: [],
+    refetchOnWindowFocus: false,
 });
 
+onMounted(() => {
+    document.title = route.name?.toString() || WEB_NAME;
+});
 </script>
 
 <template>
     <v-container>
         <v-row class="flex-sm-nowrap-reverse flex-sm-nowrap-reverse">
-            <v-col
-                align-self="center"
-                cols="12"
-                md="6" lg="6" xl="6" xxl="6" xxxl="7"
-            >
+            <v-col align-self="center" cols="12" md="6" lg="6" xl="6" xxl="6" xxxl="7">
                 <div class="text-h3">Sneaker Collection</div>
                 <div class="my-4 text-body-1">
                     Labore eu ad fugiat labore ut ad consectetur ex adipisicing incididunt amet officia consequat.
-                    Fugiat sit sint laborum anim occaecat sunt sint.
-                    Ipsum dolor velit esse sint laborum tempor excepteur
-                    id officia non nisi consectetur tempor qui.
+                    Fugiat sit sint laborum anim occaecat sunt sint. Ipsum dolor velit esse sint laborum tempor
+                    excepteur id officia non nisi consectetur tempor qui.
                 </div>
             </v-col>
             <v-col>
-                <big-sneaker/>
+                <big-sneaker />
             </v-col>
         </v-row>
     </v-container>
-    <v-container>
-        <h3></h3>
-    </v-container>
-    <v-container>
-        <h3 class="py-10 text-h3">Products</h3>
-        <v-row>
-            <v-col 
-                v-for="item of homeStore.suggestions"
-                :key="item.id" 
-                cols="12"
-                sm="6" md="4" lg="3" xl="2" xxl="2"
-                class="d-flex justify-center"
-            >
-                <sneaker-card v-bind="item" />
-            </v-col>
-        </v-row>
+
+    <template v-for="{ data, isSuccess } of sneakersByBrand">
+        <v-container v-show="isSuccess">
+            <sneakers-slide-group v-if="data" v-bind="data" />
+        </v-container>
+    </template>
+
+    <v-container v-if="isSuggestionsSuccess">
+        <sneakers-group title="Suggestion For You" :sneakers="suggestions" />
     </v-container>
 </template>

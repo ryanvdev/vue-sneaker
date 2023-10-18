@@ -1,4 +1,4 @@
-function asyncSleep(millisecond:number):Promise<void> {
+function asyncSleep(millisecond: number): Promise<void> {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve();
@@ -6,4 +6,4 @@ function asyncSleep(millisecond:number):Promise<void> {
     });
 }
 
-export {asyncSleep};
+export { asyncSleep };

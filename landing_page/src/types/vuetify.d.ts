@@ -1,9 +1,9 @@
 import { ThemeDefinition as _ThemeDefinition } from 'vuetify';
 
-export {}
+export {};
 
-declare module "vuetify" {
-    interface InternalThemeDefinition{
+declare module 'vuetify' {
+    interface InternalThemeDefinition {
         colors: {
             dark: string;
             white: string;
@@ -13,6 +13,6 @@ declare module "vuetify" {
             tertiary: string;
             price: string;
             cardBackground: string;
-        },
+        };
     }
 }

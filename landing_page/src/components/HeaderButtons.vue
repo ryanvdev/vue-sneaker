@@ -8,13 +8,11 @@ interface Props {
 const props = defineProps<Props>();
 </script>
 
-
 <template>
     <div :class="`${style['header-buttons']} ${props.class}`">
-        <cart-button/>
+        <cart-button />
     </div>
 </template>
-
 
 <style module="style" lang="scss">
 .header-buttons {
@@ -27,4 +25,3 @@ const props = defineProps<Props>();
     height: 60px;
 }
 </style>
-

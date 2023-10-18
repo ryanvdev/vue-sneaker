@@ -1,24 +1,22 @@
-import type {Sneaker} from '@/types/sneaker';
-import { homeFetcher } from './home_fetcher';
-import { memoCache } from '@/utils/cache_utils';
+import type { Sneaker } from '@/types/sneaker';
+import { fetchAllSneakers } from '../products_service';
+import _ from 'lodash';
 
+const LOCAL_KEY = 'home_service';
 
-const fetchSuggestionsKey = 'home_service/fetchSuggestions';
-export const fetchSuggestions = async ():Promise<Sneaker[]> => {
-    const url = '/sneakers.json';
-    const cacheKey = fetchSuggestionsKey + url;
-
-    // If has cache
-    if(memoCache.has(cacheKey)) {
-        return memoCache.get(cacheKey);
-    }
-    
-    // If hasn't
-    const res = await homeFetcher.get(url);
-
-    const data = (res.data as Sneaker[]).slice(20, 40);
-
-    // Save data to cache
-    memoCache.set(cacheKey, data);
-    return data;
+interface FetchSuggestions {
+    (): Promise<Sneaker[]>;
+    queryKey: string;
 }
+
+const fetchSuggestions = (async () => {
+    const sneakers = await fetchAllSneakers();
+    const data = sneakers.slice(0, 20);
+
+    return data;
+}) as FetchSuggestions;
+
+fetchSuggestions.queryKey = _.uniqueId(LOCAL_KEY);
+
+export type { FetchSuggestions };
+export { fetchSuggestions };

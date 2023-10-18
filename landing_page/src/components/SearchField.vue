@@ -3,14 +3,13 @@ import { useRootStore } from '@/stores/root_store';
 import { className } from '@/utils/template_utils';
 import { ref, computed, defineProps, withDefaults } from 'vue';
 
-
 interface Props {
-    id?:string;
-    name?:string;
-    class?:string;
+    id?: string;
+    name?: string;
+    class?: string;
     placeholder?: string;
 
-    isFocused?:boolean;
+    isFocused?: boolean;
 }
 
 const rootStore = useRootStore();
@@ -20,7 +19,7 @@ const props = withDefaults(defineProps<Props>(), {
 });
 
 const emit = defineEmits<{
-    'update:isFocused': [e:boolean]
+    'update:isFocused': [e: boolean];
 }>();
 
 const inputValue = ref<string>('');
@@ -28,11 +27,10 @@ const isFocused = computed<boolean>({
     get: () => props.isFocused,
     set: (v) => {
         emit('update:isFocused', v);
-    }
+    },
 });
 
-
-// TODO: 
+// TODO:
 const suggestions = computed<[string, string, string][]>(() => {
     const items = inputValue.value.split(' ');
     if (items.length === 1 && items[0].length === 0) return [];
@@ -41,58 +39,48 @@ const suggestions = computed<[string, string, string][]>(() => {
         return [`${index}-${item}`, `#${item}`, item];
     });
 });
-
 </script>
 
 <template>
-    <div :class="`${style['search-field']} ${style[isFocused?'focus':'blur']} ${props.class||''}`">
+    <div :class="`${style['search-field']} ${style[isFocused ? 'focus' : 'blur']} ${props.class || ''}`">
         <div :class="style['cover-wrapper']">
-            <div 
-                :class="style['cover']"
-                v-show="isFocused"
-                @mousedown="isFocused=false"
-            >
-            </div>
+            <div :class="style['cover']" v-show="isFocused" @mousedown="isFocused = false"></div>
         </div>
-        <div :class="className(style['wrapper'], 'rounded-lg', isFocused?'elevation-2':'elevation-0')">
+        <div :class="className(style['wrapper'], 'rounded-lg', isFocused ? 'elevation-2' : 'elevation-0')">
             <div :class="style['input-wrapper']">
-                <input 
-                    type="text" 
-                    autocomplete="off" 
+                <input
+                    type="text"
+                    autocomplete="off"
                     :id="props.id"
                     :name="props.name"
                     :placeholder="props.placeholder"
                     v-model="inputValue"
-                    @focus="isFocused=true"
+                    @focus="isFocused = true"
                 />
-                <v-btn 
+                <v-btn
                     icon="mdi:mdi-magnify"
                     variant="text"
                     rounded="lg"
                     color="surface"
                     density="default"
                     height="var(--input-height)"
-                    :width="rootStore.isMobile?'var(--input-height)':'calc(var(--input-height)*2)'"
+                    :width="rootStore.isMobile ? 'var(--input-height)' : 'calc(var(--input-height)*2)'"
                     class="bg-secondary float-right"
                 >
                     <template v-slot:default>
-                        <v-icon/>
+                        <v-icon />
                     </template>
                 </v-btn>
             </div>
-            <div :class="`${style['line-break']} ${isFocused&&style['display']}`"></div>
+            <div :class="`${style['line-break']} ${isFocused && style['display']}`"></div>
             <div :class="style['suggestion-wrapper']" v-show="isFocused">
-                <div :class="style['suggestion-placeholder']" v-show="suggestions.length===0">
+                <div :class="style['suggestion-placeholder']" v-show="suggestions.length === 0">
                     {{ props.placeholder }}
                 </div>
-                <v-list class="w-100" v-show="suggestions.length>0">
-                    <v-list-item 
-                        v-for="[key, href, label] of suggestions" 
-                        :key="key" 
-                        :href="href"
-                    >
+                <v-list class="w-100" v-show="suggestions.length > 0">
+                    <v-list-item v-for="[key, href, label] of suggestions" :key="key" :href="href">
                         <template v-slot:prepend>
-                            <v-icon icon="mdi:mdi-magnify"/>
+                            <v-icon icon="mdi:mdi-magnify" />
                         </template>
                         <v-list-item-title>
                             {{ label }}
@@ -116,7 +104,7 @@ const suggestions = computed<[string, string, string][]>(() => {
     width: 690px;
     height: var(--height);
 
-    &.focus{
+    &.focus {
         z-index: 100;
     }
 }
@@ -167,7 +155,7 @@ const suggestions = computed<[string, string, string][]>(() => {
 
     padding: 0px 10px;
 
-    >input {
+    > input {
         display: block;
         float: left;
 
@@ -182,7 +170,7 @@ const suggestions = computed<[string, string, string][]>(() => {
 }
 
 :global(.is-mobile) .input-wrapper {
-    >input{
+    > input {
         width: calc(100% - var(--input-height) - 30px);
     }
 }
@@ -213,7 +201,7 @@ const suggestions = computed<[string, string, string][]>(() => {
     height: auto;
 }
 
-.suggestion-placeholder{
+.suggestion-placeholder {
     display: block;
     width: 100%;
 
@@ -221,5 +209,4 @@ const suggestions = computed<[string, string, string][]>(() => {
     line-height: var(--input-height);
     padding-left: 10px;
 }
-
 </style>

@@ -1,7 +1,7 @@
-<script setup lang="ts" >
-import type {Sneaker, SneakerVariation, SneakerVariationLibrary} from '@/types/sneaker';
+<script setup lang="ts">
+import type { Sneaker, SneakerVariation, SneakerVariationLibrary } from '@/types/sneaker';
 
-import { provide, onUpdated, defineProps, computed, ref } from 'vue';
+import { provide, onUpdated, defineProps, computed, ref, DeepReadonly } from 'vue';
 import { toast } from 'vue3-toastify';
 import { useRouter } from 'vue-router';
 
@@ -12,9 +12,7 @@ import { className } from '@/utils/template_utils';
 import SneakerCardInfo from './SneakerCardInfo.vue';
 import { injectionKey, localLogger } from './sneaker_card_utils';
 
-interface Props extends Sneaker{
-
-}
+interface Props extends Sneaker {}
 
 defineOptions({
     inheritAttrs: false,
@@ -33,11 +31,10 @@ const color = ref<string | undefined>();
 // similar to the color ref
 const size = ref<string | undefined>();
 
-
 /**
  * The variations remaining when the customer has selected color or size on the SneakerCard
  */
-const variations = computed<SneakerVariation[]>(() => {
+const variations = computed<DeepReadonly<SneakerVariation[]>>(() => {
     const colorValue = color.value;
     const sizeValue = size.value;
 
@@ -80,7 +77,7 @@ const image = computed<string>(() => {
     if (uniqueImageIds.length === 1) {
         return variationLibrary.images[uniqueImageIds[0]];
     }
-    return variationLibrary.images[color.value||props.defaultImage];
+    return variationLibrary.images[color.value || props.defaultImage];
 });
 
 const href = computed<string>(() => {
@@ -89,20 +86,20 @@ const href = computed<string>(() => {
 
 const ellipseColor = computed<string>(() => {
     const colorValue = color.value;
-    if(colorValue !== undefined) return variationLibrary.colors[colorValue];
+    if (colorValue !== undefined) return variationLibrary.colors[colorValue];
     const firstColorKey = variations.value.at(0)?.color;
-    return variationLibrary.colors[firstColorKey||props.defaultColor];
+    return variationLibrary.colors[firstColorKey || props.defaultColor];
 });
 
 const btnBuyIsReady = computed<boolean>(() => {
     const colorValue = color.value;
     const sizeValue = size.value;
-    if(colorValue === undefined || sizeValue === undefined) return false;
+    if (colorValue === undefined || sizeValue === undefined) return false;
 
     const variationsValue = variations.value;
-    if(variationsValue.length === 1){
+    if (variationsValue.length === 1) {
         const tmp = variationsValue[0];
-        if(sizeValue === tmp.size && colorValue === tmp.color) return true;
+        if (sizeValue === tmp.size && colorValue === tmp.color) return true;
 
         localLogger.error(`Not found variation with size=${sizeValue} and color=${colorValue}`);
     }
@@ -110,11 +107,11 @@ const btnBuyIsReady = computed<boolean>(() => {
     return false;
 });
 
-const addToCart = async ():Promise<boolean> => {
+const addToCart = async (): Promise<boolean> => {
     const selectedVariation = getSelectedVariation(color.value, size.value, props.variations);
 
-    // If the customer has not selected the color and size yet. 
-    if(!selectedVariation) {
+    // If the customer has not selected the color and size yet.
+    if (!selectedVariation) {
         toast.warning('You need to select the color and size first !');
         return false;
     }
@@ -126,17 +123,17 @@ const addToCart = async ():Promise<boolean> => {
     toast.success(`Added ${selectedColorName} ${props.name} size ${selectedSizeName} to cart`);
 
     return true;
-}
+};
 
-const handleBuyNowClick = async () => {   
+const handleBuyNowClick = async () => {
     const success = await addToCart();
-    if(!success) return;
+    if (!success) return;
     router.push('/cart');
-}
+};
 
 const handleAddToCartClick = async () => {
     await addToCart();
-}
+};
 
 provide(injectionKey, {
     name,
@@ -154,18 +151,17 @@ provide(injectionKey, {
 onUpdated(() => {
     localLogger.info('SneakerCard updated');
 });
-
 </script>
 
 <template>
-    <div 
-        :class="className('stack', style['sneaker-card'])"
-    >
+    <div :class="className('stack', style['sneaker-card'])">
         <div>
-            <div :class="style['ellipse']" :style="{
-                backgroundColor: ellipseColor
-            }">
-            </div>
+            <div
+                :class="style['ellipse']"
+                :style="{
+                    backgroundColor: ellipseColor,
+                }"
+            ></div>
         </div>
         <div>
             <div :class="style['brand']">
@@ -173,7 +169,7 @@ onUpdated(() => {
             </div>
         </div>
         <div>
-            <div :class="style['sneaker-image']" :style="{'--local-image': `url('${image}')`}"></div>
+            <div :class="style['sneaker-image']" :style="{ '--local-image': `url('${image}')` }"></div>
         </div>
         <div>
             <SneakerCardInfo :class="style['sneaker-info']" />
@@ -181,12 +177,11 @@ onUpdated(() => {
     </div>
 </template>
 
-
 <style module="style" lang="scss">
 $info-height: 254px;
 $info-blur-height: $info-height - 145px;
 
-.sneaker-card{
+.sneaker-card {
     --local-width: 270px;
 }
 
@@ -202,25 +197,24 @@ $info-blur-height: $info-height - 145px;
 
     background-color: rgba(var(--v-theme-surface), 1);
 
-    >* {
+    > * {
         overflow: hidden;
     }
 }
-
 
 .brand {
     display: block;
     width: 100%;
     height: 100%;
 
-    >p {
+    > p {
         position: relative;
         top: 8%;
         left: 0%;
         transition: all 0.3s;
 
         rotate: -33deg;
-        
+
         color: rgba(80, 85, 90, 0.5);
         font-family: Roboto Slab;
         font-size: 50px;
@@ -269,7 +263,6 @@ $info-blur-height: $info-height - 145px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-
 }
 
 .sneaker-info {
@@ -277,9 +270,8 @@ $info-blur-height: $info-height - 145px;
     z-index: 5;
     transition: top 0.3s, background-color 0.1s;
 
-    
     top: calc(100% - $info-blur-height);
-    
+
     border-radius: 10px 10px 0px 0px;
 
     margin-left: auto;
@@ -288,18 +280,14 @@ $info-blur-height: $info-height - 145px;
     background-color: transparent;
 }
 
-
-
 :global(.device-sm) .sneaker-card,
 :global(.device-xs) .sneaker-card {
     --local-width: 100%;
 }
 
-
-
 :global(.is-mobile) .sneaker-card,
 :global(.is-desktop) .sneaker-card:hover {
-    .brand>p {
+    .brand > p {
         top: 5px;
         left: 10px;
         rotate: 0deg;
