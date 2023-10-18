@@ -1,10 +1,10 @@
-import {format} from 'prettier';
+import { format } from 'prettier';
 
-export function useValue<T>(callbackFn: ()=>T):T{
+export function useValue<T>(callbackFn: () => T): T {
     return callbackFn();
 }
 
-export function useJsonFormat(v:string):Promise<string>{
+export function useJsonFormat(v: string): Promise<string> {
     return format(v, {
         parser: 'json',
         tabWidth: 4,
